@@ -81,12 +81,12 @@ export default function About() {
       </section>
 
       {/* SECTION 2: COMPANY STORY */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Visual Column */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-[#E5EAF0] relative h-96">
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-[#E5EAF0] relative h-72 sm:h-96">
                 <img
                   className="w-full h-full object-cover"
                   alt="Modern high-precision software architecture laboratory"
@@ -111,7 +111,7 @@ export default function About() {
                   FOUNDATIONAL MISSION
                 </span>
               </div>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 Rejecting Digital Vanity. Embracing Deterministic Engineering.
               </h2>
               <div className="flex flex-col gap-4 font-body-large text-body-large text-on-surface-variant leading-relaxed">
@@ -128,19 +128,19 @@ export default function About() {
       </section>
 
       {/* SECTION 3: MISSION & VISION */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               STRATEGIC ANCHORS
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Our Core Purpose and North Star
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-8 lg:p-10 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <div className="p-6 sm:p-8 lg:p-10 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-5">
               <div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
                 <Compass className="w-6 h-6" />
               </div>
@@ -150,7 +150,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="p-8 lg:p-10 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-5">
+            <div className="p-6 sm:p-8 lg:p-10 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-5">
               <div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
                 <Eye className="w-6 h-6" />
               </div>
@@ -164,13 +164,13 @@ export default function About() {
       </section>
 
       {/* SECTION 4: FOUR GUIDING PILLARS */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               CORE VALUES
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Our Four Guiding Pillars
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
@@ -178,7 +178,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-4 border border-[#E5EAF0]">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <Lightbulb className="w-5 h-5" />
@@ -223,13 +223,13 @@ export default function About() {
       </section>
 
       {/* SECTION 5: CORE EXPERTISE (Interactive Breakdown) */}
-      <section className="w-full py-24 bg-surface" id="expertise-section">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+      <section className="w-full py-16 sm:py-24 bg-surface" id="expertise-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
             <span className="font-label-code text-label-code uppercase tracking-widest text-primary font-bold">
               CAPABILITY MATRIX
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface mt-2 tracking-tight">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface mt-2 tracking-tight">
               Our Core Practice Disciplines
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant mt-4">
@@ -238,9 +238,9 @@ export default function About() {
           </div>
 
           {/* Tab Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
             <button
-              className={`px-5 py-3 rounded-lg font-label-prominent text-label-prominent transition-all duration-150 ${
+              className={`px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-lg font-label-prominent text-xs sm:text-label-prominent transition-all duration-150 ${
                 activeTab === 'web'
                   ? 'bg-primary-container text-on-primary shadow-sm'
                   : 'bg-surface-container-high text-on-surface-variant hover:text-on-surface'
@@ -251,7 +251,7 @@ export default function About() {
               Web Engineering & Interactive Platforms
             </button>
             <button
-              className={`px-5 py-3 rounded-lg font-label-prominent text-label-prominent transition-all duration-150 ${
+              className={`px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-lg font-label-prominent text-xs sm:text-label-prominent transition-all duration-150 ${
                 activeTab === 'software'
                   ? 'bg-primary-container text-on-primary shadow-sm'
                   : 'bg-surface-container-high text-on-surface-variant hover:text-on-surface'
@@ -262,7 +262,7 @@ export default function About() {
               Custom Enterprise Software
             </button>
             <button
-              className={`px-5 py-3 rounded-lg font-label-prominent text-label-prominent transition-all duration-150 ${
+              className={`px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-lg font-label-prominent text-xs sm:text-label-prominent transition-all duration-150 ${
                 activeTab === 'ai'
                   ? 'bg-primary-container text-on-primary shadow-sm'
                   : 'bg-surface-container-high text-on-surface-variant hover:text-on-surface'
@@ -276,7 +276,7 @@ export default function About() {
 
           {/* Practice Content 1: Web Engineering */}
           {activeTab === 'web' && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 lg:p-12 rounded-2xl bg-surface-container-lowest shadow-md border border-[#E5EAF0]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 lg:p-12 rounded-2xl bg-surface-container-lowest shadow-md border border-[#E5EAF0]">
               <div className="lg:col-span-7 flex flex-col gap-5">
                 <div className="inline-flex items-center gap-2">
                   <Globe className="w-6 h-6 text-primary" />
@@ -290,7 +290,7 @@ export default function About() {
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
                   We design and construct digital storefronts, client portals, and corporate web platforms that blend immersive aesthetics with sub-second page loads. Every build features accessibility compliance (WCAG 2.1 AA), responsive fluidity, and rigorous SEO metadata engineering.
                 </p>
-                <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2">
                   <div className="p-4 rounded-lg bg-surface-container-low border border-[#E5EAF0]/60">
                     <span className="font-label-prominent text-label-prominent font-semibold text-on-surface block mb-1">Core Tech Stack</span>
                     <span className="font-body-small text-body-small text-on-surface-variant">Next.js, TypeScript, Tailwind CSS, Edge Networks</span>
@@ -303,7 +303,7 @@ export default function About() {
               </div>
               <div className="lg:col-span-5">
                 <img
-                  className="w-full h-80 object-cover rounded-xl shadow-sm border border-[#E5EAF0]"
+                  className="w-full h-64 sm:h-80 object-cover rounded-xl shadow-sm border border-[#E5EAF0]"
                   alt="Clean minimal high-contrast web dashboard interface showing real-time website performance telemetry"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCKV_QncN0hqbXlMQ9r9AF8146SyqgaQkiCFvxwf-hVKJberbRhR1YCzQIKuLhP2aIY-iU4RYPnmMIsgEDmkYkJxBQ80GWyKQ9ke2sIq5hsG01KNZnGdqEJ_0O8ALwWcfAo_KMmnSTpTYYn1zxymr_oIbqegqJe0C8NY-ZWCbDCArcUxIAzDAHWEQZbIS3X1S0HURgnjip1M2jTahPbJg8IzC7zlPfSOOqsaVmQ"
                 />
@@ -313,7 +313,7 @@ export default function About() {
 
           {/* Practice Content 2: Enterprise Software */}
           {activeTab === 'software' && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 lg:p-12 rounded-2xl bg-surface-container-lowest shadow-md border border-[#E5EAF0]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 lg:p-12 rounded-2xl bg-surface-container-lowest shadow-md border border-[#E5EAF0]">
               <div className="lg:col-span-7 flex flex-col gap-5">
                 <div className="inline-flex items-center gap-2">
                   <Terminal className="w-6 h-6 text-primary" />
@@ -327,7 +327,7 @@ export default function About() {
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
                   Replacing unwieldy off-the-shelf software with tailored business systems. We architect secure REST and gRPC API ecosystems, multitenant SaaS engines, and enterprise database infrastructures engineered for horizontal scaling without lock-in.
                 </p>
-                <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2">
                   <div className="p-4 rounded-lg bg-surface-container-low border border-[#E5EAF0]/60">
                     <span className="font-label-prominent text-label-prominent font-semibold text-on-surface block mb-1">Core Tech Stack</span>
                     <span className="font-body-small text-body-small text-on-surface-variant">Go, Node.js, Python, PostgreSQL, Kubernetes</span>
@@ -340,7 +340,7 @@ export default function About() {
               </div>
               <div className="lg:col-span-5">
                 <img
-                  className="w-full h-80 object-cover rounded-xl shadow-sm border border-[#E5EAF0]"
+                  className="w-full h-64 sm:h-80 object-cover rounded-xl shadow-sm border border-[#E5EAF0]"
                   alt="Complex enterprise backend system architecture diagram displayed on an elegant screen"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg_vtY4AHBZRfvdRrJx-DivTyCay1bnqHjzGPxEg0ZgdkXt8NAcY9J-2ZgQBj4RtF9GHFekAXxD3vHqQUJg8RxbQ5qCZrXiCTx-hT2cTh_9sCYAsjQz7XUpCK_hwPIzvlarLHqDnMIoQ3sz1YQVRE7ltQOpHeT7eSb_Mfs80vY0v8PM8WUj62-31ZtZtlDcRMZcBJ4-TnLWaslo7-rwYJj3WeFWdgFrXWWJli76w"
                 />
@@ -350,7 +350,7 @@ export default function About() {
 
           {/* Practice Content 3: Practical AI */}
           {activeTab === 'ai' && (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 lg:p-12 rounded-2xl bg-surface-container-lowest shadow-md border border-[#E5EAF0]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-8 lg:p-12 rounded-2xl bg-surface-container-lowest shadow-md border border-[#E5EAF0]">
               <div className="lg:col-span-7 flex flex-col gap-5">
                 <div className="inline-flex items-center gap-2">
                   <BrainCircuit className="w-6 h-6 text-primary" />
@@ -364,7 +364,7 @@ export default function About() {
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
                   Moving beyond generative novelty into production-grade business leverage. We implement localized LLM fine-tuning, deterministic RAG knowledge retrieval systems, and predictive workflow automation to eliminate repetitive operational overhead.
                 </p>
-                <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2">
                   <div className="p-4 rounded-lg bg-surface-container-low border border-[#E5EAF0]/60">
                     <span className="font-label-prominent text-label-prominent font-semibold text-on-surface block mb-1">Core Tech Stack</span>
                     <span className="font-body-small text-body-small text-on-surface-variant">LangChain, PyTorch, Vector DBs, Claude & OpenAI APIs</span>
@@ -377,7 +377,7 @@ export default function About() {
               </div>
               <div className="lg:col-span-5">
                 <img
-                  className="w-full h-80 object-cover rounded-xl shadow-sm border border-[#E5EAF0]"
+                  className="w-full h-64 sm:h-80 object-cover rounded-xl shadow-sm border border-[#E5EAF0]"
                   alt="Futuristic high-precision vector database semantic graph visualization with clean interconnected nodes"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsbytQlNWbid7cvKFsQ-ozCzwYNyIfYJWQyYCotgkh_OjfMwmNKSMuo_SzSds-CGu-phuRb_bX4nHqn4d4oXWtkGtxyoNhaNwk0KA4HMcb-7MgOCZfqKKukEvKSD6g3YNXqHGoWS_GdIwqNGNR8auhshtxi2hT-kJTBmQy_p9NBDFY6m7tzqopVyLuNt1MRiwR6FYtKWUCMSGCgSQodhe6MG5O-04sYeR8eWt3rQ"
                 />
@@ -388,13 +388,13 @@ export default function About() {
       </section>
 
       {/* SECTION 6: WORKING PHILOSOPHY */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               THE TRIAD
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Our Working Philosophy
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
@@ -402,8 +402,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code uppercase text-primary font-bold">01 // PHASE</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">LEARN</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -411,7 +411,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code uppercase text-primary font-bold">02 // PHASE</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">BUILD</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -419,7 +419,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code uppercase text-primary font-bold">03 // PHASE</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">INNOVATE</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -431,14 +431,14 @@ export default function About() {
       </section>
 
       {/* SECTION 7: CULTURE & MASTERY */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-6 flex flex-col gap-6">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
                 ENGINEERING GUILD
               </span>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 An Engineering Culture Rooted in Mastery and Mentorship.
               </h2>
               <p className="font-body-large text-body-large text-on-surface-variant leading-relaxed">
@@ -461,15 +461,15 @@ export default function About() {
               </div>
             </div>
 
-            <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-              <div className="rounded-xl overflow-hidden shadow-sm h-64 border border-[#E5EAF0]">
+            <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 border border-[#E5EAF0]">
                 <img
                   className="w-full h-full object-cover"
                   alt="Senior software architect reviewing technical designs"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm28P-_9u4ANFRduhAxUH7GdejgI"
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-sm h-64 border border-[#E5EAF0]">
+              <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 border border-[#E5EAF0]">
                 <img
                   className="w-full h-full object-cover"
                   alt="Engineering team collaborating in tech office"

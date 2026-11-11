@@ -21,15 +21,15 @@ export default function FAQAccordion({ items, defaultOpenIndex = 0 }) {
           >
             <button
               type="button"
-              className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none gap-4"
+              className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left focus:outline-none gap-3 sm:gap-4"
               onClick={() => toggle(idx)}
               aria-expanded={isOpen}
             >
-              <span className="font-headline-sub text-body-large text-on-surface font-semibold">
+              <span className="font-headline-sub text-[15px] sm:text-body-large text-on-surface font-semibold leading-snug">
                 {item.question}
               </span>
               <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${
+                className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${
                   isOpen ? 'bg-primary text-on-primary' : 'bg-surface-container text-outline'
                 }`}
               >
@@ -37,7 +37,7 @@ export default function FAQAccordion({ items, defaultOpenIndex = 0 }) {
               </div>
             </button>
             {isOpen && (
-              <div className="px-6 pb-6 text-on-surface-variant font-body-default leading-relaxed border-t border-[#E5EAF0]/50 pt-4">
+              <div className="px-4 sm:px-6 pb-5 sm:pb-6 text-on-surface-variant font-body-small sm:font-body-default text-body-small sm:text-body-default leading-relaxed border-t border-[#E5EAF0]/50 pt-3 sm:pt-4">
                 {item.answer}
               </div>
             )}

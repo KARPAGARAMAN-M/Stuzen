@@ -53,11 +53,11 @@ export default function CustomSoftware() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 font-label-code text-label-code text-outline">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
@@ -67,7 +67,7 @@ export default function CustomSoftware() {
             <span className="text-primary font-semibold">Custom Software</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 flex flex-col gap-6">
               <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
@@ -77,7 +77,7 @@ export default function CustomSoftware() {
                 </span>
               </div>
 
-              <h1 className="font-hero-display text-hero-display text-on-surface tracking-tight leading-none text-balance">
+              <h1 className="font-hero-display text-[clamp(1.85rem,6vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
                 Software Solutions Designed Around Your Business.
               </h1>
 
@@ -86,7 +86,7 @@ export default function CustomSoftware() {
               </p>
 
               {/* Specs Strip */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
                   <div className="font-headline-sub text-headline-sub text-primary font-bold">100%</div>
                   <span className="font-label-code text-label-code text-outline uppercase">Full IP Ownership</span>
@@ -102,7 +102,7 @@ export default function CustomSoftware() {
               </div>
 
               {/* CTAs */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center h-12 px-7 rounded-lg bg-primary-container text-on-primary font-label-prominent text-label-prominent shadow-md hover:bg-primary transition-all duration-200 transform hover:-translate-y-0.5 gap-2 group"
@@ -121,7 +121,7 @@ export default function CustomSoftware() {
 
             {/* Right: Architecture Diagram Mockup */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-2xl p-6 bg-surface-container-lowest shadow-2xl border border-[#E5EAF0] flex flex-col gap-4">
+              <div className="rounded-2xl p-5 sm:p-6 bg-surface-container-lowest shadow-2xl border border-[#E5EAF0] flex flex-col gap-4">
                 <div className="flex items-center justify-between pb-3 border-b border-[#E5EAF0]">
                   <span className="font-label-prominent text-label-prominent text-on-surface flex items-center gap-2">
                     <Server className="w-4 h-4 text-primary" /> Event Mesh Topology
@@ -161,13 +161,13 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 2: OFF-THE-SHELF VS CUSTOM SOFTWARE */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-3xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               THE STRATEGIC REALITY
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Off-the-shelf software forces compromise. We engineer competitive leverage.
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
@@ -175,9 +175,9 @@ export default function CustomSoftware() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Off-the-shelf Downside Card */}
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-error/20 flex flex-col gap-6">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-error/20 flex flex-col gap-6">
               <div className="flex items-center justify-between">
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Off-the-Shelf Packages</h3>
                 <span className="px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-code text-label-code font-bold">
@@ -205,7 +205,7 @@ export default function CustomSoftware() {
             </div>
 
             {/* Custom Advantage Card */}
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-md border border-primary/30 flex flex-col gap-6">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-md border border-primary/30 flex flex-col gap-6">
               <div className="flex items-center justify-between">
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Stuzen Custom Systems</h3>
                 <span className="px-3 py-1 rounded-full bg-surface-container text-primary font-label-code text-label-code font-bold">
@@ -236,19 +236,19 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 3: 6 SOLUTION CATEGORIES */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               SOLUTIONS DIRECTORY
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Tailored Solution Categories
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">01 // DOMAIN</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Business Management Software</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -256,7 +256,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">02 // DOMAIN</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Workflow Management Systems</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -264,7 +264,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">03 // DOMAIN</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Custom Business Applications</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -272,7 +272,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">04 // DOMAIN</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Database-Driven Applications</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -280,7 +280,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">05 // DOMAIN</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Internal Business Tools & Dashboards</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -288,7 +288,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">06 // DOMAIN</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Process-Oriented Software Solutions</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -300,19 +300,19 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 4: IMPACT PILLARS */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               OUTCOMES
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Tangible Business Impact Pillars
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <Workflow className="w-5 h-5" />
               </div>
@@ -322,7 +322,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <Layers className="w-5 h-5" />
               </div>
@@ -332,7 +332,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <FileCode className="w-5 h-5" />
               </div>
@@ -342,7 +342,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <Shield className="w-5 h-5" />
               </div>
@@ -356,19 +356,19 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 5: 6 LIFECYCLE STAGES */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               ENGINEERING RIGOR
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Our Software Engineering Lifecycle
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STAGE 01</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Technical Discovery & Domain Modeling</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -376,7 +376,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STAGE 02</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Architecture & Schema Specification</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -384,7 +384,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STAGE 03</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Agile Sprints & Clean Code</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -392,7 +392,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STAGE 04</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Automated Testing & Review Gates</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -400,7 +400,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STAGE 05</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Secure Deployment & Cloud Provisioning</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -408,7 +408,7 @@ export default function CustomSoftware() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STAGE 06</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Proactive Monitoring & Evolution</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -420,14 +420,14 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 6: FEATURED IMPLEMENTATIONS */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
                 ENTERPRISE WORK
               </span>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 Featured Enterprise Implementations
               </h2>
             </div>
@@ -440,16 +440,16 @@ export default function CustomSoftware() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             <div className="rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
                   alt="NovaLogix Fleet Ops platform"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWza0jc9rDMjPpx8tV0IkF3GWbAl"
                 />
               </div>
-              <div className="p-8 flex flex-col gap-4">
+              <div className="p-6 sm:p-8 flex flex-col gap-4">
                 <span className="font-label-code text-label-code text-outline uppercase">TELEMATICS & SUPPLY CHAIN</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">
                   NovaLogix Fleet Ops: Cloud Dispatch & Real-Time Telemetry Engine
@@ -470,14 +470,14 @@ export default function CustomSoftware() {
             </div>
 
             <div className="rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
                   alt="Omnia Core ERP"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkCD1e8TtkPI5f9khHL82CVUeacB"
                 />
               </div>
-              <div className="p-8 flex flex-col gap-4">
+              <div className="p-6 sm:p-8 flex flex-col gap-4">
                 <span className="font-label-code text-label-code text-outline uppercase">ERP & MULTI-CURRENCY LEDGER</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">
                   Omnia Core ERP: Multi-Entity Inventory & Financial Reconciliation
@@ -501,13 +501,13 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 7: FAQS */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
           <div className="text-center flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               GOT QUESTIONS?
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Frequently Asked Questions
             </h2>
             <p className="font-body-large text-body-large text-on-surface-variant">

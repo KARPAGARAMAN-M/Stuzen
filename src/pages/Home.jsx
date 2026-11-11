@@ -24,14 +24,14 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* HERO SECTION */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-24 lg:pt-16 lg:pb-32">
+      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-24 lg:pt-16 lg:pb-32">
         {/* Ambient architectural glow background shapes */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12 lg:gap-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 lg:gap-16">
           {/* Top Text Block */}
-          <div className="max-w-4xl flex flex-col gap-6">
+          <div className="max-w-4xl w-full flex flex-col gap-5 sm:gap-6">
             {/* Eyebrow Badge */}
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
               <span className="relative flex h-2 w-2">
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-hero-display text-hero-display text-on-surface tracking-tight leading-none text-balance">
+            <h1 className="font-hero-display text-[clamp(2rem,7vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
               Turning Ideas Into <span className="text-primary-container">Digital Solutions.</span>
             </h1>
 
@@ -54,7 +54,7 @@ export default function Home() {
             </p>
 
             {/* CTA Action Cluster */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
               <Link
                 to="/services"
                 className="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-primary-container text-on-primary font-label-prominent text-label-prominent shadow-md hover:bg-primary transition-all duration-200 transform hover:-translate-y-0.5 gap-2 group"
@@ -72,9 +72,9 @@ export default function Home() {
           </div>
 
           {/* Technology Visual Canvas Mockup */}
-          <div className="relative w-full rounded-xl bg-surface-container-lowest p-6 lg:p-8 shadow-xl border border-[#E5EAF0]">
+          <div className="relative w-full rounded-xl bg-surface-container-lowest p-4 sm:p-6 lg:p-8 shadow-xl border border-[#E5EAF0] overflow-hidden">
             {/* Canvas Window Header */}
-            <div className="flex items-center justify-between pb-6 mb-6 border-b border-[#E5EAF0]/60">
+            <div className="flex items-center justify-between pb-4 sm:pb-6 mb-4 sm:mb-6 border-b border-[#E5EAF0]/60">
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-error-container" />
                 <span className="w-3 h-3 rounded-full bg-surface-container-highest" />
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
 
             {/* Canvas Body Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
               {/* Left: Code & Architecture Tree */}
               <div className="lg:col-span-4 bg-surface-container-low rounded-lg p-5 flex flex-col justify-between">
                 <div>
@@ -239,9 +239,9 @@ export default function Home() {
       </section>
 
       {/* SECTION 2: COMPANY INTRODUCTION */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Text Column */}
             <div className="lg:col-span-7 flex flex-col gap-6">
               <div className="inline-flex items-center gap-2">
@@ -250,7 +250,7 @@ export default function Home() {
                   The Stuzen Philosophy
                 </span>
               </div>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 Who We Are & How We Build
               </h2>
               <div className="flex flex-col gap-4 font-body-large text-body-large text-on-surface-variant leading-relaxed">
@@ -276,15 +276,15 @@ export default function Home() {
             </div>
 
             {/* Visual Mosaic Column */}
-            <div className="lg:col-span-5 grid grid-cols-2 gap-4">
-              <div className="flex flex-col gap-4">
-                <div className="rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest p-6 flex flex-col justify-between h-48 border border-[#E5EAF0]">
+            <div className="lg:col-span-5 grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="flex flex-col gap-3 sm:gap-4">
+                <div className="rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest p-4 sm:p-6 flex flex-col justify-between h-44 sm:h-48 border border-[#E5EAF0]">
                   <span className="font-label-code text-label-code uppercase text-primary font-bold">01 / LEARN</span>
                   <p className="font-body-small text-body-small text-on-surface font-medium leading-normal">
                     Continuous domain research, architectural audits & feasibility modeling.
                   </p>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-sm h-64 relative border border-[#E5EAF0]">
+                <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 relative border border-[#E5EAF0]">
                   <img
                     className="w-full h-full object-cover"
                     alt="Senior software engineering leads discussing digital enterprise system architecture"
@@ -292,15 +292,15 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-4 -mt-6">
-                <div className="rounded-xl overflow-hidden shadow-sm h-64 relative border border-[#E5EAF0]">
+              <div className="flex flex-col gap-3 sm:gap-4 mt-0 sm:-mt-6">
+                <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 relative border border-[#E5EAF0]">
                   <img
                     className="w-full h-full object-cover"
                     alt="High tech software interface display on modern ultra-wide monitors"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRB8HnNJ-sjt1xwOzAizWbN9d3t_7Z1c1Dz0cU9RLXTr9zgDp8GeCQVjvCIwIqLenoDAyDXQfoSj6uLVXFulISn8DB84XojvqHD9XUYmvoZBnLfXa69GgGoETjPgsR3RlZYzsJX2pXLw9vq9DdED-TD63fGiEAWpWnAgcC5mzj7k2JS-GOrrzIAZvni6yGp-SJ8RAc4IBX8GYtpCa2sw5qDYsP_IJR5NdekXJyNg"
                   />
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-sm bg-primary text-on-primary p-6 flex flex-col justify-between h-48">
+                <div className="rounded-xl overflow-hidden shadow-sm bg-primary text-on-primary p-4 sm:p-6 flex flex-col justify-between h-44 sm:h-48">
                   <span className="font-label-code text-label-code uppercase text-primary-fixed font-bold">02 / INNOVATE</span>
                   <p className="font-body-small text-body-small text-on-primary font-medium leading-normal">
                     Autonomous deployment systems that unlock sustainable enterprise growth.
@@ -313,15 +313,15 @@ export default function Home() {
       </section>
 
       {/* SECTION 3: SERVICES OVERVIEW */}
-      <section className="w-full py-24 lg:py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-16 sm:py-24 lg:py-32 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
                 Engineered Core Capabilities
               </span>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 Bespoke Services for the Modern Enterprise
               </h2>
               <p className="font-body-default text-body-default text-on-surface-variant">
@@ -338,7 +338,7 @@ export default function Home() {
           </div>
 
           {/* Services Grid (3 Cards) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {/* Card 1: Website Development */}
             <div className="group relative rounded-xl bg-surface-container-lowest p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
               <div className="flex flex-col gap-6">
@@ -457,13 +457,13 @@ export default function Home() {
       </section>
 
       {/* SECTION 4: WHY CHOOSE STUZEN */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               Competitive Edge
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Why Demanding Teams Choose Stuzen
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
@@ -472,7 +472,7 @@ export default function Home() {
           </div>
 
           {/* 4 Differentiators */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-4 border border-[#E5EAF0]">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold font-headline-sub">
                 01
@@ -517,13 +517,13 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: OUR WORKING PROCESS */}
-      <section className="w-full py-24 lg:py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-16 sm:py-24 lg:py-32 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               Standardized Execution Flow
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               From Concept to Stable Production
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
@@ -532,7 +532,7 @@ export default function Home() {
           </div>
 
           {/* 4 Milestones */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="flex flex-col gap-4 p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
               <div className="flex items-center justify-between">
                 <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded">
@@ -589,14 +589,14 @@ export default function Home() {
       </section>
 
       {/* SECTION 6: FEATURED PROJECTS */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
                 Proven Case Studies
               </span>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 Featured Client Deployments
               </h2>
               <p className="font-body-default text-body-default text-on-surface-variant">
@@ -612,7 +612,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Project 1: Apex Financial */}
             <div className="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-xl transition-all duration-300 border border-[#E5EAF0]">
               <div>
@@ -728,13 +728,13 @@ export default function Home() {
       </section>
 
       {/* SECTION 7: CLIENT ENDORSEMENTS */}
-      <section className="w-full py-24 lg:py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-16 sm:py-24 lg:py-32 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               Executive Feedback
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Partnership Testimonials
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
@@ -742,9 +742,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Testimonial 1 */}
-            <div className="p-8 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6 border border-[#E5EAF0]">
+            <div className="p-6 sm:p-8 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6 border border-[#E5EAF0]">
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-1 text-secondary">
                   {[...Array(5)].map((_, i) => (
@@ -767,7 +767,7 @@ export default function Home() {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="p-8 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6 border border-[#E5EAF0]">
+            <div className="p-6 sm:p-8 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6 border border-[#E5EAF0]">
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-1 text-secondary">
                   {[...Array(5)].map((_, i) => (

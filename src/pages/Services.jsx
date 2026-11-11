@@ -22,12 +22,12 @@ export default function Services() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-10">
-          <div className="max-w-4xl flex flex-col gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
+          <div className="max-w-4xl flex flex-col gap-5 sm:gap-6">
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary" />
               <span className="font-label-code text-label-code uppercase tracking-widest text-primary font-bold">
@@ -35,7 +35,7 @@ export default function Services() {
               </span>
             </div>
 
-            <h1 className="font-hero-display text-hero-display text-on-surface tracking-tight leading-none text-balance">
+            <h1 className="font-hero-display text-[clamp(1.85rem,6vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
               Technology Solutions That Move Businesses Forward.
             </h1>
 
@@ -45,7 +45,7 @@ export default function Services() {
           </div>
 
           {/* Key Metrics Strip */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-[#E5EAF0]">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-4 border-t border-[#E5EAF0]">
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
               <span className="font-label-code text-label-code text-outline uppercase">Speed Benchmark</span>
               <div className="font-headline-sub text-headline-sub text-on-surface mt-1">&lt; 0.8s Avg Load</div>
@@ -72,16 +72,16 @@ export default function Services() {
       </section>
 
       {/* SECTION 2: 3 DEEP DIVE SERVICE BLOCKS */}
-      <section className="w-full py-16 md:py-24 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-20">
+      <section className="w-full py-12 sm:py-16 md:py-24 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-20">
           {/* BLOCK 1: Website Development */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-lowest rounded-2xl p-8 lg:p-12 shadow-sm border border-[#E5EAF0]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-lowest rounded-2xl p-6 sm:p-8 lg:p-12 shadow-sm border border-[#E5EAF0]">
             <div className="lg:col-span-6 flex flex-col items-start">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed mb-5 font-label-code text-label-code">
                 <Globe className="w-4 h-4 text-secondary" />
                 WEB & CLOUD EXPERTISE
               </div>
-              <h2 className="font-headline-section text-headline-section text-on-surface mb-4 leading-tight">
+              <h2 className="font-headline-section text-[clamp(1.4rem,4.5vw,2.15rem)] leading-tight text-on-surface mb-4">
                 High-Performance Web Architecture & Scalable Portals
               </h2>
               <p className="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">
@@ -120,7 +120,7 @@ export default function Services() {
             <div className="lg:col-span-6 flex flex-col gap-4">
               <div className="relative w-full rounded-xl overflow-hidden shadow-md bg-surface-container border border-[#E5EAF0]">
                 <img
-                  className="w-full h-80 object-cover"
+                  className="w-full h-64 sm:h-80 object-cover"
                   alt="Modern software engineering studio showing responsive web interfaces"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC74qETZjak9e4rIekYkOMMC9ftSXnshkaUf24nmttTr-w9YYRbaQmfLWO3w5Ugzb1p6v5YUYfLSWQDxAhi4Ioto1xWzvF7hRNQiY-gF9swqhP5MkPxd2gg55k22apOT9jK7lb8pBcRNcmJ4GzQVeN4xjCkKhT4RRxUv7O0ecmLBpzqunI2VrvAyMZPN_WcMKVdLk4IWCnzrgBNrI_CiHYPxkdWv4eDekN3Xg6Q1g"
                 />
@@ -133,11 +133,11 @@ export default function Services() {
           </div>
 
           {/* BLOCK 2: Custom Software Development */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-lowest rounded-2xl p-8 lg:p-12 shadow-sm border border-[#E5EAF0]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-lowest rounded-2xl p-6 sm:p-8 lg:p-12 shadow-sm border border-[#E5EAF0]">
             <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col gap-4">
               <div className="relative w-full rounded-xl overflow-hidden shadow-md bg-surface-container border border-[#E5EAF0]">
                 <img
-                  className="w-full h-80 object-cover"
+                  className="w-full h-64 sm:h-80 object-cover"
                   alt="Architectural software blueprint and database relationships"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5jaXNghOfBlkM1cBSRGDgvb19Q8RfqF6P75_i93-K377xW5gH1lKx0iF2Y7yX_Jk4_zU-8fX-l2b7k7"
                 />
@@ -152,7 +152,7 @@ export default function Services() {
                 <Terminal className="w-4 h-4 text-primary" />
                 ENTERPRISE INFRASTRUCTURE
               </div>
-              <h2 className="font-headline-section text-headline-section text-on-surface mb-4 leading-tight">
+              <h2 className="font-headline-section text-[clamp(1.4rem,4.5vw,2.15rem)] leading-tight text-on-surface mb-4">
                 Tailor-Made Software Engineered to Operational Perfection
               </h2>
               <p className="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">
@@ -191,13 +191,13 @@ export default function Services() {
           </div>
 
           {/* BLOCK 3: AI & Automation */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-lowest rounded-2xl p-8 lg:p-12 shadow-sm border border-[#E5EAF0]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-lowest rounded-2xl p-6 sm:p-8 lg:p-12 shadow-sm border border-[#E5EAF0]">
             <div className="lg:col-span-6 flex flex-col items-start">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed mb-5 font-label-code text-label-code">
                 <BrainCircuit className="w-4 h-4 text-secondary" />
                 COGNITIVE SYSTEMS & RPA
               </div>
-              <h2 className="font-headline-section text-headline-section text-on-surface mb-4 leading-tight">
+              <h2 className="font-headline-section text-[clamp(1.4rem,4.5vw,2.15rem)] leading-tight text-on-surface mb-4">
                 Intelligent Automation Engines & Custom AI Solutions
               </h2>
               <p className="font-body-default text-body-default text-on-surface-variant mb-6 leading-relaxed">
@@ -236,7 +236,7 @@ export default function Services() {
             <div className="lg:col-span-6 flex flex-col gap-4">
               <div className="relative w-full rounded-xl overflow-hidden shadow-md bg-surface-container border border-[#E5EAF0]">
                 <img
-                  className="w-full h-80 object-cover"
+                  className="w-full h-64 sm:h-80 object-cover"
                   alt="Neural network visualization and automated business intelligence"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWpjIlQQJiiWh1iDprtpRM_CJCth3mG70YnC_4iZ8qJ4_m49pX-8q-g0k7y6v-x3dF"
                 />
@@ -251,13 +251,13 @@ export default function Services() {
       </section>
 
       {/* SECTION 3: 4-PHASE ENGAGEMENT MODEL */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               DELIVERY LIFECYCLE
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               How We Deliver Exceptional Software
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
@@ -265,7 +265,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold">
                 01
@@ -310,13 +310,13 @@ export default function Services() {
       </section>
 
       {/* SECTION 4: ENGAGEMENT MODELS TABLE */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               PARTNERSHIP OPTIONS
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Transparent Engagement Models
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
@@ -324,7 +324,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="w-full overflow-x-auto rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] p-6 lg:p-8">
+          <div className="w-full overflow-x-auto rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] p-4 sm:p-6 lg:p-8">
             <table className="w-full text-left border-collapse min-w-[700px]">
               <thead>
                 <tr className="bg-surface-container-low rounded-lg">

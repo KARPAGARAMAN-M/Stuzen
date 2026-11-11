@@ -47,11 +47,11 @@ export default function AIAutomation() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 font-label-code text-label-code text-outline">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
@@ -61,7 +61,7 @@ export default function AIAutomation() {
             <span className="text-primary font-semibold">AI & Automation</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 flex flex-col gap-6">
               <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
@@ -71,7 +71,7 @@ export default function AIAutomation() {
                 </span>
               </div>
 
-              <h1 className="font-hero-display text-hero-display text-on-surface tracking-tight leading-none text-balance">
+              <h1 className="font-hero-display text-[clamp(1.85rem,6vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
                 Smarter Workflows. Better Possibilities.
               </h1>
 
@@ -80,7 +80,7 @@ export default function AIAutomation() {
               </p>
 
               {/* Confidence Metrics */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
                   <div className="font-headline-sub text-headline-sub text-primary font-bold">99.4%</div>
                   <span className="font-label-code text-label-code text-outline uppercase">Extraction Precision</span>
@@ -96,7 +96,7 @@ export default function AIAutomation() {
               </div>
 
               {/* CTAs */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center h-12 px-7 rounded-lg bg-primary-container text-on-primary font-label-prominent text-label-prominent shadow-md hover:bg-primary transition-all duration-200 transform hover:-translate-y-0.5 gap-2 group"
@@ -115,7 +115,7 @@ export default function AIAutomation() {
 
             {/* Right: Engineered Pipeline Flowchart Mockup */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-2xl p-6 bg-surface-container-lowest shadow-2xl border border-[#E5EAF0] flex flex-col gap-4">
+              <div className="rounded-2xl p-5 sm:p-6 bg-surface-container-lowest shadow-2xl border border-[#E5EAF0] flex flex-col gap-4">
                 <div className="flex items-center justify-between pb-3 border-b border-[#E5EAF0]">
                   <span className="font-label-prominent text-label-prominent text-on-surface flex items-center gap-2">
                     <BrainCircuit className="w-4 h-4 text-primary" /> Autonomous Execution Pipeline
@@ -161,14 +161,14 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 2: PHILOSOPHY */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7 flex flex-col gap-6">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
                 PRAGMATIC AI DOCTRINE
               </span>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 Pragmatic Engineering Over Experimental Novelty.
               </h2>
               <div className="flex flex-col gap-4 font-body-large text-body-large text-on-surface-variant leading-relaxed">
@@ -181,7 +181,7 @@ export default function AIAutomation() {
               </div>
             </div>
 
-            <div className="lg:col-span-5 rounded-2xl overflow-hidden shadow-lg border border-[#E5EAF0] h-80">
+            <div className="lg:col-span-5 rounded-2xl overflow-hidden shadow-lg border border-[#E5EAF0] h-64 sm:h-80">
               <img
                 className="w-full h-full object-cover"
                 alt="Software engineers deploying cognitive AI pipeline"
@@ -193,19 +193,19 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 3: 5 STRUCTURED PRACTICE AREAS */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               AI CAPABILITIES
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Engineered AI Capabilities Tailored for Industry Scale.
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">01 // SPECIALTY</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">AI-Powered Business Solutions</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -213,7 +213,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">02 // SPECIALTY</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Business Workflow Automation</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -221,7 +221,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">03 // SPECIALTY</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Process Automation & RPA</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -229,7 +229,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">04 // SPECIALTY</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Intelligent Business Tools</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -237,7 +237,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">05 // SPECIALTY</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Secure AI Integration & APIs</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -249,19 +249,19 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 4: CONCRETE BUSINESS BENEFITS */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               QUANTIFIABLE METRICS
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Measurable Return on Investment.
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <CheckCircle className="w-5 h-5" />
               </div>
@@ -271,7 +271,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <Zap className="w-5 h-5" />
               </div>
@@ -281,7 +281,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <TrendingUp className="w-5 h-5" />
               </div>
@@ -291,7 +291,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <Layers className="w-5 h-5" />
               </div>
@@ -305,19 +305,19 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 5: IMPLEMENTATION ROADMAP */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               DELIVERY PROTOCOL
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               A Disciplined, Risk-Mitigated Delivery Roadmap.
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">PHASE 01</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Workflow Audit & Feasibility</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -325,7 +325,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">PHASE 02</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Architecture & Data Security</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -333,7 +333,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">PHASE 03</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Model Tuning & Benchmark</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -341,7 +341,7 @@ export default function AIAutomation() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">PHASE 04</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Phased Rollout & Onboarding</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -353,14 +353,14 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 6: PROVEN DEPLOYMENTS */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
                 PROVEN RESULTS
               </span>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 Proven Industrial Deployments.
               </h2>
             </div>
@@ -373,16 +373,16 @@ export default function AIAutomation() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             <div className="rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
                   alt="Synthra Intelligence"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoPDeM-W5c39PHYAQ0v0B5UJkagR_q60f1y23"
                 />
               </div>
-              <div className="p-8 flex flex-col gap-4">
+              <div className="p-6 sm:p-8 flex flex-col gap-4">
                 <span className="font-label-code text-label-code text-outline uppercase">ENTERPRISE NLP / ML</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Synthra Intelligence</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -401,14 +401,14 @@ export default function AIAutomation() {
             </div>
 
             <div className="rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
                   alt="FlowSync Autonomous Agent"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5LZrZuAb1PBqksmn6RxLtHG-wZb"
                 />
               </div>
-              <div className="p-8 flex flex-col gap-4">
+              <div className="p-6 sm:p-8 flex flex-col gap-4">
                 <span className="font-label-code text-label-code text-outline uppercase">AUTONOMOUS AGENTS</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">FlowSync Agent</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -430,13 +430,13 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 7: FAQS */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
           <div className="text-center flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               SECURITY & OPERATIONS
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Frequently Asked Questions.
             </h2>
             <p className="font-body-large text-body-large text-on-surface-variant">

@@ -50,11 +50,11 @@ export default function WebsiteDevelopment() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 font-label-code text-label-code text-outline">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
@@ -64,7 +64,7 @@ export default function WebsiteDevelopment() {
             <span className="text-primary font-semibold">Website Development</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 flex flex-col gap-6">
               <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
@@ -74,7 +74,7 @@ export default function WebsiteDevelopment() {
                 </span>
               </div>
 
-              <h1 className="font-hero-display text-hero-display text-on-surface tracking-tight leading-none text-balance">
+              <h1 className="font-hero-display text-[clamp(1.85rem,6vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
                 Websites Built for Your Business.
               </h1>
 
@@ -83,7 +83,7 @@ export default function WebsiteDevelopment() {
               </p>
 
               {/* Metrics Row */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
                   <div className="font-headline-sub text-headline-sub text-primary font-bold">&lt; 0.6s</div>
                   <span className="font-label-code text-label-code text-outline uppercase">Time to Interactive</span>
@@ -99,7 +99,7 @@ export default function WebsiteDevelopment() {
               </div>
 
               {/* CTAs */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center h-12 px-7 rounded-lg bg-primary-container text-on-primary font-label-prominent text-label-prominent shadow-md hover:bg-primary transition-all duration-200 transform hover:-translate-y-0.5 gap-2 group"
@@ -157,19 +157,19 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 2: 3 PILLARS */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               THE VALUE EQUATION
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Why Modern Web Architecture Dictates Business Velocity
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
                 <Zap className="w-6 h-6" />
               </div>
@@ -179,7 +179,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
                 <Shield className="w-6 h-6" />
               </div>
@@ -189,7 +189,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
                 <Sparkles className="w-6 h-6" />
               </div>
@@ -203,19 +203,19 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 3: 6 WEB SOLUTIONS GRID */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               SOLUTIONS SCOPE
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Engineered Web Solutions for Every Organizational Scale
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">01 // SOLUTION</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Corporate & Enterprise Websites</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -223,7 +223,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">02 // SOLUTION</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">High-Performance Business Sites</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -231,7 +231,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">03 // SOLUTION</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Custom Web Applications</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -239,7 +239,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">04 // SOLUTION</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Responsive UI/UX Development</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -247,7 +247,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">05 // SOLUTION</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Website Modernization & Migration</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -255,7 +255,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
               <span className="font-label-code text-label-code text-primary font-bold">06 // SOLUTION</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Portfolio & Creative Showcases</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -267,19 +267,19 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 4: 5 PROCESS STEPS */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               DELIVERY STEPS
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               From Information Architecture to Millisecond Deployments
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STEP 01</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Discovery & Sitemap</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -287,7 +287,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STEP 02</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Wireframes & Tokens</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -295,7 +295,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STEP 03</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Frontend Engineering</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -303,7 +303,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STEP 04</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">QA & Accessibility</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -311,7 +311,7 @@ export default function WebsiteDevelopment() {
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
+            <div className="p-5 sm:p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-3">
               <span className="font-label-code text-label-code text-primary font-bold">STEP 05</span>
               <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Launch & Optimization</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
@@ -323,22 +323,22 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 5: TECH STACK BADGES */}
-      <section className="w-full py-16 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-8">
+      <section className="w-full py-12 sm:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8">
           <div className="max-w-xl">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               STANDARDS & TOOLING
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface mt-1">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface mt-1">
               Built on Battle-Tested Modern Standards
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 sm:gap-4">
             {['React', 'Vite', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'GraphQL', 'AWS Edge'].map((tech) => (
               <div
                 key={tech}
-                className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] text-center font-label-prominent text-label-prominent text-on-surface hover:border-primary/40 transition-colors"
+                className="p-3.5 sm:p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] text-center font-label-prominent text-xs sm:text-label-prominent text-on-surface hover:border-primary/40 transition-colors"
               >
                 {tech}
               </div>
@@ -348,14 +348,14 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 6: SELECTED CASE STUDIES */}
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
                 PROVEN RESULTS
               </span>
-              <h2 className="font-headline-section text-headline-section text-on-surface">
+              <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                 Selected Web Engineering Case Studies
               </h2>
             </div>
@@ -368,16 +368,16 @@ export default function WebsiteDevelopment() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             <div className="rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
                   alt="Apex Financial Platform"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuZcWj8079rhvrLURNJ0ATcqh9S7bNsJiTIEtd7ZiyvB-VbNRY3lQFJhCbGndp4lG54dDrhMdA-jP238KfdjRlqOuFFfPF1F1qHmFu-GEitxTtGC71oiwjUJ9MtWKGI7Jtyuzjfa2J-Jbhl0m8-iF_x3bKSbrTX-0-9voAeT4TinOzxfmI6ckaNNKMGhK24OYKBzq4QRIKlracSkBeBmO8niGwjwlZn_nQqUUYVQ"
                 />
               </div>
-              <div className="p-8 flex flex-col gap-4">
+              <div className="p-6 sm:p-8 flex flex-col gap-4">
                 <span className="font-label-code text-label-code text-outline uppercase">FINTECH & CAPITAL</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Apex Financial Corporate Platform</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -396,14 +396,14 @@ export default function WebsiteDevelopment() {
             </div>
 
             <div className="rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
                   alt="Vantage Health Technology Portal"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKcQZQBMRerrnL1zbTm1CmDyJGe1c8g1_v3b4Xy-Nq0"
                 />
               </div>
-              <div className="p-8 flex flex-col gap-4">
+              <div className="p-6 sm:p-8 flex flex-col gap-4">
                 <span className="font-label-code text-label-code text-outline uppercase">HEALTHCARE & MEDTECH</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Vantage Health Technology Portal</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -425,13 +425,13 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 7: FAQS */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
           <div className="text-center flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               CLEAR ANSWERS
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Frequently Asked Questions
             </h2>
             <p className="font-body-large text-body-large text-on-surface-variant">

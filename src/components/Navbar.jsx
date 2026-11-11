@@ -146,7 +146,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-surface-container-lowest border-b border-[#E5EAF0] px-6 py-4 shadow-xl">
+        <div className="lg:hidden bg-surface-container-lowest border-b border-[#E5EAF0] px-4 sm:px-6 py-4 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto">
           <nav className="flex flex-col gap-2">
             {navLinks.map((link) => {
               if (link.hasDropdown) {

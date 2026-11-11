@@ -97,11 +97,11 @@ export default function Contact() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO HEADER */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 lg:pt-16 lg:pb-20">
+      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-14 sm:pb-16 lg:pt-16 lg:pb-20">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8">
           <div className="max-w-3xl flex flex-col gap-4">
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary" />
@@ -110,7 +110,7 @@ export default function Contact() {
               </span>
             </div>
 
-            <h1 className="font-hero-display text-hero-display text-on-surface tracking-tight leading-none text-balance">
+            <h1 className="font-hero-display text-[clamp(1.85rem,6vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
               Let's Talk About Your Next Project.
             </h1>
 
@@ -120,7 +120,7 @@ export default function Contact() {
           </div>
 
           {/* Quick Action Trio Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-[#E5EAF0]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pt-4 border-t border-[#E5EAF0]">
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center gap-4">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
                 <Shield className="w-5 h-5 text-primary" />
@@ -155,16 +155,16 @@ export default function Contact() {
       </section>
 
       {/* SECTION 2 & 3: TWO-COLUMN INTERACTION SECTION */}
-      <section className="w-full pb-24" id="inquiry-form">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <section className="w-full pb-16 sm:pb-24" id="inquiry-form">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
             {/* Left Column: Direct Coordinates */}
-            <div className="lg:col-span-5 flex flex-col gap-8">
+            <div className="lg:col-span-5 flex flex-col gap-6 sm:gap-8">
               <div className="flex flex-col gap-3">
                 <span className="font-label-code text-label-code uppercase tracking-wider text-outline">
                   Direct Channels
                 </span>
-                <h2 className="font-headline-section text-headline-section text-on-surface">
+                <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
                   Global Inquiries & Engineering HQ
                 </h2>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
@@ -175,14 +175,14 @@ export default function Contact() {
               {/* Channel List */}
               <div className="flex flex-col gap-4">
                 {/* Email Item */}
-                <div className="p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-4">
+                <div className="p-4 sm:p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center justify-between gap-3 sm:gap-4">
+                  <div className="flex items-center gap-3 sm:gap-4">
                     <div className="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div className="flex flex-col">
                       <span className="font-label-code text-label-code uppercase text-outline">Official Business Email</span>
-                      <a href="mailto:hello@stuzen.com" className="font-label-prominent text-label-prominent text-on-surface hover:text-primary transition-colors">
+                      <a href="mailto:hello@stuzen.com" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
                         hello@stuzen.com
                       </a>
                     </div>
@@ -190,7 +190,7 @@ export default function Contact() {
                   <button
                     type="button"
                     onClick={handleCopyEmail}
-                    className="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors relative"
+                    className="p-2 sm:p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors relative"
                     title="Copy to clipboard"
                   >
                     {copiedEmail ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4" />}
@@ -203,17 +203,17 @@ export default function Contact() {
                 </div>
 
                 {/* Phone Line Item */}
-                <div className="p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center gap-4">
+                <div className="p-4 sm:p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center gap-3 sm:gap-4">
                   <div className="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex flex-col">
                     <span className="font-label-code text-label-code uppercase text-outline">Corporate Direct Lines</span>
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                      <a href="tel:+18004127889" className="font-label-prominent text-label-prominent text-on-surface hover:text-primary transition-colors">
+                      <a href="tel:+18004127889" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
                         +1 (800) 412-STUZEN
                       </a>
-                      <span className="text-outline-variant text-[12px]">•</span>
+                      <span className="text-outline-variant text-[12px] hidden sm:inline">•</span>
                       <a href="tel:+18004127889" className="font-body-small text-body-small text-on-surface-variant hover:text-primary transition-colors">
                         +1 (800) 412-7889
                       </a>
@@ -222,15 +222,15 @@ export default function Contact() {
                 </div>
 
                 {/* WhatsApp Item */}
-                <div className="p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-4">
+                <div className="p-4 sm:p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center justify-between gap-3 sm:gap-4">
+                  <div className="flex items-center gap-3 sm:gap-4">
                     <div className="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant shrink-0">
                       <MessageSquare className="w-5 h-5 text-secondary" />
                     </div>
                     <div className="flex flex-col">
                       <span className="font-label-code text-label-code uppercase text-outline">Instant Technical Chat</span>
-                      <a href="https://wa.me/18004127889" target="_blank" rel="noopener noreferrer" className="font-label-prominent text-label-prominent text-on-surface hover:text-primary transition-colors">
-                        WhatsApp Business Channel
+                      <a href="https://wa.me/18004127889" target="_blank" rel="noopener noreferrer" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
+                        WhatsApp Business
                       </a>
                     </div>
                   </div>
@@ -240,13 +240,13 @@ export default function Contact() {
                 </div>
 
                 {/* Operating Campus */}
-                <div className="p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-4">
+                <div className="p-4 sm:p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-3 sm:gap-4">
                   <div className="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex flex-col">
                     <span className="font-label-code text-label-code uppercase text-outline">Operating Campus</span>
-                    <span className="font-label-prominent text-label-prominent text-on-surface mt-0.5">
+                    <span className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface mt-0.5">
                       HQ Technology Campus, Silicon Valley
                     </span>
                     <span className="font-body-small text-body-small text-on-surface-variant mt-0.5">
@@ -256,13 +256,13 @@ export default function Contact() {
                 </div>
 
                 {/* Working Hours */}
-                <div className="p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center gap-4">
+                <div className="p-4 sm:p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center gap-3 sm:gap-4">
                   <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
                     <Clock className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex flex-col">
                     <span className="font-label-code text-label-code uppercase text-outline">Operating Hours</span>
-                    <span className="font-label-prominent text-label-prominent text-on-surface">
+                    <span className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface">
                       Monday – Friday: 9:00 AM – 6:00 PM EST
                     </span>
                   </div>
@@ -271,8 +271,8 @@ export default function Contact() {
             </div>
 
             {/* Right Column: Enterprise Project Inquiry Form */}
-            <div className="lg:col-span-7">
-              <div className="rounded-3xl bg-surface-container-lowest shadow-xl p-8 sm:p-12 relative border border-[#E5EAF0]">
+            <div className="lg:col-span-7 w-full">
+              <div className="rounded-3xl bg-surface-container-lowest shadow-xl p-5 sm:p-8 lg:p-12 relative border border-[#E5EAF0]">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-2xl pointer-events-none -mr-12 -mt-12" />
 
                 <div className="relative z-10 flex flex-col gap-6">
@@ -543,8 +543,8 @@ export default function Contact() {
       </section>
 
       {/* SECTION 4: HIGH-TRUST REASSURANCES */}
-      <section className="w-full py-16 bg-surface-container-low border-y border-[#E5EAF0]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="w-full py-12 sm:py-16 bg-surface-container-low border-y border-[#E5EAF0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm border border-[#E5EAF0]">
               <Shield className="w-6 h-6" />
@@ -584,13 +584,13 @@ export default function Contact() {
       </section>
 
       {/* SECTION 5: FAQS BEFORE REACHING OUT */}
-      <section className="w-full py-20 lg:py-28 bg-surface">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
           <div className="text-center flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               ENGAGEMENT FAQ
             </span>
-            <h2 className="font-headline-section text-headline-section text-on-surface">
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
               Frequently Asked Questions Before Reaching Out
             </h2>
           </div>
