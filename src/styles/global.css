@@ -5,22 +5,27 @@
 @tailwind utilities;
 
 @layer base {
-  html, body {
+  html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
     font-family: 'Inter', sans-serif;
     background-color: var(--color-surface);
     color: var(--color-on-surface);
-    overflow-x: hidden;
+    overflow-x: clip;
+    -webkit-overflow-scrolling: touch;
   }
 
   *, *::before, *::after {
     box-sizing: border-box;
-  }
-
-  body {
-    overscroll-behavior: none;
-    overflow-x: hidden;
   }
 
   img, svg {
