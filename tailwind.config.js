@@ -77,6 +77,7 @@ export default {
         "gutter": "1.5rem"
       },
       fontFamily: {
+        "brand-logo": ["Orbitron", "Oxanium", "sans-serif"],
         "body-small": ["Inter", "sans-serif"],
         "hero-display-mobile": ["Manrope", "sans-serif"],
         "label-code": ["Inter", "sans-serif"],

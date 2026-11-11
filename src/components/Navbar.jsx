@@ -28,17 +28,17 @@ export default function Navbar() {
       <div className="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4 sm:gap-6">
         {/* Brand Logo */}
         <div className="flex items-center gap-4 shrink-0">
-          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group">
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group select-none">
             <img
               alt="Stuzen Technologies Icon"
-              className="h-9 w-auto object-contain"
+              className="h-9 sm:h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
               src={stuzenIcon}
             />
             <div className="flex flex-col justify-center">
-              <span className="font-headline-sub text-[15px] sm:text-body-default font-bold tracking-tight text-on-surface leading-none group-hover:text-primary transition-colors">
-                STUZEN
+              <span className="font-brand-logo text-[16px] sm:text-[18px] font-black tracking-[0.08em] text-on-surface leading-none">
+                STU<span className="text-primary-container">Z</span>EN
               </span>
-              <span className="font-label-code text-[10px] sm:text-label-code text-outline uppercase tracking-wider leading-none mt-1">
+              <span className="font-brand-logo text-[8px] sm:text-[9.5px] font-semibold text-outline uppercase tracking-[0.28em] leading-none mt-1 sm:mt-1.5">
                 TECHNOLOGIES
               </span>
             </div>

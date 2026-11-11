@@ -11,18 +11,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-8 pb-10 sm:pb-14 border-b border-[#E5EAF0]">
           {/* Brand Column */}
           <div className="lg:col-span-4 flex flex-col gap-4">
-            <Link to="/" className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3 group select-none">
               <img
                 alt="Stuzen Technologies Icon"
-                className="h-9 w-auto object-contain"
+                className="h-9 sm:h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
                 src={stuzenIcon}
               />
-              <div className="flex flex-col">
-                <span className="font-headline-sub text-body-default font-bold tracking-tight text-on-surface">
-                  STUZEN
+              <div className="flex flex-col justify-center">
+                <span className="font-brand-logo text-[18px] font-black tracking-[0.08em] text-on-surface leading-none">
+                  STU<span className="text-primary-container">Z</span>EN
                 </span>
-                <span className="font-label-code text-label-code text-outline uppercase tracking-wider">
-                  Technologies
+                <span className="font-brand-logo text-[9.5px] font-semibold text-outline uppercase tracking-[0.28em] leading-none mt-1.5">
+                  TECHNOLOGIES
                 </span>
               </div>
             </Link>
