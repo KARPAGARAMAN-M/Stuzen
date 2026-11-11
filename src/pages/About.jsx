@@ -27,8 +27,8 @@ export default function About() {
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-10">
-          <div className="max-w-4xl flex flex-col gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
+          <div className="max-w-4xl w-full flex flex-col gap-5 sm:gap-6">
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary" />
               <span className="font-label-code text-label-code uppercase tracking-widest text-primary font-bold">
@@ -36,7 +36,7 @@ export default function About() {
               </span>
             </div>
 
-            <h1 className="font-hero-display text-hero-display text-on-surface tracking-tight leading-none text-balance">
+            <h1 className="font-hero-display text-[clamp(1.85rem,6vw,3.75rem)] leading-[1.18] lg:leading-[72px] font-extrabold text-on-surface tracking-tight break-words">
               Engineering Technological Distinction with Purpose and Precision.
             </h1>
 
