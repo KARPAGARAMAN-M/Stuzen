@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, ArrowRight, User } from 'lucide-react';
 import { navLinks } from '../data/navigation';
-import stuzenLogo from '../assets/logo/STUZEN_Logo_Transparent.png';
+import stuzenIcon from '../assets/logo/stuzen-icon.png';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,13 +27,21 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-[#E5EAF0] shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
       <div className="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4 sm:gap-6">
         {/* Brand Logo */}
-        <div className="flex items-center shrink-0">
-          <Link to="/" className="flex items-center group py-1" aria-label="Stuzen Technologies Home">
+        <div className="flex items-center gap-4 shrink-0">
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group">
             <img
-              alt="Stuzen Technologies"
-              className="h-12 sm:h-14 lg:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
-              src={stuzenLogo}
+              alt="Stuzen Technologies Icon"
+              className="h-9 w-auto object-contain"
+              src={stuzenIcon}
             />
+            <div className="flex flex-col justify-center">
+              <span className="font-headline-sub text-[15px] sm:text-body-default font-bold tracking-tight text-on-surface leading-none group-hover:text-primary transition-colors">
+                STUZEN
+              </span>
+              <span className="font-label-code text-[10px] sm:text-label-code text-outline uppercase tracking-wider leading-none mt-1">
+                TECHNOLOGIES
+              </span>
+            </div>
           </Link>
         </div>
 

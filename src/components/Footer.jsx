@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { footerLinks } from '../data/navigation';
-import stuzenLogo from '../assets/logo/STUZEN_Logo_Transparent.png';
+import stuzenIcon from '../assets/logo/stuzen-icon.png';
 
 export default function Footer() {
   return (
@@ -11,12 +11,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-8 pb-10 sm:pb-14 border-b border-[#E5EAF0]">
           {/* Brand Column */}
           <div className="lg:col-span-4 flex flex-col gap-4">
-            <Link to="/" className="inline-flex items-center group w-fit" aria-label="Stuzen Technologies Home">
+            <Link to="/" className="flex items-center gap-3">
               <img
-                alt="Stuzen Technologies"
-                className="h-14 sm:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
-                src={stuzenLogo}
+                alt="Stuzen Technologies Icon"
+                className="h-9 w-auto object-contain"
+                src={stuzenIcon}
               />
+              <div className="flex flex-col">
+                <span className="font-headline-sub text-body-default font-bold tracking-tight text-on-surface">
+                  STUZEN
+                </span>
+                <span className="font-label-code text-label-code text-outline uppercase tracking-wider">
+                  Technologies
+                </span>
+              </div>
             </Link>
             <p className="font-body-small text-body-small text-on-surface-variant max-w-sm leading-relaxed">
               Premier technology engineering and digital solutions partner helping visionary businesses build, scale, and innovate with precision.
