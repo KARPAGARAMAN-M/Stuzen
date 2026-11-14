@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, ArrowRight, User } from 'lucide-react';
+import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { navLinks } from '../data/navigation';
 import stuzenIcon from '../assets/logo/stuzen-icon.png';
 
@@ -127,10 +127,6 @@ export default function Navbar() {
           >
             Let's Talk
           </Link>
-          
-          <div className="hidden sm:flex w-8 h-8 rounded-full bg-primary items-center justify-center shrink-0 text-on-primary">
-            <User className="w-4 h-4" />
-          </div>
 
           {/* Mobile Menu Button */}
           <button
