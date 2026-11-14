@@ -13,59 +13,13 @@ import '../styles/welcome.css';
  * - Only after clicking the button (or pressing Enter/Space) does it smoothly transition to the homepage.
  * - 100% safe: does not modify or damage any existing webpage design or components.
  */
-export default function WelcomeScreen({ onComplete, duration = 1800 }) {
-  const [progress, setProgress] = useState(0);
-  const [telemetryMsg, setTelemetryMsg] = useState('INITIALIZING ARCHITECTURE PROTOCOLS');
-  const [isReady, setIsReady] = useState(false);
+export default function WelcomeScreen({ onComplete }) {
   const [isExiting, setIsExiting] = useState(false);
   const onCompleteRef = useRef(onComplete);
 
   useEffect(() => {
     onCompleteRef.current = onComplete;
   }, [onComplete]);
-
-  useEffect(() => {
-    let animFrameId;
-    const startTime = performance.now();
-
-    const checkpoints = [
-      { at: 0, msg: 'INITIALIZING ARCHITECTURE PROTOCOLS' },
-      { at: 30, msg: 'SYNTHESIZING DIGITAL WORKSPACE' },
-      { at: 65, msg: 'CALIBRATING ENTERPRISE ENGINE' },
-      { at: 90, msg: 'ESTABLISHING SECURE CONNECTION' },
-      { at: 100, msg: 'SYSTEM READY // CLICK BELOW TO ENTER' }
-    ];
-
-    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
-
-    const updateProgress = (currentTime) => {
-      const elapsed = currentTime - startTime;
-      const linear = Math.min(1, Math.max(0, elapsed / duration));
-      const eased = easeOutCubic(linear);
-      const currentPct = Math.round(eased * 100);
-
-      setProgress(currentPct);
-
-      for (let i = checkpoints.length - 1; i >= 0; i--) {
-        if (currentPct >= checkpoints[i].at) {
-          setTelemetryMsg(checkpoints[i].msg);
-          break;
-        }
-      }
-
-      if (linear < 1) {
-        animFrameId = requestAnimationFrame(updateProgress);
-      } else {
-        setIsReady(true);
-      }
-    };
-
-    animFrameId = requestAnimationFrame(updateProgress);
-
-    return () => {
-      if (animFrameId) cancelAnimationFrame(animFrameId);
-    };
-  }, [duration]);
 
   // Handle entry button click - smooth exit transition
   const handleEnter = () => {
@@ -107,37 +61,7 @@ export default function WelcomeScreen({ onComplete, duration = 1800 }) {
       {/* 3. Fine Geometric Alignment Axis */}
       <div aria-hidden="true" className="stuzen-welcome-axis-h" />
 
-      {/* 4. Precision Technical Corner Overlays */}
-      <div className="stuzen-corner-marker stuzen-corner-tl" aria-hidden="true">
-        <svg className="w-3.5 h-3.5 text-[#087BEE]" fill="none" stroke="currentColor" strokeWidth="1.2" viewBox="0 0 16 16">
-          <path d="M8 2v12M2 8h12" />
-        </svg>
-        <span className="stuzen-marker-text">SYS.LOC // 28.6139° N, 77.2090° E</span>
-      </div>
-
-      <div className="stuzen-corner-marker stuzen-corner-tr" aria-hidden="true">
-        <span className="stuzen-beacon-dot" />
-        <span className="stuzen-marker-text">INITIALIZED : SECURE_CHANNEL_READY</span>
-        <svg className="w-3.5 h-3.5 text-[#087BEE]" fill="none" stroke="currentColor" strokeWidth="1.2" viewBox="0 0 16 16">
-          <path d="M8 2v12M2 8h12" />
-        </svg>
-      </div>
-
-      <div className="stuzen-corner-marker stuzen-corner-bl" aria-hidden="true">
-        <svg className="w-3.5 h-3.5 text-[#087BEE]" fill="none" stroke="currentColor" strokeWidth="1.2" viewBox="0 0 16 16">
-          <path d="M8 2v12M2 8h12" />
-        </svg>
-        <span className="stuzen-marker-text">PRECISION PROTOCOL : ACTIVE [VER 3.4.12]</span>
-      </div>
-
-      <div className="stuzen-corner-marker stuzen-corner-br" aria-hidden="true">
-        <span className="stuzen-marker-text">DIGITAL ARCHITECTURE PLATFORM</span>
-        <svg className="w-3.5 h-3.5 text-[#087BEE]" fill="none" stroke="currentColor" strokeWidth="1.2" viewBox="0 0 16 16">
-          <path d="M8 2v12M2 8h12" />
-        </svg>
-      </div>
-
-      {/* 5. Main Focal Unit: Original S Ribbon Icon & Stuzen Identity */}
+      {/* 4. Main Focal Unit: Original S Ribbon Icon & Stuzen Identity */}
       <main className="stuzen-welcome-content">
         <div className="stuzen-brand-lockup">
           {/* Original blue-cyan gradient S symbol */}
@@ -165,7 +89,7 @@ export default function WelcomeScreen({ onComplete, duration = 1800 }) {
           </div>
         </div>
 
-        {/* 6. Corporate Typography Hierarchy */}
+        {/* 5. Corporate Typography Hierarchy */}
         <div className="stuzen-typography-stack">
           {/* Eyebrow */}
           <p className="stuzen-eyebrow">
@@ -183,20 +107,7 @@ export default function WelcomeScreen({ onComplete, duration = 1800 }) {
           </p>
         </div>
 
-        {/* 7. Minimal Animated Progress Indicator */}
-        <div className="stuzen-progress-container" aria-hidden="true">
-          <div className="stuzen-progress-track">
-            <div
-              className="stuzen-progress-bar"
-              style={{ width: `${progress}%` }}
-            />
-          </div>
-          <p className="stuzen-status-telemetry">
-            {telemetryMsg}
-          </p>
-        </div>
-
-        {/* 8. Interactive CTA Button with Arrow Mark — Click to Enter Homepage */}
+        {/* 6. Interactive CTA Button with Arrow Mark — Click to Enter Homepage */}
         <div className="stuzen-cta-wrapper">
           <button
             type="button"
