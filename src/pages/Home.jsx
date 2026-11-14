@@ -2,11 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight,
-  TrendingUp,
   Shield,
   CheckCircle,
-  Database,
-  Cpu,
   Layers,
   Search,
   Compass,
@@ -71,133 +68,165 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Technology Visual Canvas Mockup */}
-          <div className="relative w-full rounded-xl bg-surface-container-lowest p-4 sm:p-6 lg:p-8 shadow-xl border border-[#E5EAF0] overflow-hidden">
-            {/* Canvas Window Header */}
-            <div className="flex items-center justify-between pb-4 sm:pb-6 mb-4 sm:mb-6 border-b border-[#E5EAF0]/60">
-              <div className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-error-container" />
-                <span className="w-3 h-3 rounded-full bg-surface-container-highest" />
-                <span className="w-3 h-3 rounded-full bg-primary-fixed" />
-                <span className="ml-4 font-label-code text-label-code text-outline tracking-wider hidden sm:inline">
-                  cluster-node-us-east // telemetry.live.stuzen.sys
-                </span>
-              </div>
+          {/* Core Technology Capabilities & Engineering Practice */}
+          <div className="relative w-full rounded-2xl bg-surface-container-lowest p-6 sm:p-8 lg:p-10 shadow-xl border border-[#E5EAF0] overflow-hidden">
+            {/* Card Header */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-6 border-b border-[#E5EAF0] gap-4">
               <div className="flex items-center gap-3">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container font-label-code text-label-code text-primary font-semibold">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary" /> 99.998% Sync
-                </span>
-                <span className="font-label-code text-label-code text-outline hidden md:inline">
-                  LATENCY: 14ms
+                <span className="w-2.5 h-2.5 rounded-full bg-primary shrink-0" />
+                <div>
+                  <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold block">
+                    Core Capabilities & Engineering Practice
+                  </span>
+                  <h2 className="font-headline-sub text-headline-sub text-on-surface mt-0.5">
+                    Purpose-Built Software, Modern Web & Automation
+                  </h2>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 self-start sm:self-auto">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container font-label-code text-label-code text-on-surface-variant font-medium">
+                  <span className="w-2 h-2 rounded-full bg-primary" /> Full-Cycle Engineering
                 </span>
               </div>
             </div>
 
-            {/* Canvas Body Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
-              {/* Left: Code & Architecture Tree */}
-              <div className="lg:col-span-4 bg-surface-container-low rounded-lg p-5 flex flex-col justify-between">
+            {/* Core Services Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Pillar 1: Website Development */}
+              <div className="flex flex-col justify-between p-5 sm:p-6 rounded-xl bg-surface-container-low border border-[#E5EAF0]/80 hover:border-primary/40 transition-colors">
                 <div>
-                  <div className="flex items-center justify-between pb-3">
-                    <span className="font-label-prominent text-label-prominent text-on-surface flex items-center gap-2">
-                      <Layers className="w-4 h-4 text-primary" />
-                      Architecture Blueprint
-                    </span>
-                    <span className="font-label-code text-label-code text-outline">v4.18.2</span>
+                  <div className="w-11 h-11 rounded-lg bg-surface-container-lowest border border-[#E5EAF0] flex items-center justify-center text-primary mb-4 shadow-sm">
+                    <Globe className="w-5 h-5" />
                   </div>
-                  <div className="flex flex-col gap-2 pt-2">
-                    <div className="flex items-center justify-between p-2 rounded bg-surface-container-lowest text-on-surface font-body-small text-body-small">
-                      <span className="flex items-center gap-2">
-                        <Activity className="w-4 h-4 text-primary" /> /gateway/api-core
-                      </span>
-                      <span className="font-label-code text-label-code text-secondary font-semibold">Active</span>
-                    </div>
-                    <div className="flex items-center justify-between p-2 rounded bg-surface-container-lowest text-on-surface font-body-small text-body-small">
-                      <span className="flex items-center gap-2">
-                        <Cpu className="w-4 h-4 text-secondary" /> /ml-worker/ingest
-                      </span>
-                      <span className="font-label-code text-label-code text-secondary font-semibold">Optimized</span>
-                    </div>
-                    <div className="flex items-center justify-between p-2 rounded bg-surface-container-lowest text-on-surface font-body-small text-body-small">
-                      <span className="flex items-center gap-2">
-                        <Database className="w-4 h-4 text-primary" /> /db/distributed-shard
-                      </span>
-                      <span className="font-label-code text-label-code text-primary font-semibold">Healthy</span>
-                    </div>
-                  </div>
+                  <h3 className="font-headline-sub text-[17px] sm:text-[18px] font-bold text-on-surface">
+                    Website Development
+                  </h3>
+                  <p className="font-body-small text-body-small text-on-surface-variant mt-2 leading-relaxed">
+                    High-performance corporate portals, responsive bespoke web applications, and headless architectures engineered for speed, search visibility, and intuitive user experiences.
+                  </p>
                 </div>
-
-                <div className="mt-6 pt-4 bg-surface-container-lowest rounded p-3">
-                  <span className="font-label-code text-label-code text-outline block mb-1">PIPELINE AUTOMATION</span>
-                  <div className="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
-                    <div className="bg-primary-container h-full w-[88%] rounded-full transition-all duration-500" />
+                <div className="pt-4 mt-5 border-t border-[#E5EAF0]/70">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">React & Next.js</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Headless CMS</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Responsive UI</span>
                   </div>
-                  <div className="flex justify-between items-center mt-2 font-label-code text-label-code text-on-surface-variant">
-                    <span>Verification & Security Audits</span>
-                    <span className="text-primary font-bold">88/88 Checks Passed</span>
-                  </div>
+                  <Link
+                    to="/services/website-development"
+                    className="inline-flex items-center gap-1.5 text-primary font-label-prominent text-label-prominent hover:text-primary-container transition-colors group"
+                  >
+                    <span>Explore Web Solutions</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </div>
               </div>
 
-              {/* Center/Right: Telemetry Metrics & Visual Network */}
-              <div className="lg:col-span-8 flex flex-col gap-4">
-                {/* Micro Stat Widgets */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-                    <span className="font-label-code text-label-code text-outline uppercase">API Responsiveness</span>
-                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">&lt; 100ms</div>
-                    <span className="font-body-small text-body-small text-secondary flex items-center gap-1 mt-1">
-                      <TrendingUp className="w-3.5 h-3.5" /> High concurrency handling
-                    </span>
+              {/* Pillar 2: Custom Software Development */}
+              <div className="flex flex-col justify-between p-5 sm:p-6 rounded-xl bg-surface-container-low border border-[#E5EAF0]/80 hover:border-primary/40 transition-colors">
+                <div>
+                  <div className="w-11 h-11 rounded-lg bg-surface-container-lowest border border-[#E5EAF0] flex items-center justify-center text-primary mb-4 shadow-sm">
+                    <Terminal className="w-5 h-5" />
                   </div>
-                  <div className="p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-                    <span className="font-label-code text-label-code text-outline uppercase">Deployment Pipeline</span>
-                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">99.9% Uptime</div>
-                    <span className="font-body-small text-body-small text-primary flex items-center gap-1 mt-1">
-                      <CheckCircle className="w-3.5 h-3.5" /> Automated CI/CD verification
-                    </span>
-                  </div>
-                  <div className="p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-                    <span className="font-label-code text-label-code text-outline uppercase">Security Protocol</span>
-                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Hardened</div>
-                    <span className="font-body-small text-body-small text-outline flex items-center gap-1 mt-1">
-                      <Shield className="w-3.5 h-3.5" /> OWASP-aligned standards
-                    </span>
-                  </div>
+                  <h3 className="font-headline-sub text-[17px] sm:text-[18px] font-bold text-on-surface">
+                    Custom Software Development
+                  </h3>
+                  <p className="font-body-small text-body-small text-on-surface-variant mt-2 leading-relaxed">
+                    Tailored enterprise platforms, bespoke operational software, and scalable cloud backends built to eliminate operational bottlenecks and replace rigid off-the-shelf software.
+                  </p>
                 </div>
-
-                {/* Inline SVG Telemetry Data Visualization Chart */}
-                <div className="p-5 rounded-lg bg-surface-container-low flex flex-col justify-between h-56">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-label-prominent text-label-prominent text-on-surface flex items-center gap-2">
-                      <Activity className="w-4 h-4 text-primary" />
-                      Global Node Execution Performance
-                    </span>
-                    <span className="font-label-code text-label-code text-outline">Real-Time Throughput</span>
+                <div className="pt-4 mt-5 border-t border-[#E5EAF0]/70">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Cloud Backends</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">REST & GraphQL</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Database Systems</span>
                   </div>
+                  <Link
+                    to="/services/custom-software"
+                    className="inline-flex items-center gap-1.5 text-primary font-label-prominent text-label-prominent hover:text-primary-container transition-colors group"
+                  >
+                    <span>Explore Custom Software</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
 
-                  {/* SVG Visual Graph */}
-                  <svg className="w-full h-36" fill="none" preserveAspectRatio="none" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="primaryGrad" x1="0" x2="0" y1="0" y2="1">
-                        <stop offset="0%" stopColor="#0073e0" stopOpacity="0.25" />
-                        <stop offset="100%" stopColor="#0073e0" stopOpacity="0.0" />
-                      </linearGradient>
-                      <linearGradient id="cyanGrad" x1="0" x2="0" y1="0" y2="1">
-                        <stop offset="0%" stopColor="#41defd" stopOpacity="0.25" />
-                        <stop offset="100%" stopColor="#41defd" stopOpacity="0.0" />
-                      </linearGradient>
-                    </defs>
-                    <line stroke="#dbe2f8" strokeDasharray="4 4" strokeWidth="1" x1="0" x2="600" y1="30" y2="30" />
-                    <line stroke="#dbe2f8" strokeDasharray="4 4" strokeWidth="1" x1="0" x2="600" y1="70" y2="70" />
-                    <line stroke="#dbe2f8" strokeWidth="1" x1="0" x2="600" y1="110" y2="110" />
-                    <path d="M0,85 C60,70 120,40 180,55 C240,70 300,30 360,45 C420,60 480,20 540,25 C570,28 600,20 600,20 L600,110 L0,110 Z" fill="url(#primaryGrad)" />
-                    <path d="M0,95 C70,90 140,65 210,75 C280,85 350,50 420,55 C490,60 550,40 600,35 L600,110 L0,110 Z" fill="url(#cyanGrad)" />
-                    <path d="M0,85 C60,70 120,40 180,55 C240,70 300,30 360,45 C420,60 480,20 540,25 C570,28 600,20 600,20" stroke="#0073e0" strokeLinecap="round" strokeWidth="2.5" />
-                    <path d="M0,95 C70,90 140,65 210,75 C280,85 350,50 420,55 C490,60 550,40 600,35" stroke="#006879" strokeLinecap="round" strokeWidth="2" />
-                    <circle className="animate-pulse" cx="360" cy="45" fill="#0073e0" r="4" />
-                    <circle cx="540" cy="25" fill="#0073e0" r="4" />
-                  </svg>
+              {/* Pillar 3: AI & Automation */}
+              <div className="flex flex-col justify-between p-5 sm:p-6 rounded-xl bg-surface-container-low border border-[#E5EAF0]/80 hover:border-primary/40 transition-colors">
+                <div>
+                  <div className="w-11 h-11 rounded-lg bg-surface-container-lowest border border-[#E5EAF0] flex items-center justify-center text-primary mb-4 shadow-sm">
+                    <BrainCircuit className="w-5 h-5" />
+                  </div>
+                  <h3 className="font-headline-sub text-[17px] sm:text-[18px] font-bold text-on-surface">
+                    AI & Intelligent Automation
+                  </h3>
+                  <p className="font-body-small text-body-small text-on-surface-variant mt-2 leading-relaxed">
+                    Pragmatic AI integrations, smart workflow automation, and intelligent document processing that eliminate repetitive manual tasks and accelerate team productivity.
+                  </p>
+                </div>
+                <div className="pt-4 mt-5 border-t border-[#E5EAF0]/70">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Workflow Engines</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Data Extraction</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">System Integration</span>
+                  </div>
+                  <Link
+                    to="/services/ai-automation"
+                    className="inline-flex items-center gap-1.5 text-primary font-label-prominent text-label-prominent hover:text-primary-container transition-colors group"
+                  >
+                    <span>Explore AI & Automation</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Development Approach Lifecycle */}
+            <div className="mt-8 pt-6 border-t border-[#E5EAF0] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5 text-primary">
+                  <Search className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="font-label-prominent text-label-prominent text-on-surface">1. Discovery & Clarity</h4>
+                  <p className="font-body-small text-[13px] text-outline mt-0.5 leading-normal">
+                    In-depth technical consultation and requirement definition before coding begins.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5 text-primary">
+                  <Layers className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="font-label-prominent text-label-prominent text-on-surface">2. Clean Architecture</h4>
+                  <p className="font-body-small text-[13px] text-outline mt-0.5 leading-normal">
+                    Modern, modular software architecture planned for long-term maintainability.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5 text-primary">
+                  <Code className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="font-label-prominent text-label-prominent text-on-surface">3. Agile Delivery</h4>
+                  <p className="font-body-small text-[13px] text-outline mt-0.5 leading-normal">
+                    Iterative sprint progress, milestone demonstrations, and transparent communication.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5 text-primary">
+                  <CheckCircle className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="font-label-prominent text-label-prominent text-on-surface">4. Quality & Support</h4>
+                  <p className="font-body-small text-[13px] text-outline mt-0.5 leading-normal">
+                    Disciplined quality assurance, smooth production handoff, and ongoing support.
+                  </p>
                 </div>
               </div>
             </div>
