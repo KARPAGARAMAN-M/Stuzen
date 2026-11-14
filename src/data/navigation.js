@@ -35,7 +35,7 @@ export const footerLinks = {
     address: 'View on Google Maps',
     mapsUrl: 'https://maps.app.goo.gl/eGEjixKQtGE34ogt8',
     instagramUrl: 'https://www.instagram.com/stuzen_tech?obrf=MXI0NDM5bGltMDR2cA==',
-    whatsappUrl: 'https://chat.whatsapp.com/Jm8jhEKqcZm5gebTtBRdzs?s=cl&p=a&iam=2',
+    whatsappUrl: 'https://wa.me/917418672022',
     hours: 'Mon–Sat, 9:00 AM – 7:00 PM IST',
   },
   legal: [

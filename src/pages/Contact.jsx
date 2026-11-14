@@ -225,19 +225,19 @@ export default function Contact() {
                       <MessageSquare className="w-5 h-5 text-secondary" />
                     </div>
                     <div className="flex flex-col">
-                      <span className="font-label-code text-label-code uppercase text-outline">Community Network</span>
-                      <a href="https://chat.whatsapp.com/Jm8jhEKqcZm5gebTtBRdzs?s=cl&p=a&iam=2" target="_blank" rel="noopener noreferrer" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
-                        WhatsApp Community
+                      <span className="font-label-code text-label-code uppercase text-outline">WhatsApp Direct</span>
+                      <a href="https://wa.me/917418672022" target="_blank" rel="noopener noreferrer" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
+                        +91 7418 672 022
                       </a>
                     </div>
                   </div>
                   <a
-                    href="https://chat.whatsapp.com/Jm8jhEKqcZm5gebTtBRdzs?s=cl&p=a&iam=2"
+                    href="https://wa.me/917418672022"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-2.5 py-1 rounded bg-surface-container text-secondary font-label-code text-[11px] font-bold hover:bg-secondary hover:text-on-secondary transition-colors"
                   >
-                    Join Group
+                    Chat Now
                   </a>
                 </div>
 
