@@ -95,10 +95,10 @@ export default function About() {
               </div>
               <div className="absolute -bottom-6 -right-6 p-5 rounded-xl bg-surface-container-lowest shadow-xl border border-[#E5EAF0] max-w-xs hidden sm:block">
                 <div className="flex items-center gap-2 text-primary font-bold font-headline-sub">
-                  <span>4.9 / 5.0</span>
+                  <span>Excellence Driven</span>
                 </div>
                 <p className="font-body-small text-body-small text-on-surface-variant mt-1">
-                  Client Trust Index across 35+ enterprise digital transformations.
+                  Disciplined engineering standards and client-first delivery focus.
                 </p>
               </div>
             </div>
@@ -442,21 +442,21 @@ export default function About() {
                 An Engineering Culture Rooted in Mastery and Mentorship.
               </h2>
               <p className="font-body-large text-body-large text-on-surface-variant leading-relaxed">
-                At Stuzen, we deliberately capped company expansion to maintain our senior-first talent density. Every member of our team is an active contributor with over a decade of production software architecture experience.
+                At Stuzen, we are focused on talent density and engineering depth. Every project is guided by experienced practitioners committed to architectural clarity, clean code, and reliable execution.
               </p>
 
               <div className="flex flex-col gap-3 pt-2">
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                  <span className="font-body-default text-body-default text-on-surface">10+ Average Years Senior Experience</span>
+                  <span className="font-body-default text-body-default text-on-surface">Extensive Full-Stack & Systems Engineering Experience</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                  <span className="font-body-default text-body-default text-on-surface">99.8% Code Review Acceptance Rate</span>
+                  <span className="font-body-default text-body-default text-on-surface">Rigorous Code Review & Automated Test Standards</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                  <span className="font-body-default text-body-default text-on-surface">100% Dedicated Architect Allocation per Client</span>
+                  <span className="font-body-default text-body-default text-on-surface">Direct Engineering Ownership on Every Engagement</span>
                 </div>
               </div>
             </div>

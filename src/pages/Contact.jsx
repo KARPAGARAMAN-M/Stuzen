@@ -16,6 +16,7 @@ import {
   AlertCircle,
   Building,
   User,
+  Instagram,
 } from 'lucide-react';
 import FAQAccordion from '../components/FAQAccordion';
 import CTASection from '../components/CTASection';
@@ -83,14 +84,14 @@ export default function Contact() {
         'Yes. If you check the NDA request box on the form, we will automatically countersign and return a mutual NDA prior to our scheduled discovery conversation.',
     },
     {
-      question: 'What is the typical minimum engagement size?',
+      question: 'How do you structure project engagements and scope?',
       answer:
-        'Our custom engineering and architecture projects typically begin at $25,000 for focused implementations, while larger enterprise transformations and dedicated team sprints scale accordingly.',
+        'We tailor each engagement to your project requirements—from focused website builds and MVP development to comprehensive enterprise software architectures and continuous digital solutions.',
     },
     {
-      question: 'Can we meet the engineering team in person?',
+      question: 'How do discovery consultations and team meetings take place?',
       answer:
-        'Yes. We welcome technical workshops and executive sessions at our Silicon Valley campus or can deploy lead architects to your corporate headquarters for intensive discovery sprints.',
+        'We conduct discovery sessions via structured video conferences or in-person technical workshops arranged to align with your project roadmap and stakeholders.',
     },
   ];
 
@@ -165,10 +166,10 @@ export default function Contact() {
                   Direct Channels
                 </span>
                 <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-                  Global Inquiries & Engineering HQ
+                  Direct Channels & Coordinates
                 </h2>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Connect directly with our solutions engineering team. We prioritize technical transparency, strict NDAs, and production velocity.
+                  Connect directly with our solutions engineering team. We prioritize technical transparency, strict confidentiality, and production velocity.
                 </p>
               </div>
 
@@ -208,14 +209,10 @@ export default function Contact() {
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="font-label-code text-label-code uppercase text-outline">Corporate Direct Lines</span>
+                    <span className="font-label-code text-label-code uppercase text-outline">Corporate Direct Line</span>
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                      <a href="tel:+18004127889" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
-                        +1 (800) 412-STUZEN
-                      </a>
-                      <span className="text-outline-variant text-[12px] hidden sm:inline">•</span>
-                      <a href="tel:+18004127889" className="font-body-small text-body-small text-on-surface-variant hover:text-primary transition-colors">
-                        +1 (800) 412-7889
+                      <a href="tel:+917418672022" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
+                        +91 74186 72022
                       </a>
                     </div>
                   </div>
@@ -228,29 +225,62 @@ export default function Contact() {
                       <MessageSquare className="w-5 h-5 text-secondary" />
                     </div>
                     <div className="flex flex-col">
-                      <span className="font-label-code text-label-code uppercase text-outline">Instant Technical Chat</span>
-                      <a href="https://wa.me/18004127889" target="_blank" rel="noopener noreferrer" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
-                        WhatsApp Business
+                      <span className="font-label-code text-label-code uppercase text-outline">Community Network</span>
+                      <a href="https://chat.whatsapp.com/Jm8jhEKqcZm5gebTtBRdzs?s=cl&p=a&iam=2" target="_blank" rel="noopener noreferrer" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
+                        WhatsApp Community
                       </a>
                     </div>
                   </div>
-                  <span className="px-2.5 py-1 rounded bg-surface-container text-secondary font-label-code text-[11px] font-bold">
-                    Active
-                  </span>
+                  <a
+                    href="https://chat.whatsapp.com/Jm8jhEKqcZm5gebTtBRdzs?s=cl&p=a&iam=2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2.5 py-1 rounded bg-surface-container text-secondary font-label-code text-[11px] font-bold hover:bg-secondary hover:text-on-secondary transition-colors"
+                  >
+                    Join Group
+                  </a>
                 </div>
 
-                {/* Operating Campus */}
+                {/* Instagram Item */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-center justify-between gap-3 sm:gap-4">
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+                      <Instagram className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="font-label-code text-label-code uppercase text-outline">Official Social Channel</span>
+                      <a href="https://www.instagram.com/stuzen_tech?obrf=MXI0NDM5bGltMDR2cA==" target="_blank" rel="noopener noreferrer" className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors">
+                        @stuzen_tech
+                      </a>
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.instagram.com/stuzen_tech?obrf=MXI0NDM5bGltMDR2cA=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2.5 py-1 rounded bg-surface-container text-primary font-label-code text-[11px] font-bold hover:bg-primary hover:text-on-primary transition-colors"
+                  >
+                    Follow
+                  </a>
+                </div>
+
+                {/* Operating Campus / Google Maps */}
                 <div className="p-4 sm:p-5 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-3 sm:gap-4">
                   <div className="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="font-label-code text-label-code uppercase text-outline">Operating Campus</span>
-                    <span className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface mt-0.5">
-                      HQ Technology Campus, Silicon Valley
-                    </span>
+                    <span className="font-label-code text-label-code uppercase text-outline">Office Destination</span>
+                    <a
+                      href="https://maps.app.goo.gl/eGEjixKQtGE34ogt8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface hover:text-primary transition-colors mt-0.5"
+                    >
+                      View on Google Maps
+                    </a>
                     <span className="font-body-small text-body-small text-on-surface-variant mt-0.5">
-                      440 Innovation Boulevard, Palo Alto, CA 94304
+                      Stuzen Technologies Destination
                     </span>
                   </div>
                 </div>
@@ -263,7 +293,7 @@ export default function Contact() {
                   <div className="flex flex-col">
                     <span className="font-label-code text-label-code uppercase text-outline">Operating Hours</span>
                     <span className="font-label-prominent text-body-small sm:text-label-prominent text-on-surface">
-                      Monday – Friday: 9:00 AM – 6:00 PM EST
+                      Monday – Saturday: 9:00 AM – 7:00 PM IST
                     </span>
                   </div>
                 </div>
@@ -343,7 +373,7 @@ export default function Contact() {
                               type="text"
                               value={formData.fullName}
                               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                              placeholder="Dr. Elena Vance"
+                              placeholder="Alex Morgan"
                               className={`w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-default focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-sm transition-all border ${
                                 errors.fullName ? 'border-error ring-1 ring-error' : 'border-[#E5EAF0]'
                               }`}
@@ -386,7 +416,7 @@ export default function Contact() {
                               type="email"
                               value={formData.workEmail}
                               onChange={(e) => setFormData({ ...formData, workEmail: e.target.value })}
-                              placeholder="elena@acme.com"
+                              placeholder="alex@company.com"
                               className={`w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-default focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-sm transition-all border ${
                                 errors.workEmail ? 'border-error ring-1 ring-error' : 'border-[#E5EAF0]'
                               }`}
@@ -407,7 +437,7 @@ export default function Contact() {
                               type="tel"
                               value={formData.phoneNumber}
                               onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
-                              placeholder="+1 (555) 019-2834"
+                              placeholder="+91 74186 72022"
                               className="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-default focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-sm transition-all border border-[#E5EAF0]"
                             />
                             <Phone className="w-4 h-4 absolute right-3.5 top-4 text-outline" />

@@ -55,26 +55,26 @@ export default function Portfolio() {
           {/* Metric Callout Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-4 border-t border-[#E5EAF0]">
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <span className="font-label-code text-label-code text-outline uppercase">Aggregate Impact</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">$1.4B+ Volume</div>
+              <span className="font-label-code text-label-code text-outline uppercase">Architecture Speed</span>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">&lt; 100ms API</div>
               <span className="font-body-small text-body-small text-secondary flex items-center gap-1 mt-1">
-                <Activity className="w-3.5 h-3.5" /> High-frequency transaction pipelines
+                <Activity className="w-3.5 h-3.5" /> High-concurrency performance
               </span>
             </div>
 
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
               <span className="font-label-code text-label-code text-outline uppercase">Availability Record</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">99.99% Uptime</div>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">99.9% Uptime</div>
               <span className="font-body-small text-body-small text-primary flex items-center gap-1 mt-1">
-                <Shield className="w-3.5 h-3.5" /> Zero unplanned outages
+                <Shield className="w-3.5 h-3.5" /> Reliable cloud architectures
               </span>
             </div>
 
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <span className="font-label-code text-label-code text-outline uppercase">Active Endpoints</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">45,000+ Units</div>
+              <span className="font-label-code text-label-code text-outline uppercase">Code Standards</span>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Type-Safe</div>
               <span className="font-body-small text-body-small text-outline flex items-center gap-1 mt-1">
-                <Zap className="w-3.5 h-3.5" /> Real-time telematics mesh
+                <Zap className="w-3.5 h-3.5" /> Maintainable & scalable builds
               </span>
             </div>
           </div>
@@ -258,19 +258,19 @@ export default function Portfolio() {
                 <ul className="flex flex-col gap-3 font-body-default text-body-default text-on-surface-variant">
                   <li className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span>Real-time WebSocket streaming for 200,000+ active tickers and fund benchmarks</span>
+                    <span>Real-time WebSocket streaming for active live market tickers and fund benchmarks</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span>Zero-trust biometric authenticated portal with cryptographic audit logging</span>
+                    <span>Zero-trust authenticated portal with cryptographic audit logging</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span>Multi-region AWS CloudFront edge routing with 100% Core Web Vitals score</span>
+                    <span>Multi-region CloudFront edge routing with 100% Core Web Vitals score</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span>Self-service investor onboarding pipeline compliant with FINRA & SEC regulations</span>
+                    <span>Self-service investor onboarding pipeline with secure verification and role-based permissions</span>
                   </li>
                 </ul>
               </div>
@@ -286,7 +286,7 @@ export default function Portfolio() {
                 />
                 <div className="p-4 sm:p-6 bg-surface-container-lowest flex items-center justify-between border-t border-[#E5EAF0]">
                   <span className="font-label-code text-label-code text-outline">TELEMETRY BENCHMARK</span>
-                  <span className="font-label-code text-label-code text-primary font-bold">1.4B Annual Vol</span>
+                  <span className="font-label-code text-label-code text-primary font-bold">Sub-100ms Ingestion</span>
                 </div>
               </div>
 

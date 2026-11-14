@@ -455,7 +455,7 @@ export default function CustomSoftware() {
                   NovaLogix Fleet Ops: Cloud Dispatch & Real-Time Telemetry Engine
                 </h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  High-scale workflow orchestration and fleet telematics platform managing over 45,000 active freight units across North America.
+                  Workflow orchestration and fleet management system providing real-time telemetry streaming, route coordination, and dispatch analytics.
                 </p>
                 <div className="pt-2">
                   <Link
@@ -483,7 +483,7 @@ export default function CustomSoftware() {
                   Omnia Core ERP: Multi-Entity Inventory & Financial Reconciliation
                 </h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  End-to-end investment banking ERP handling cross-border allocations, capital calls, and automated compliance auditing for 14 institutional funds.
+                  Comprehensive financial operations ERP handling portfolio allocations, workflow management, and automated regulatory reporting.
                 </p>
                 <div className="pt-2">
                   <Link

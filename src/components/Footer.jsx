@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Instagram } from 'lucide-react';
 import { footerLinks } from '../data/navigation';
 import stuzenIcon from '../assets/logo/stuzen-icon.png';
 
@@ -82,13 +82,20 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <a href="tel:+18004127889" className="hover:text-primary transition-colors">
+                <a href="tel:+917418672022" className="hover:text-primary transition-colors">
                   {footerLinks.contact.phone}
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <span>{footerLinks.contact.address}</span>
+                <a
+                  href={footerLinks.contact.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  {footerLinks.contact.address}
+                </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="w-4 h-4 text-primary shrink-0 mt-0.5" />
@@ -100,8 +107,18 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-small text-body-small text-outline">
-          <p>© 2025 STUZEN TECHNOLOGIES INC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} STUZEN TECHNOLOGIES. All rights reserved.</p>
           <div className="flex items-center gap-6">
+            <a
+              href={footerLinks.contact.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-primary transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+              <span>Instagram</span>
+            </a>
+            <span className="text-outline-variant">|</span>
             <Link to="/contact" className="hover:text-on-surface transition-colors">
               Privacy Policy
             </Link>

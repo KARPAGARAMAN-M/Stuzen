@@ -102,8 +102,8 @@ export const servicesData = [
         description: 'Deep-learning parsing systems extracting structured data from PDF contracts, invoices, and medical records with 99%+ validated accuracy.',
       },
       {
-        title: 'Autonomous Multi-Agent Networks',
-        description: 'Collaborative AI agent swarms executing multi-step business logic, customer triage, and scheduling workflows with verifiable audit trails.',
+        title: 'Autonomous Multi-Agent Workflows',
+        description: 'Collaborative AI agent pipelines executing multi-step business logic, customer triage, and scheduling workflows with verifiable audit trails.',
       },
     ],
   },

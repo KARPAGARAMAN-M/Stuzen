@@ -381,7 +381,7 @@ export default function WebsiteDevelopment() {
                 <span className="font-label-code text-label-code text-outline uppercase">FINTECH & CAPITAL</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Apex Financial Corporate Platform</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Enterprise wealth platform handling $1.4B in annual transactions with sub-second page delivery and 100% Lighthouse audit benchmarks.
+                  Enterprise wealth platform handling high-throughput transactional workflows with sub-second page delivery and 100% Lighthouse audit benchmarks.
                 </p>
                 <div className="pt-2">
                   <Link

@@ -31,9 +31,12 @@ export const footerLinks = {
   ],
   contact: {
     email: 'hello@stuzen.com',
-    phone: '+1 (800) 412-STUZEN',
-    address: 'HQ Technology Campus, Silicon Valley',
-    hours: 'Mon–Fri, 9:00 AM – 6:00 PM EST',
+    phone: '+91 74186 72022',
+    address: 'View on Google Maps',
+    mapsUrl: 'https://maps.app.goo.gl/eGEjixKQtGE34ogt8',
+    instagramUrl: 'https://www.instagram.com/stuzen_tech?obrf=MXI0NDM5bGltMDR2cA==',
+    whatsappUrl: 'https://chat.whatsapp.com/Jm8jhEKqcZm5gebTtBRdzs?s=cl&p=a&iam=2',
+    hours: 'Mon–Sat, 9:00 AM – 7:00 PM IST',
   },
   legal: [
     { name: 'Privacy Policy', path: '#' },

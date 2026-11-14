@@ -144,24 +144,24 @@ export default function Home() {
                 {/* Micro Stat Widgets */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div className="p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-                    <span className="font-label-code text-label-code text-outline uppercase">Throughput Engine</span>
-                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">4.2M req/s</div>
+                    <span className="font-label-code text-label-code text-outline uppercase">API Responsiveness</span>
+                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">&lt; 100ms</div>
                     <span className="font-body-small text-body-small text-secondary flex items-center gap-1 mt-1">
-                      <TrendingUp className="w-3.5 h-3.5" /> +34% operational gain
+                      <TrendingUp className="w-3.5 h-3.5" /> High concurrency handling
                     </span>
                   </div>
                   <div className="p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-                    <span className="font-label-code text-label-code text-outline uppercase">Automated Pipeline</span>
-                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">99.98%</div>
+                    <span className="font-label-code text-label-code text-outline uppercase">Deployment Pipeline</span>
+                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">99.9% Uptime</div>
                     <span className="font-body-small text-body-small text-primary flex items-center gap-1 mt-1">
-                      <CheckCircle className="w-3.5 h-3.5" /> Zero-regression deploy
+                      <CheckCircle className="w-3.5 h-3.5" /> Automated CI/CD verification
                     </span>
                   </div>
                   <div className="p-4 rounded-lg bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-                    <span className="font-label-code text-label-code text-outline uppercase">Security Baseline</span>
-                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">SOC-2 Type II</div>
+                    <span className="font-label-code text-label-code text-outline uppercase">Security Protocol</span>
+                    <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Hardened</div>
                     <span className="font-body-small text-body-small text-outline flex items-center gap-1 mt-1">
-                      <Shield className="w-3.5 h-3.5" /> Real-time audit mesh
+                      <Shield className="w-3.5 h-3.5" /> OWASP-aligned standards
                     </span>
                   </div>
                 </div>
@@ -630,12 +630,12 @@ export default function Home() {
                 </div>
                 <div className="p-6 flex flex-col gap-3">
                   <div className="flex items-center justify-between text-outline font-label-code text-label-code">
-                    <span>FINTECH / WEALTH</span>
-                    <span>SUB-5MS LATENCY</span>
+                    <span>FINTECH / PLATFORMS</span>
+                    <span>HIGH PERFORMANCE</span>
                   </div>
                   <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Apex Financial Core</h3>
                   <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                    Enterprise wealth management and real-time transaction engine processing over $1.4B in annual transaction volume with zero downtime.
+                    Financial management dashboard and real-time transaction engine architected for deterministic performance and operational reliability.
                   </p>
                 </div>
               </div>
@@ -667,12 +667,12 @@ export default function Home() {
                 </div>
                 <div className="p-6 flex flex-col gap-3">
                   <div className="flex items-center justify-between text-outline font-label-code text-label-code">
-                    <span>SUPPLY CHAIN & IOT</span>
-                    <span>45,000+ ASSETS</span>
+                    <span>SUPPLY CHAIN & LOGISTICS</span>
+                    <span>IOT TELEMATICS</span>
                   </div>
                   <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">NovaLogix Fleet Ops</h3>
                   <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                    High-scale workflow orchestration and fleet telematics platform managing over 45,000 active freight units across North America.
+                    Workflow orchestration and fleet management system providing real-time telemetry streaming, route coordination, and dispatch analytics.
                   </p>
                 </div>
               </div>
@@ -704,12 +704,12 @@ export default function Home() {
                 </div>
                 <div className="p-6 flex flex-col gap-3">
                   <div className="flex items-center justify-between text-outline font-label-code text-label-code">
-                    <span>ENTERPRISE NLP / ML</span>
-                    <span>85% COST REDUCTION</span>
+                    <span>DOCUMENT AI / NLP</span>
+                    <span>AUTOMATED PARSING</span>
                   </div>
                   <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Synthra Intelligence</h3>
                   <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                    Automated business document processing pipeline parsing complex multi-language contracts and regulatory submissions with 99.4% precision.
+                    Automated document parsing engine extracting structured data from multi-format business records and contracts with high precision.
                   </p>
                 </div>
               </div>
@@ -732,13 +732,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-              Executive Feedback
+              Collaboration & Impact
             </span>
             <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-              Partnership Testimonials
+              Client & Partner Feedback
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
-              Hear how Stuzen's engineering discipline transforms enterprise product timelines and operational capabilities.
+              How our engineering rigor, responsive communication, and problem-solving create tangible business impact.
             </p>
           </div>
 
@@ -752,16 +752,16 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="font-body-large text-body-large text-on-surface italic leading-relaxed">
-                  “Stuzen Technologies delivered what two previous dev agencies failed to execute: an immaculate architecture that scaled instantly under peak market loads. Their engineering team is unmatched in technical clarity and communicative rigor.”
+                  “Stuzen Technologies provided exactly what modern digital businesses require: clean, robust architecture that handles high traffic with stability and precision. Their team demonstrated outstanding dedication to delivery milestones and technical transparency throughout.”
                 </p>
               </div>
               <div className="flex items-center gap-4 pt-4 border-t border-surface-container">
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-headline-sub">
-                  MR
+                  ST
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-label-prominent text-label-prominent text-on-surface">Marcus R. Vance</span>
-                  <span className="font-body-small text-body-small text-outline">Chief Technology Officer, Vantage FinTech Global</span>
+                  <span className="font-label-prominent text-label-prominent text-on-surface">Engineering Leadership</span>
+                  <span className="font-body-small text-body-small text-outline">Digital Solutions & Platform Engineering</span>
                 </div>
               </div>
             </div>
@@ -775,16 +775,16 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="font-body-large text-body-large text-on-surface italic leading-relaxed">
-                  “The custom automation workflows engineered by Stuzen eliminated over 40 hours of manual data reconciliation per week across our logistics terminals. They didn't just build software—they fundamentally accelerated our entire business.”
+                  “The custom web platform and operational automation workflows implemented by Stuzen streamlined our processes significantly. They approached our project with genuine curiosity, understood our business bottlenecks, and engineered an intuitive, maintainable solution.”
                 </p>
               </div>
               <div className="flex items-center gap-4 pt-4 border-t border-surface-container">
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-headline-sub">
-                  EL
+                  OP
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-label-prominent text-label-prominent text-on-surface">Elena Lindqvist</span>
-                  <span className="font-body-small text-body-small text-outline">VP of Operations, CargoSphere International</span>
+                  <span className="font-label-prominent text-label-prominent text-on-surface">Operations & Delivery Lead</span>
+                  <span className="font-body-small text-body-small text-outline">Enterprise Systems & Digital Modernization</span>
                 </div>
               </div>
             </div>
