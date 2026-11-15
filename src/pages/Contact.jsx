@@ -112,11 +112,11 @@ export default function Contact() {
             </div>
 
             <h1 className="font-hero-display text-[clamp(1.85rem,6vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
-              Let's Talk About Your Next Project.
+              Let's Talk About Your Project.
             </h1>
 
             <p className="font-body-large text-body-large text-on-surface-variant max-w-2xl leading-relaxed">
-              Whether you are planning a mission-critical web platform, replacing restrictive legacy software, or automating enterprise operations, our senior architects are ready to collaborate.
+              Have a question or need a digital solution for your business? Send us your requirements and our team will get back to you.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ export default function Contact() {
                   Direct Channels & Coordinates
                 </h2>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Connect directly with our solutions engineering team. We prioritize technical transparency, strict confidentiality, and production velocity.
+                  Have a question or need a digital solution for your business? Send us your requirements and our team will get back to you.
                 </p>
               </div>
 

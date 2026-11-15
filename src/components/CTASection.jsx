@@ -4,9 +4,9 @@ import { ArrowRight } from 'lucide-react';
 
 export default function CTASection({
   tag = 'Start Your Project',
-  title = "Let's Build Something Great Together.",
-  description = 'Ready to elevate your technology stack or build your next mission-critical platform? Schedule an initial technical consultation with our engineering team.',
-  buttonText = 'Contact Us Today',
+  title = 'Have a Project in Mind?',
+  description = 'Tell us what you want to build. Let’s discuss a digital solution that fits your business.',
+  buttonText = 'Get in Touch',
   buttonLink = '/contact',
 }) {
   return (

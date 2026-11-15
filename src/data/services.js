@@ -4,8 +4,8 @@ export const servicesData = [
     slug: 'website-development',
     title: 'Website Development',
     badge: 'High-Performance Web Architecture',
-    subtitle: 'High-performance corporate portals, responsive bespoke web applications, and headless architectures with sub-second page delivery.',
-    heroDescription: 'From high-converting corporate portals to complex multi-tenant SaaS interfaces, we build sub-second, accessible, and conversion-engineered web experiences with modern architecture.',
+    subtitle: 'Modern, responsive and user-friendly websites designed to present your business professionally and work smoothly across mobile, tablet and desktop.',
+    heroDescription: 'Modern, responsive and user-friendly websites designed to present your business professionally and work smoothly across mobile, tablet and desktop.',
     icon: 'web',
     path: '/services/website-development',
     features: [
@@ -40,8 +40,8 @@ export const servicesData = [
     slug: 'custom-software',
     title: 'Custom Software Development',
     badge: 'Deterministic Cloud Architecture',
-    subtitle: 'Tailored enterprise platforms, bespoke operational engines, and mission-critical cloud backends designed to replace restrictive legacy tech.',
-    heroDescription: 'When off-the-shelf software limits your operational agility or forces costly compromises, Stuzen architects purpose-built cloud engines, microservices, and databases that give you permanent competitive advantages.',
+    subtitle: 'Business-focused software built around your workflow, helping simplify operations, organize information and improve productivity.',
+    heroDescription: 'Business-focused software built around your workflow, helping simplify operations, organize information and improve productivity.',
     icon: 'terminal',
     path: '/services/custom-software',
     features: [
@@ -74,10 +74,10 @@ export const servicesData = [
   {
     id: 'ai-automation',
     slug: 'ai-automation',
-    title: 'AI & Automation',
+    title: 'AI Automation',
     badge: 'Intelligent Enterprise Systems',
-    subtitle: 'Autonomous workflow engines, custom generative agent pipelines, and intelligent predictive algorithms that multiply team output.',
-    heroDescription: 'We build pragmatic AI solutions and cognitive robotic workflows that eliminate manual friction, accelerate operational triage, and convert complex unstructured enterprise data into immediate action.',
+    subtitle: 'Practical AI-powered workflows that reduce repetitive tasks, support faster responses and help teams work more efficiently.',
+    heroDescription: 'Practical AI-powered workflows that reduce repetitive tasks, support faster responses and help teams work more efficiently.',
     icon: 'psychology',
     path: '/services/ai-automation',
     features: [

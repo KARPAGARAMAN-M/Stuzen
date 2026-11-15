@@ -14,6 +14,7 @@ import {
   Globe,
   Terminal,
   BrainCircuit,
+  MessageSquare,
 } from 'lucide-react';
 import CTASection from '../components/CTASection';
 
@@ -42,12 +43,12 @@ export default function Home() {
 
             {/* Headline */}
             <h1 className="font-hero-display text-[clamp(2rem,7vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
-              Turning Ideas Into <span className="text-primary-container">Digital Solutions.</span>
+              Smart Digital Solutions for a <span className="text-primary-container">Growing Business.</span>
             </h1>
 
             {/* Subhead */}
             <p className="font-body-large text-body-large text-on-surface-variant max-w-3xl leading-relaxed">
-              Stuzen Technologies partners with ambitious enterprises and forward-thinking businesses to design, architect, and deploy world-class digital platforms, enterprise software, and intelligent automation systems.
+              Stuzen Technologies helps businesses build a stronger digital presence through modern websites, custom software, AI-powered automation and connected business solutions. We focus on clear design, reliable development and practical technology that supports your goals.
             </p>
 
             {/* CTA Action Cluster */}
@@ -63,7 +64,7 @@ export default function Home() {
                 to="/contact"
                 className="inline-flex items-center justify-center h-12 px-7 rounded-lg bg-surface-container-lowest text-on-surface font-label-prominent text-label-prominent shadow-sm hover:bg-surface-container transition-all duration-200"
               >
-                Contact Us
+                Discuss Your Project
               </Link>
             </div>
           </div>
@@ -102,14 +103,14 @@ export default function Home() {
                     Website Development
                   </h3>
                   <p className="font-body-small text-body-small text-on-surface-variant mt-2 leading-relaxed">
-                    High-performance corporate portals, responsive bespoke web applications, and headless architectures engineered for speed, search visibility, and intuitive user experiences.
+                    Modern, responsive and user-friendly websites designed to present your business professionally and work smoothly across mobile, tablet and desktop.
                   </p>
                 </div>
                 <div className="pt-4 mt-5 border-t border-[#E5EAF0]/70">
                   <div className="flex flex-wrap gap-1.5 mb-4">
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">React & Next.js</span>
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Headless CMS</span>
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Responsive UI</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Responsive Web</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Corporate Portals</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Clean UI/UX</span>
                   </div>
                   <Link
                     to="/services/website-development"
@@ -131,14 +132,14 @@ export default function Home() {
                     Custom Software Development
                   </h3>
                   <p className="font-body-small text-body-small text-on-surface-variant mt-2 leading-relaxed">
-                    Tailored enterprise platforms, bespoke operational software, and scalable cloud backends built to eliminate operational bottlenecks and replace rigid off-the-shelf software.
+                    Business-focused software built around your workflow, helping simplify operations, organize information and improve productivity.
                   </p>
                 </div>
                 <div className="pt-4 mt-5 border-t border-[#E5EAF0]/70">
                   <div className="flex flex-wrap gap-1.5 mb-4">
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Cloud Backends</span>
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">REST & GraphQL</span>
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Database Systems</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Business Logic</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Workflow Tools</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Secure Backend</span>
                   </div>
                   <Link
                     to="/services/custom-software"
@@ -150,30 +151,30 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Pillar 3: AI & Automation */}
+              {/* Pillar 3: AI Automation */}
               <div className="flex flex-col justify-between p-5 sm:p-6 rounded-xl bg-surface-container-low border border-[#E5EAF0]/80 hover:border-primary/40 transition-colors">
                 <div>
                   <div className="w-11 h-11 rounded-lg bg-surface-container-lowest border border-[#E5EAF0] flex items-center justify-center text-primary mb-4 shadow-sm">
                     <BrainCircuit className="w-5 h-5" />
                   </div>
                   <h3 className="font-headline-sub text-[17px] sm:text-[18px] font-bold text-on-surface">
-                    AI & Intelligent Automation
+                    AI Automation
                   </h3>
                   <p className="font-body-small text-body-small text-on-surface-variant mt-2 leading-relaxed">
-                    Pragmatic AI integrations, smart workflow automation, and intelligent document processing that eliminate repetitive manual tasks and accelerate team productivity.
+                    Practical AI-powered workflows that reduce repetitive tasks, support faster responses and help teams work more efficiently.
                   </p>
                 </div>
                 <div className="pt-4 mt-5 border-t border-[#E5EAF0]/70">
                   <div className="flex flex-wrap gap-1.5 mb-4">
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Workflow Engines</span>
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Data Extraction</span>
-                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">System Integration</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Smart Workflows</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Task Automation</span>
+                    <span className="px-2.5 py-1 rounded-md text-[11.5px] font-medium bg-surface-container-lowest text-on-surface-variant border border-[#E5EAF0]">Fast Response</span>
                   </div>
                   <Link
                     to="/services/ai-automation"
                     className="inline-flex items-center gap-1.5 text-primary font-label-prominent text-label-prominent hover:text-primary-container transition-colors group"
                   >
-                    <span>Explore AI & Automation</span>
+                    <span>Explore AI Automation</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
@@ -276,7 +277,7 @@ export default function Home() {
               <div className="inline-flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-primary" />
                 <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-                  The Stuzen Philosophy
+                  ABOUT US
                 </span>
               </div>
               <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
@@ -284,13 +285,10 @@ export default function Home() {
               </h2>
               <div className="flex flex-col gap-4 font-body-large text-body-large text-on-surface-variant leading-relaxed">
                 <p>
-                  At Stuzen Technologies, we reject ephemeral tech fads in favor of rigorous, durable architectural engineering. Our methodology is anchored on three simple principles:{' '}
-                  <strong className="text-on-surface font-semibold">Learn</strong>,{' '}
-                  <strong className="text-on-surface font-semibold">Build</strong>, and{' '}
-                  <strong className="text-on-surface font-semibold">Innovate</strong>.
+                  Stuzen Technologies is an IT solutions company delivering website development, custom software, AI automation and digital services for businesses. We bring thoughtful design and dependable technology together to create solutions that are easy to use, efficient to manage and ready to grow with your business.
                 </p>
                 <p>
-                  We dive deep into operational domain realities before writing a single line of production code. We then craft bespoke systems with meticulous precision—ensuring that every digital touchpoint, database interaction, and automation pipeline scales effortlessly without technical debt.
+                  We begin by understanding your requirements, then plan, design, develop and refine the solution around your business needs. Our focus is on useful features, clean user experiences, structured development and ongoing support where required.
                 </p>
               </div>
               <div className="pt-4">
@@ -298,7 +296,7 @@ export default function Home() {
                   to="/about"
                   className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors group"
                 >
-                  <span>Read Our Full Story & Leadership Model</span>
+                  <span>Learn More About Us</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -348,92 +346,64 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-                Engineered Core Capabilities
+                OUR SERVICES
               </span>
               <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-                Bespoke Services for the Modern Enterprise
+                Practical Technology That Supports Your Goals
               </h2>
               <p className="font-body-default text-body-default text-on-surface-variant">
-                Full-lifecycle technical delivery spanning fast high-converting platforms, specialized software engines, and next-generation cognitive automation.
+                We deliver modern website development, custom software, AI automation and connected business solutions built around your workflow.
               </p>
             </div>
             <Link
               to="/services"
               className="inline-flex items-center gap-1.5 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors shrink-0"
             >
-              <span>View All Service Frameworks</span>
+              <span>Explore All Services</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          {/* Services Grid (3 Cards) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          {/* Services Grid (6 Cards from PDF) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Card 1: Website Development */}
-            <div className="group relative rounded-xl bg-surface-container-lowest p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
-              <div className="flex flex-col gap-6">
-                <div className="w-14 h-14 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                  <Globe className="w-7 h-7" />
+            <div className="group relative rounded-xl bg-surface-container-lowest p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
+              <div className="flex flex-col gap-4">
+                <div className="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                  <Globe className="w-6 h-6" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Website Development</h3>
+                  <h3 className="font-headline-sub text-[18px] sm:text-[20px] text-on-surface font-bold">Website Development</h3>
                   <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                    High-performance corporate portals, responsive bespoke web applications, and headless architectures with sub-second page delivery.
+                    Modern, responsive and user-friendly websites designed to present your business professionally and work smoothly across mobile, tablet and desktop.
                   </p>
                 </div>
-                <ul className="flex flex-col gap-2.5 pt-2">
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    Headless CMS & Jamstack Architecture
-                  </li>
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    100/100 Core Web Vitals Optimization
-                  </li>
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    Global CDN Edge Distribution
-                  </li>
-                </ul>
               </div>
-              <div className="pt-8">
+              <div className="pt-6 mt-4 border-t border-[#E5EAF0]/70">
                 <Link
                   to="/services/website-development"
                   className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
                 >
-                  <span>Explore Website Architecture</span>
+                  <span>Explore Website Development</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
 
             {/* Card 2: Custom Software Development */}
-            <div className="group relative rounded-xl bg-surface-container-lowest p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
-              <div className="flex flex-col gap-6">
-                <div className="w-14 h-14 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                  <Terminal className="w-7 h-7" />
+            <div className="group relative rounded-xl bg-surface-container-lowest p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
+              <div className="flex flex-col gap-4">
+                <div className="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                  <Terminal className="w-6 h-6" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Custom Software</h3>
+                  <h3 className="font-headline-sub text-[18px] sm:text-[20px] text-on-surface font-bold">Custom Software Development</h3>
                   <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                    Tailored enterprise platforms, bespoke operational engines, and mission-critical cloud backends designed to replace restrictive legacy tech.
+                    Business-focused software built around your workflow, helping simplify operations, organize information and improve productivity.
                   </p>
                 </div>
-                <ul className="flex flex-col gap-2.5 pt-2">
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    Scalable Microservices & Event-Driven Core
-                  </li>
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    Enterprise API Integration & Middleware
-                  </li>
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    Zero-Downtime High-Concurrency Logic
-                  </li>
-                </ul>
               </div>
-              <div className="pt-8">
+              <div className="pt-6 mt-4 border-t border-[#E5EAF0]/70">
                 <Link
                   to="/services/custom-software"
                   className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
@@ -444,39 +414,99 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 3: AI & Automation */}
-            <div className="group relative rounded-xl bg-surface-container-lowest p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
-              <div className="flex flex-col gap-6">
-                <div className="w-14 h-14 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                  <BrainCircuit className="w-7 h-7" />
+            {/* Card 3: AI Automation */}
+            <div className="group relative rounded-xl bg-surface-container-lowest p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
+              <div className="flex flex-col gap-4">
+                <div className="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                  <BrainCircuit className="w-6 h-6" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">AI & Automation</h3>
+                  <h3 className="font-headline-sub text-[18px] sm:text-[20px] text-on-surface font-bold">AI Automation</h3>
                   <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                    Autonomous workflow engines, custom generative agent pipelines, and intelligent predictive algorithms that multiply team output.
+                    Practical AI-powered workflows that reduce repetitive tasks, support faster responses and help teams work more efficiently.
                   </p>
                 </div>
-                <ul className="flex flex-col gap-2.5 pt-2">
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    Domain-Trained LLMs & RAG Pipelines
-                  </li>
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    Automated Document & Logic Processing
-                  </li>
-                  <li className="flex items-center gap-2 font-body-small text-body-small text-on-surface">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    Autonomous Agentic Decision Engines
-                  </li>
-                </ul>
               </div>
-              <div className="pt-8">
+              <div className="pt-6 mt-4 border-t border-[#E5EAF0]/70">
                 <Link
                   to="/services/ai-automation"
                   className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
                 >
-                  <span>Explore AI Systems</span>
+                  <span>Explore AI Automation</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 4: WhatsApp Automation */}
+            <div className="group relative rounded-xl bg-surface-container-lowest p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
+              <div className="flex flex-col gap-4">
+                <div className="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                  <MessageSquare className="w-6 h-6" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-headline-sub text-[18px] sm:text-[20px] text-on-surface font-bold">WhatsApp Automation</h3>
+                  <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
+                    Automated WhatsApp communication for customer enquiries, instant replies, lead follow-ups, notifications and business messaging workflows.
+                  </p>
+                </div>
+              </div>
+              <div className="pt-6 mt-4 border-t border-[#E5EAF0]/70">
+                <a
+                  href="https://wa.me/917418672022"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
+                >
+                  <span>Connect on WhatsApp</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+
+            {/* Card 5: Web Application Development */}
+            <div className="group relative rounded-xl bg-surface-container-lowest p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
+              <div className="flex flex-col gap-4">
+                <div className="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                  <Layers className="w-6 h-6" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-headline-sub text-[18px] sm:text-[20px] text-on-surface font-bold">Web Application Development</h3>
+                  <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
+                    Feature-rich web applications with intuitive frontends, structured backends and database integration to support your requirements.
+                  </p>
+                </div>
+              </div>
+              <div className="pt-6 mt-4 border-t border-[#E5EAF0]/70">
+                <Link
+                  to="/services/website-development"
+                  className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
+                >
+                  <span>Learn More</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 6: Business Digital Solutions */}
+            <div className="group relative rounded-xl bg-surface-container-lowest p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1 border border-[#E5EAF0]">
+              <div className="flex flex-col gap-4">
+                <div className="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                  <Code className="w-6 h-6" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-headline-sub text-[18px] sm:text-[20px] text-on-surface font-bold">Business Digital Solutions</h3>
+                  <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
+                    Connected digital tools and tailored technology solutions that help streamline day-to-day business activities.
+                  </p>
+                </div>
+              </div>
+              <div className="pt-6 mt-4 border-t border-[#E5EAF0]/70">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
+                >
+                  <span>Discuss Your Project</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -485,132 +515,203 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 4: WHY CHOOSE STUZEN */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
-          <div className="max-w-2xl flex flex-col gap-3">
-            <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-              Competitive Edge
-            </span>
+      {/* SECTION 4: WHATSAPP AUTOMATION */}
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low border-y border-[#E5EAF0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
+          <div className="max-w-3xl flex flex-col gap-3">
+            <div className="inline-flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-primary" />
+              <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
+                WHATSAPP AUTOMATION
+              </span>
+            </div>
             <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-              Why Demanding Teams Choose Stuzen
+              Make Every Customer Conversation More Efficient.
             </h2>
-            <p className="font-body-default text-body-default text-on-surface-variant">
-              We operate as an elite engineering force committed to technical transparency, rigorous architecture, and outcome accountability.
+            <p className="font-body-large text-body-large text-on-surface-variant leading-relaxed">
+              Connect with customers through structured WhatsApp workflows. From enquiry acknowledgement to follow-up messages and important notifications, WhatsApp automation can help your business respond consistently and manage conversations more efficiently.
             </p>
           </div>
 
-          {/* 4 Differentiators */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-4 border border-[#E5EAF0]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-3.5">
+              <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Automated welcome and enquiry replies</h4>
+              </div>
+            </div>
+
+            <div className="p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-3.5">
+              <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Customer follow-up message workflows</h4>
+              </div>
+            </div>
+
+            <div className="p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-3.5">
+              <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Appointment and order notifications</h4>
+              </div>
+            </div>
+
+            <div className="p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-3.5">
+              <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Lead capture and enquiry organization</h4>
+              </div>
+            </div>
+
+            <div className="p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-3.5">
+              <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Frequently asked question responses</h4>
+              </div>
+            </div>
+
+            <div className="p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex items-start gap-3.5">
+              <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Business updates and approved message campaigns</h4>
+              </div>
+            </div>
+          </div>
+
+          <p className="font-body-small text-[13px] text-outline italic">
+            Feature availability depends on the selected WhatsApp platform, provider and applicable messaging policies.
+          </p>
+        </div>
+      </section>
+
+      {/* SECTION 5: WHY CHOOSE STUZEN */}
+      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-14">
+          <div className="max-w-2xl flex flex-col gap-3">
+            <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
+              WHY CHOOSE STUZEN
+            </span>
+            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
+              Why Choose Stuzen
+            </h2>
+            <p className="font-body-default text-body-default text-on-surface-variant">
+              We bring thoughtful design and dependable technology together to create solutions that are easy to use, efficient to manage and ready to grow with your business.
+            </p>
+          </div>
+
+          {/* 5 Differentiators from PDF */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3 border border-[#E5EAF0]">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold font-headline-sub">
                 01
               </div>
-              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Architecture-First Approach</h4>
+              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Business-focused</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                We avoid quick, brittle fixes. Every system is drawn with long-range scalabilities in mind, keeping maintenance overhead near zero as user counts scale.
+                Solutions shaped around your actual requirements.
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-4 border border-[#E5EAF0]">
+            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3 border border-[#E5EAF0]">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold font-headline-sub">
                 02
               </div>
-              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Transparent Sprints</h4>
+              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Clean user experience</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                Direct access to source repos, daily telemetry syncs, and clear kanban views. No mysterious black boxes; you see exactly how every hour is invested.
+                Simple, clear and responsive interfaces.
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-4 border border-[#E5EAF0]">
+            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3 border border-[#E5EAF0]">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold font-headline-sub">
                 03
               </div>
-              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Senior Engineers Only</h4>
+              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Thoughtful development</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                Your project will never be delegated to junior trainees. You collaborate directly with proven technical architects with over a decade of production mastery.
+                Organized frontend, backend and database implementation.
               </p>
             </div>
 
-            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-4 border border-[#E5EAF0]">
+            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3 border border-[#E5EAF0]">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold font-headline-sub">
                 04
               </div>
-              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Uncompromising Security</h4>
+              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Practical automation</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                Automated SAST/DAST testing pipelines, WCAG accessibility benchmarks, and hardened cryptography protocols are baked into the core framework.
+                Technology that helps reduce repetitive work.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3 border border-[#E5EAF0] sm:col-span-2 lg:col-span-1">
+              <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-bold font-headline-sub">
+                05
+              </div>
+              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Scalable approach</h4>
+              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
+                Solutions planned to support future improvements.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 5: OUR WORKING PROCESS */}
-      <section className="w-full py-16 sm:py-24 lg:py-32 bg-surface">
+      {/* SECTION 6: OUR PROCESS */}
+      <section className="w-full py-16 sm:py-24 lg:py-32 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-              Standardized Execution Flow
+              OUR PROCESS
             </span>
             <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-              From Concept to Stable Production
+              Our Process
             </h2>
             <p className="font-body-default text-body-default text-on-surface-variant">
-              A systematic, four-milestone framework that eliminates risk, aligns technical vision, and ensures predictability.
+              A clear, structured development lifecycle to deliver dependable technology solutions.
             </p>
           </div>
 
-          {/* 4 Milestones */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <div className="flex flex-col gap-4 p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <div className="flex items-center justify-between">
-                <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded">
-                  MILESTONE 01
-                </span>
-                <Search className="w-5 h-5 text-outline" />
-              </div>
-              <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold mt-2">Understand</h3>
-              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                Comprehensive discovery sessions, technical dependency reviews, business goal synthesis, and technical feasibility audits.
+          {/* 5 Milestones from PDF */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            <div className="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
+              <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded w-fit">
+                01 — Discover
+              </span>
+              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed mt-1">
+                We understand your business, goals and project requirements.
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <div className="flex items-center justify-between">
-                <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded">
-                  MILESTONE 02
-                </span>
-                <Compass className="w-5 h-5 text-outline" />
-              </div>
-              <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold mt-2">Plan</h3>
-              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                System architectural schematics, database entity diagrams, responsive UX wireframes, and fixed-schedule sprint milestones.
+            <div className="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
+              <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded w-fit">
+                02 — Plan
+              </span>
+              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed mt-1">
+                We define the scope, key features, structure and development approach.
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <div className="flex items-center justify-between">
-                <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded">
-                  MILESTONE 03
-                </span>
-                <Code className="w-5 h-5 text-outline" />
-              </div>
-              <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold mt-2">Build</h3>
-              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                Clean modular code written with strict typing, paired unit tests, continuous integration runners, and staging deployments.
+            <div className="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
+              <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded w-fit">
+                03 — Design
+              </span>
+              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed mt-1">
+                We create a clear and user-friendly experience for your audience.
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 p-6 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <div className="flex items-center justify-between">
-                <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded">
-                  MILESTONE 04
-                </span>
-                <Rocket className="w-5 h-5 text-outline" />
-              </div>
-              <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold mt-2">Deliver</h3>
-              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                Zero-downtime production cutover, load testing at maximum capacity, operational handoff docs, and proactive telemetry monitoring.
+            <div className="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
+              <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded w-fit">
+                04 — Develop
+              </span>
+              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed mt-1">
+                We build and integrate the required frontend, backend and services.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] sm:col-span-2 lg:col-span-1">
+              <span className="font-label-code text-label-code text-primary font-bold px-2 py-1 bg-surface-container rounded w-fit">
+                05 — Test & Deliver
+              </span>
+              <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed mt-1">
+                We review functionality, resolve issues and prepare the solution for launch.
               </p>
             </div>
           </div>
@@ -824,9 +925,9 @@ export default function Home() {
       {/* SECTION 8: FINAL CONVERSION CTA */}
       <CTASection
         tag="Start Your Project"
-        title="Let's Build Something Great Together."
-        description="Ready to elevate your technology stack or build your next mission-critical platform? Schedule an initial technical consultation with our engineering team."
-        buttonText="Contact Us Today"
+        title="Have a Project in Mind?"
+        description="Tell us what you want to build. Let’s discuss a digital solution that fits your business."
+        buttonText="Get in Touch"
         buttonLink="/contact"
       />
     </div>

@@ -379,10 +379,10 @@ export default function Services() {
 
       {/* SECTION 5: FINAL CTA */}
       <CTASection
-        tag="CONSULTATIVE REVIEW"
-        title="Have a Specific Technology Challenge?"
-        description="Share your requirements with our lead technical architects and receive an honest feasibility analysis and timeline within 24 hours."
-        buttonText="Discuss Your Architecture"
+        tag="Call to Action"
+        title="Have a Project in Mind?"
+        description="Tell us what you want to build. Let’s discuss a digital solution that fits your business."
+        buttonText="Get in Touch"
         buttonLink="/contact"
       />
     </div>

@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="font-body-small text-body-small text-on-surface-variant max-w-sm leading-relaxed">
-              Premier technology engineering and digital solutions partner helping visionary businesses build, scale, and innovate with precision.
+              Smart digital solutions for modern businesses.
             </p>
             <div className="inline-flex items-center gap-2 pt-2">
               <span className="font-label-prominent text-label-prominent font-semibold text-primary">

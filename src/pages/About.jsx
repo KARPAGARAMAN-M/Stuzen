@@ -41,7 +41,7 @@ export default function About() {
             </h1>
 
             <p className="font-body-large text-body-large text-on-surface-variant max-w-3xl leading-relaxed">
-              We bridge executive ambition and deterministic digital engineering. Founded on foundational principles of craftsmanship, Stuzen exists to build software that stands up to enterprise scale and market scrutiny.
+              Stuzen Technologies is an IT solutions company delivering website development, custom software, AI automation and digital services for businesses. We bring thoughtful design and dependable technology together to create solutions that are easy to use, efficient to manage and ready to grow with your business.
             </p>
           </div>
 
@@ -108,18 +108,18 @@ export default function About() {
               <div className="inline-flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-primary" />
                 <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-                  FOUNDATIONAL MISSION
+                  OUR APPROACH
                 </span>
               </div>
               <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-                Rejecting Digital Vanity. Embracing Deterministic Engineering.
+                Thoughtful Design & Dependable Technology
               </h2>
               <div className="flex flex-col gap-4 font-body-large text-body-large text-on-surface-variant leading-relaxed">
                 <p>
-                  Stuzen Technologies was founded on a simple, counter-industry observation: modern digital agencies often prioritize surface-level aesthetics over long-term software durability, leaving clients with bloated frameworks, unscalable databases, and fragile technical debt.
+                  Stuzen Technologies is an IT solutions company delivering website development, custom software, AI automation and digital services for businesses. We bring thoughtful design and dependable technology together to create solutions that are easy to use, efficient to manage and ready to grow with your business.
                 </p>
                 <p>
-                  We built Stuzen as a corrective antidote. We operate as an elite engineering force of senior practitioners dedicated to technological discipline, architectural clarity, and verifiable business value. Every product we deploy is built to withstand peak traffic surges, regulatory scrutiny, and rapid operational scaling.
+                  We begin by understanding your requirements, then plan, design, develop and refine the solution around your business needs. Our focus is on useful features, clean user experiences, structured development and ongoing support where required.
                 </p>
               </div>
             </div>
@@ -483,10 +483,10 @@ export default function About() {
 
       {/* SECTION 8: CONTACT CTA */}
       <CTASection
-        tag="START A CONVERSATION"
-        title="Ready to collaborate with a dedicated technology team?"
-        description="Let's discuss how our senior engineers can solve your technical challenges and accelerate your roadmap."
-        buttonText="Schedule an Architectural Review"
+        tag="Call to Action"
+        title="Have a Project in Mind?"
+        description="Tell us what you want to build. Let’s discuss a digital solution that fits your business."
+        buttonText="Get in Touch"
         buttonLink="/contact"
       />
     </div>
