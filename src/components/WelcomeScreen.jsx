@@ -98,7 +98,11 @@ export default function WelcomeScreen({ onComplete }) {
 
           {/* Welcome Heading */}
           <h1 className="stuzen-heading">
-            Welcome to Stuzen Technologies
+            <span className="stuzen-heading-prefix">Welcome to </span>
+            <span className="stuzen-heading-name">
+              <span className="stuzen-heading-brand">Stuzen</span>{' '}
+              <span className="stuzen-heading-suffix">Technologies</span>
+            </span>
           </h1>
 
           {/* Supporting Narrative */}

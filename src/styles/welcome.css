@@ -214,16 +214,41 @@
 /* Main Heading: Welcome to Stuzen Technologies */
 .stuzen-heading {
   font-family: 'Manrope', 'Inter', sans-serif;
-  font-size: clamp(1.35rem, 3.2vw, 2.45rem);
+  font-size: clamp(1.4rem, 3.2vw, 2.45rem);
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.22;
   letter-spacing: -0.025em;
-  color: #101827;
   margin: 0;
   padding: 0;
   opacity: 0;
   transform: translateY(12px);
   animation: stuzenFadeUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.75s forwards;
+  text-wrap: balance;
+}
+
+.stuzen-heading-prefix {
+  font-weight: 400;
+  color: #384556;
+  letter-spacing: -0.015em;
+}
+
+.stuzen-heading-name {
+  display: inline-block;
+}
+
+.stuzen-heading-brand {
+  font-weight: 800;
+  background: linear-gradient(135deg, #0755C9 0%, #0073E0 45%, #00C6FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.025em;
+}
+
+.stuzen-heading-suffix {
+  font-weight: 800;
+  color: #0F1E36;
+  letter-spacing: -0.025em;
 }
 
 /* Supporting Narrative */
