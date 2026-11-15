@@ -213,11 +213,10 @@
 
 /* Main Heading: Welcome to Stuzen Technologies */
 .stuzen-heading {
-  font-family: 'Manrope', 'Inter', sans-serif;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: clamp(1.4rem, 3.2vw, 2.45rem);
-  font-weight: 800;
-  line-height: 1.22;
-  letter-spacing: -0.025em;
+  line-height: 1.24;
+  letter-spacing: -0.02em;
   margin: 0;
   padding: 0;
   opacity: 0;
@@ -227,28 +226,32 @@
 }
 
 .stuzen-heading-prefix {
-  font-weight: 400;
-  color: #384556;
-  letter-spacing: -0.015em;
+  font-family: inherit;
+  font-weight: 500;
+  color: #0F1E36;
+  letter-spacing: -0.02em;
 }
 
 .stuzen-heading-name {
   display: inline-block;
+  font-family: inherit;
 }
 
 .stuzen-heading-brand {
-  font-weight: 800;
+  font-family: inherit;
+  font-weight: 700;
   background: linear-gradient(135deg, #0755C9 0%, #0073E0 45%, #00C6FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 .stuzen-heading-suffix {
-  font-weight: 800;
+  font-family: inherit;
+  font-weight: 600;
   color: #0F1E36;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 /* Supporting Narrative */
