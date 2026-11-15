@@ -13,7 +13,7 @@ import {
   Terminal,
   BrainCircuit,
   Lock,
-  AlertTriangle,
+  Compass,
   Building2,
 } from 'lucide-react';
 import { projectsData } from '../data/projects';
@@ -39,42 +39,42 @@ export default function Portfolio() {
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary" />
               <span className="font-label-code text-label-code uppercase tracking-widest text-primary font-bold">
-                PORTFOLIO & CASE STUDIES
+                OUR CAPABILITIES & SOLUTIONS
               </span>
             </div>
 
             <h1 className="font-hero-display text-[clamp(2rem,7vw,3.75rem)] leading-[1.1] font-extrabold text-on-surface tracking-tight break-words">
-              Ideas Into Reality.
+              Ideas Engineered Into Reliable Software.
             </h1>
 
             <p className="font-body-large text-body-large text-on-surface-variant max-w-3xl leading-relaxed">
-              Explore how Stuzen Technologies architects resilient web flagships, deterministic custom enterprise systems, and autonomous cognitive pipelines that scale effortlessly under high enterprise demands.
+              Explore the types of modern web applications, custom business systems, and intelligent workflow automations Stuzen Technologies is equipped to build for growing companies.
             </p>
           </div>
 
           {/* Metric Callout Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-4 border-t border-[#E5EAF0]">
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <span className="font-label-code text-label-code text-outline uppercase">Architecture Speed</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">&lt; 100ms API</div>
+              <span className="font-label-code text-label-code text-outline uppercase">Frontend Engineering</span>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Modern UI & React</div>
               <span className="font-body-small text-body-small text-secondary flex items-center gap-1 mt-1">
-                <Activity className="w-3.5 h-3.5" /> High-concurrency performance
+                <Activity className="w-3.5 h-3.5" /> Clean, responsive user interfaces
               </span>
             </div>
 
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <span className="font-label-code text-label-code text-outline uppercase">Availability Record</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">99.9% Uptime</div>
+              <span className="font-label-code text-label-code text-outline uppercase">Backend & APIs</span>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Structured & Scalable</div>
               <span className="font-body-small text-body-small text-primary flex items-center gap-1 mt-1">
-                <Shield className="w-3.5 h-3.5" /> Reliable cloud architectures
+                <Shield className="w-3.5 h-3.5" /> Reliable API & database architecture
               </span>
             </div>
 
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <span className="font-label-code text-label-code text-outline uppercase">Code Standards</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Type-Safe</div>
+              <span className="font-label-code text-label-code text-outline uppercase">Development Standards</span>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Clean Code</div>
               <span className="font-body-small text-body-small text-outline flex items-center gap-1 mt-1">
-                <Zap className="w-3.5 h-3.5" /> Maintainable & scalable builds
+                <Zap className="w-3.5 h-3.5" /> Maintainable & extensible builds
               </span>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Portfolio() {
           <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-[#E5EAF0]">
             <div className="flex flex-wrap items-center gap-2">
               {[
-                { id: 'all', label: 'All Projects' },
+                { id: 'all', label: 'All Capabilities' },
                 { id: 'web', label: 'Web Platforms' },
                 { id: 'software', label: 'Custom Software' },
                 { id: 'ai', label: 'AI & Automation' },
@@ -109,7 +109,7 @@ export default function Portfolio() {
             </div>
 
             <span className="font-label-code text-label-code text-outline text-xs sm:text-label-code">
-              Showing {filteredProjects.length} Verified Case Studies
+              Showing {filteredProjects.length} Technical Capabilities
             </span>
           </div>
 
@@ -173,24 +173,24 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* SECTION 3: ARCHITECTURAL DEEP-DIVE (Featured Case Study) */}
+      {/* SECTION 3: ARCHITECTURAL BLUEPRINT */}
       <section id="deep-dive" className="w-full bg-surface py-14 sm:py-20 lg:py-28 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <span className="font-label-code text-label-code text-primary uppercase tracking-widest block mb-2 font-bold">
-                ARCHITECTURAL DEEP-DIVE
+                ENGINEERING ARCHITECTURE
               </span>
               <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface tracking-tight">
-                Case Study: Apex Financial Core
+                How We Engineer Modern Web & Software Platforms
               </h2>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <span className="px-3.5 py-1.5 rounded-full bg-surface-container font-label-code text-label-code text-on-surface-variant shadow-sm text-xs">
-                Flagship Migration
+                Clean Architecture
               </span>
               <span className="px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-label-code text-label-code shadow-sm text-xs">
-                Grade 100/100 CWV
+                Modern Tech Stack
               </span>
             </div>
           </div>
@@ -205,11 +205,11 @@ export default function Portfolio() {
                     <Building2 className="w-5 h-5" />
                   </div>
                   <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">
-                    Project Overview
+                    Our Development Approach
                   </h3>
                 </div>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Re-engineering a legacy institutional web presence into a responsive, highly-secure flagship. Apex Financial caters to private family offices, venture funds, and high-net-worth individuals requiring immediate real-time reporting alongside bank-grade data security guarantees.
+                  When developing digital solutions, Stuzen Technologies emphasizes modular frontend components, clean API separation, and well-structured database schemas. This approach ensures your software remains easy to update, performant across all devices, and ready to scale as your business expands.
                 </p>
               </div>
 
@@ -217,18 +217,18 @@ export default function Portfolio() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col justify-between">
                   <div>
-                    <div className="flex items-center gap-2 text-error mb-4">
-                      <AlertTriangle className="w-5 h-5 text-error" />
+                    <div className="flex items-center gap-2 text-primary mb-4">
+                      <Compass className="w-5 h-5 text-primary" />
                       <span className="font-label-prominent text-label-prominent font-bold uppercase tracking-wider">
-                        The Challenge
+                        Key Focus Areas
                       </span>
                     </div>
                     <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                      Legacy monolithic architecture caused 5.8-second load latencies, fragmented mobile layouts, and complex content update cycles that delayed market disclosure notices by up to 48 hours.
+                      Fluid responsive interfaces that adapt seamlessly to mobile, tablet, and desktop screens with intuitive navigation and accessible layout design.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-[#E5EAF0]/60 text-outline font-label-code text-label-code">
-                    <span>Core bottleneck: Monolith DB locks</span>
+                    <span>Focus: Clean UX & Speed</span>
                   </div>
                 </div>
 
@@ -237,15 +237,15 @@ export default function Portfolio() {
                     <div className="flex items-center gap-2 text-primary mb-4">
                       <CheckCircle className="w-5 h-5 text-primary" />
                       <span className="font-label-prominent text-label-prominent font-bold uppercase tracking-wider">
-                        The Solution
+                        Maintainable Code
                       </span>
                     </div>
                     <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                      Decoupled into an edge-cached Next.js frontend with GraphQL middleware and headless CMS integration, compressing load times to 0.4s and ensuring instant real-time portfolio refreshes.
+                      Structured folders, typed interfaces, and well-documented API connections that make future updates straightforward and minimize technical complexity.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-[#E5EAF0]/60 text-primary font-label-code text-label-code">
-                    <span>Result: Sub-500ms Edge Delivery</span>
+                    <span>Outcome: Extensible Codebase</span>
                   </div>
                 </div>
               </div>
@@ -253,24 +253,24 @@ export default function Portfolio() {
               {/* Key Features List */}
               <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
                 <h4 className="font-headline-sub text-body-large text-on-surface font-bold mb-4">
-                  Key Engineered Features
+                  Engineering Best Practices
                 </h4>
                 <ul className="flex flex-col gap-3 font-body-default text-body-default text-on-surface-variant">
                   <li className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span>Real-time WebSocket streaming for active live market tickers and fund benchmarks</span>
+                    <span>Component-driven architecture for clean code reusability and fast page rendering</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span>Zero-trust authenticated portal with cryptographic audit logging</span>
+                    <span>Secure RESTful APIs with sanitized input handling and structured request validation</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span>Multi-region CloudFront edge routing with 100% Core Web Vitals score</span>
+                    <span>Cross-device optimization ensuring quick interaction times on mobile and desktop</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span>Self-service investor onboarding pipeline with secure verification and role-based permissions</span>
+                    <span>Organized database modeling to support accurate business reporting and data growth</span>
                   </li>
                 </ul>
               </div>
@@ -281,21 +281,21 @@ export default function Portfolio() {
               <div className="rounded-2xl overflow-hidden shadow-xl border border-[#E5EAF0] bg-surface-container-lowest">
                 <img
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCywmIIbKpUKOIUzCEKECh3nDOY6c"
-                  alt="Apex Financial Core screen telemetry"
+                  alt="Modern web platform interface and code structure"
                   className="w-full h-56 sm:h-72 object-cover"
                 />
                 <div className="p-4 sm:p-6 bg-surface-container-lowest flex items-center justify-between border-t border-[#E5EAF0]">
-                  <span className="font-label-code text-label-code text-outline">TELEMETRY BENCHMARK</span>
-                  <span className="font-label-code text-label-code text-primary font-bold">Sub-100ms Ingestion</span>
+                  <span className="font-label-code text-label-code text-outline">ENGINEERING DISCIPLINE</span>
+                  <span className="font-label-code text-label-code text-primary font-bold">Clean Code Standards</span>
                 </div>
               </div>
 
               <div className="p-6 rounded-2xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0] flex flex-col gap-4">
                 <h4 className="font-label-prominent text-label-prominent text-on-surface uppercase tracking-wider font-bold">
-                  Technologies Used
+                  Technologies We Work With
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  {['React', 'Next.js', 'TypeScript', 'Rust Engine', 'GraphQL', 'PostgreSQL', 'Redis', 'AWS Edge'].map((tech) => (
+                  {['React', 'Next.js', 'JavaScript', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL', 'Tailwind CSS', 'REST APIs', 'Docker'].map((tech) => (
                     <span
                       key={tech}
                       className="px-3 py-1.5 rounded-lg bg-surface-container font-label-code text-xs sm:text-label-code text-on-surface"
@@ -310,21 +310,21 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* SECTION 4: CONFIDENTIALITY CALLOUT */}
+      {/* SECTION 4: CONFIDENTIALITY & INTEGRITY */}
       <section className="w-full py-10 sm:py-12 bg-surface-container-low border-y border-[#E5EAF0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="max-w-3xl">
             <h3 className="font-headline-sub text-headline-sub text-on-surface font-semibold">
-              Strict Enterprise Confidentiality
+              Client Confidentiality & Code Ownership
             </h3>
             <p className="font-body-small text-body-small text-on-surface-variant mt-1.5 leading-relaxed">
-              Stuzen Technologies operates under rigid Non-Disclosure Agreements (NDAs) with Fortune 500 partners, defense sub-contractors, and proprietary fintech funds. The works exhibited above showcase sanitized architectures and non-classified implementations.
+              Stuzen Technologies values client confidentiality and data security. All custom software, application logic, and repository commits engineered for your business belong 100% to you. We respect Non-Disclosure Agreements (NDAs) and uphold transparent development practices.
             </p>
           </div>
           <div className="shrink-0">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-code text-label-code shadow-sm border border-[#E5EAF0]">
               <span className="w-2 h-2 rounded-full bg-secondary" />
-              <span>NDA Certified Engineering</span>
+              <span>Full Code Ownership & Privacy</span>
             </span>
           </div>
         </div>
@@ -332,13 +332,12 @@ export default function Portfolio() {
 
       {/* SECTION 5: FINAL CTA */}
       <CTASection
-        tag="START YOUR ENTERPRISE BUILD"
+        tag="START YOUR PROJECT"
         title="Have a Project You Would Like to Bring to Life?"
-        description="Schedule an architectural discovery session. We will evaluate technical feasibility, provide preliminary scope models, and discuss delivery timelines."
-        buttonText="Schedule Discovery Session"
+        description="Tell us about what you want to build. We will evaluate technical requirements, discuss practical approaches, and provide clear timeline estimates."
+        buttonText="Discuss Your Project"
         buttonLink="/contact"
       />
     </div>
   );
 }
-

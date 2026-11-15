@@ -23,9 +23,9 @@ import CTASection from '../components/CTASection';
 export default function AIAutomation() {
   const faqs = [
     {
-      question: 'How do you guarantee the security and privacy of our proprietary business data?',
+      question: 'How do you handle the security and privacy of business data?',
       answer:
-        'All AI and workflow pipelines engineered by STUZEN operate under strict zero-retention enterprise agreements or within dedicated private Virtual Private Clouds (VPCs). Your proprietary data is never logged, persisted outside encrypted buffers, or utilized to fine-tune external multi-tenant foundation models. Systems strictly adhere to SOC2 Type II, HIPAA, and GDPR standards with immutable transaction audit trails.',
+        'All AI and automation workflows engineered by Stuzen are built with strict data isolation and privacy in mind. Your business information is processed securely through dedicated API endpoints and is never utilized to fine-tune external public models. We enforce encrypted communication channels and secure access credentials.',
     },
     {
       question: 'What is the typical timeline for deploying an enterprise automation pipeline?',
@@ -82,16 +82,16 @@ export default function AIAutomation() {
               {/* Confidence Metrics */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
-                  <div className="font-headline-sub text-headline-sub text-primary font-bold">99.4%</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">Extraction Precision</span>
+                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Precise</div>
+                  <span className="font-label-code text-label-code text-outline uppercase">Rule-Validated Extraction</span>
                 </div>
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
-                  <div className="font-headline-sub text-headline-sub text-primary font-bold">85%</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">Cycle Time Reduction</span>
+                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Practical</div>
+                  <span className="font-label-code text-label-code text-outline uppercase">Time-Saving Automations</span>
                 </div>
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
-                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Zero</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">Model Data Retention</span>
+                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Private</div>
+                  <span className="font-label-code text-label-code text-outline uppercase">Isolated Data Processing</span>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ export default function AIAutomation() {
                   to="/portfolio"
                   className="inline-flex items-center justify-center h-12 px-7 rounded-lg bg-surface-container-lowest text-on-surface font-label-prominent text-label-prominent shadow-sm border border-[#E5EAF0] hover:bg-surface-container transition-all duration-200"
                 >
-                  Explore AI Portfolio
+                  Explore Capabilities
                 </Link>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function AIAutomation() {
                     <span className="flex items-center gap-2">
                       <Cpu className="w-4 h-4 text-primary" /> 02 // Neural Entity Extraction (LLM)
                     </span>
-                    <span className="font-label-code text-label-code text-secondary">99.4% Conf</span>
+                    <span className="font-label-code text-label-code text-secondary">Verified</span>
                   </div>
                   <div className="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
                     <span className="flex items-center gap-2">
@@ -265,9 +265,9 @@ export default function AIAutomation() {
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <CheckCircle className="w-5 h-5" />
               </div>
-              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Drastic Error Reduction</h4>
+              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Practical Error Reduction</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                Eliminate human fatigue in data transcription with automated double-entry verification loops that hit 99.4% validated accuracy.
+                Eliminate human fatigue in data transcription with automated verification loops and rule-based validation checks.
               </p>
             </div>
 
@@ -352,23 +352,23 @@ export default function AIAutomation() {
         </div>
       </section>
 
-      {/* SECTION 6: PROVEN DEPLOYMENTS */}
+      {/* SECTION 6: AUTOMATION CAPABILITIES */}
       <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-                PROVEN RESULTS
+                OUR AUTOMATION CAPABILITIES
               </span>
               <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-                Proven Industrial Deployments.
+                Automation Solutions We Engineer
               </h2>
             </div>
             <Link
               to="/portfolio"
               className="inline-flex items-center gap-1.5 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors shrink-0"
             >
-              <span>View All Projects</span>
+              <span>Explore All Capabilities</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -378,22 +378,22 @@ export default function AIAutomation() {
               <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
-                  alt="Synthra Intelligence"
+                  alt="Intelligent Document Processing"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoPDeM-W5c39PHYAQ0v0B5UJkagR_q60f1y23"
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
-                <span className="font-label-code text-label-code text-outline uppercase">ENTERPRISE NLP / ML</span>
-                <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Synthra Intelligence</h3>
+                <span className="font-label-code text-label-code text-outline uppercase">DOCUMENT AUTOMATION</span>
+                <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Intelligent Document & Data Extraction</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Automated business document processing pipeline parsing complex multi-language contracts and regulatory submissions with 99.4% precision.
+                  Automated business document processing workflows extracting structured data from records, forms, and invoices with rule-assisted validation.
                 </p>
                 <div className="pt-2">
                   <Link
                     to="/portfolio"
                     className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors"
                   >
-                    <span>Read Implementation</span>
+                    <span>Explore Capabilities</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -404,22 +404,22 @@ export default function AIAutomation() {
               <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
-                  alt="FlowSync Autonomous Agent"
+                  alt="Workflow & Task Automation"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5LZrZuAb1PBqksmn6RxLtHG-wZb"
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
-                <span className="font-label-code text-label-code text-outline uppercase">AUTONOMOUS AGENTS</span>
-                <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">FlowSync Agent</h3>
+                <span className="font-label-code text-label-code text-outline uppercase">WORKFLOW AUTOMATION</span>
+                <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Smart Task & Communication Automations</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Intelligent multi-agent orchestration engine performing automated load reconciliation, dispatch routing, and exception resolution with zero human intervention.
+                  Intelligent workflow automation pipelines handling routine notifications, inquiry categorization, and automated data updates across business tools.
                 </p>
                 <div className="pt-2">
                   <Link
                     to="/portfolio"
                     className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors"
                   >
-                    <span>Read Implementation</span>
+                    <span>Explore Capabilities</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

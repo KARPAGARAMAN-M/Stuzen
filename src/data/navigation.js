@@ -12,7 +12,7 @@ export const navLinks = [
       { name: 'AI & Automation', path: '/services/ai-automation' },
     ],
   },
-  { name: 'Our Work', path: '/portfolio' },
+  { name: 'Our Capabilities', path: '/portfolio' },
   { name: 'Contact Us', path: '/contact' },
 ];
 
@@ -20,7 +20,7 @@ export const footerLinks = {
   company: [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Our Work', path: '/portfolio' },
+    { name: 'Our Capabilities', path: '/portfolio' },
     { name: 'Contact', path: '/contact' },
   ],
   services: [

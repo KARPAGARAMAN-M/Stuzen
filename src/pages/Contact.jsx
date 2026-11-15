@@ -29,7 +29,7 @@ export default function Contact() {
     phoneNumber: '',
     serviceFocus: 'web',
     timeline: 'standard',
-    budget: '50k-100k',
+    budget: 'standard',
     projectScope: '',
     ndaCheck: false,
   });
@@ -76,22 +76,22 @@ export default function Contact() {
     {
       question: 'What happens after I submit this inquiry form?',
       answer:
-        'Your brief is reviewed within 4 hours by a Senior Solutions Architect. We prepare an initial technical assessment and respond via email within 24 business hours to schedule a 30-minute discovery consultation.',
+        'Your requirements are reviewed directly by our technical team. We evaluate project feasibility and reach out within 24 business hours to discuss your project scope and next steps.',
     },
     {
       question: 'Do you sign Non-Disclosure Agreements (NDAs) before discussion?',
       answer:
-        'Yes. If you check the NDA request box on the form, we will automatically countersign and return a mutual NDA prior to our scheduled discovery conversation.',
+        'Yes. If your project involves proprietary business logic or confidential ideas, we are glad to execute a mutual NDA before detailed technical discussions.',
     },
     {
       question: 'How do you structure project engagements and scope?',
       answer:
-        'We tailor each engagement to your project requirements—from focused website builds and MVP development to comprehensive enterprise software architectures and continuous digital solutions.',
+        'We tailor each engagement to your project requirements—from initial website builds and focused tools to custom software architectures and ongoing support.',
     },
     {
       question: 'How do discovery consultations and team meetings take place?',
       answer:
-        'We conduct discovery sessions via structured video conferences or in-person technical workshops arranged to align with your project roadmap and stakeholders.',
+        'We conduct consultations via structured video calls or messaging arranged to align with your availability and schedule.',
     },
   ];
 
@@ -128,7 +128,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-label-prominent text-label-prominent text-on-surface">Confidentiality First</h4>
-                <p className="font-body-small text-body-small text-outline mt-0.5">Automated mutual NDA execution</p>
+                <p className="font-body-small text-body-small text-outline mt-0.5">Mutual NDA execution available</p>
               </div>
             </div>
 
@@ -137,8 +137,8 @@ export default function Contact() {
                 <UserCheck className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h4 className="font-label-prominent text-label-prominent text-on-surface">Technical Feasibility</h4>
-                <p className="font-body-small text-body-small text-outline mt-0.5">Direct senior architect review</p>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Technical Consultation</h4>
+                <p className="font-body-small text-body-small text-outline mt-0.5">Direct review with development team</p>
               </div>
             </div>
 
@@ -147,8 +147,8 @@ export default function Contact() {
                 <Clock className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h4 className="font-label-prominent text-label-prominent text-on-surface">Rapid SLA Response</h4>
-                <p className="font-body-small text-body-small text-outline mt-0.5">Guaranteed feedback within 24 hours</p>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Responsive Communication</h4>
+                <p className="font-body-small text-body-small text-outline mt-0.5">Prompt feedback within 24 hours</p>
               </div>
             </div>
           </div>
@@ -319,7 +319,7 @@ export default function Contact() {
                       Start Your Project Inquiry
                     </h3>
                     <p className="font-body-small text-body-small text-on-surface-variant">
-                      Tell us about your objectives. A Principal Architect will review your specifications before our first discussion.
+                      Tell us about your objectives. Our technical team will review your specifications before our first discussion.
                     </p>
                   </div>
 
@@ -332,7 +332,7 @@ export default function Contact() {
                           Enquiry Received Successfully
                         </span>
                         <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                          Thank you, <strong>{formData.fullName}</strong>. Your project brief has been assigned to our Senior Solutions Architect. Expect a direct response at <strong>{formData.workEmail}</strong> within 24 business hours.
+                          Thank you, <strong>{formData.fullName}</strong>. Your project brief has been received by our technical team. Expect a direct response at <strong>{formData.workEmail}</strong> within 24 business hours.
                         </p>
                         <p className="font-label-code text-[11px] text-outline mt-2">
                           (Note: Frontend simulation. No actual email was transmitted.)
@@ -348,7 +348,7 @@ export default function Contact() {
                               phoneNumber: '',
                               serviceFocus: 'web',
                               timeline: 'standard',
-                              budget: '50k-100k',
+                              budget: 'standard',
                               projectScope: '',
                               ndaCheck: false,
                             });
@@ -455,7 +455,7 @@ export default function Contact() {
                             { id: 'web', label: 'Website Dev' },
                             { id: 'software', label: 'Custom Software' },
                             { id: 'ai', label: 'AI & Automation' },
-                            { id: 'enterprise', label: 'Full Enterprise' },
+                            { id: 'consulting', label: 'Consultation' },
                           ].map((item) => (
                             <button
                               key={item.id}
@@ -494,7 +494,7 @@ export default function Contact() {
 
                         <div className="flex flex-col gap-1.5">
                           <label className="font-label-prominent text-label-prominent text-on-surface" htmlFor="budget">
-                            Estimated Budget Range
+                            Estimated Scope Range
                           </label>
                           <select
                             id="budget"
@@ -502,10 +502,10 @@ export default function Contact() {
                             onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                             className="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface text-body-default focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-sm transition-all border border-[#E5EAF0] cursor-pointer"
                           >
-                            <option value="25k-50k">$25,000 – $50,000</option>
-                            <option value="50k-100k">$50,000 – $100,000</option>
-                            <option value="100k-250k">$100,000 – $250,000</option>
-                            <option value="250k+">$250,000+ (Enterprise Architecture)</option>
+                            <option value="initial">Initial / Startup Scope</option>
+                            <option value="standard">Standard Project Scope</option>
+                            <option value="custom">Custom Multi-Feature System</option>
+                            <option value="flexible">Flexible / To be discussed</option>
                           </select>
                         </div>
                       </div>

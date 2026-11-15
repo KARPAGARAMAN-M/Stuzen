@@ -9,7 +9,6 @@ import {
   Compass,
   Code,
   Rocket,
-  Star,
   Activity,
   Globe,
   Terminal,
@@ -718,54 +717,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 6: FEATURED PROJECTS */}
+      {/* SECTION 6: OUR CAPABILITIES */}
       <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-                Proven Case Studies
+                OUR CAPABILITIES
               </span>
               <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-                Featured Client Deployments
+                Digital Solutions We Engineer
               </h2>
               <p className="font-body-default text-body-default text-on-surface-variant">
-                Explore how we engineered scalable custom systems that solved complex enterprise operational challenges.
+                Explore the types of modern web platforms, custom software, and intelligent workflow automations Stuzen Technologies develops for growing businesses.
               </p>
             </div>
             <Link
               to="/portfolio"
               className="inline-flex items-center gap-1.5 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors shrink-0"
             >
-              <span>Explore Entire Portfolio</span>
+              <span>Explore All Capabilities</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Project 1: Apex Financial */}
+            {/* Capability 1: Web Platforms */}
             <div className="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-xl transition-all duration-300 border border-[#E5EAF0]">
               <div>
                 <div className="h-60 overflow-hidden relative">
                   <img
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    alt="Apex Financial Core platform dashboard interface"
+                    alt="Modern web platform dashboard interface"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuZcWj8079rhvrLURNJ0ATcqh9S7bNsJiTIEtd7ZiyvB-VbNRY3lQFJhCbGndp4lG54dDrhMdA-jP238KfdjRlqOuFFfPF1F1qHmFu-GEitxTtGC71oiwjUJ9MtWKGI7Jtyuzjfa2J-Jbhl0m8-iF_x3bKSbrTX-0-9voAeT4TinOzxfmI6ckaNNKMGhK24OYKBzq4QRIKlracSkBeBmO8niGwjwlZn_nQqUUYVQ"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-code text-label-code text-on-surface font-semibold shadow-sm">
-                      Web & Cloud Platform
+                      Web & Digital Platforms
                     </span>
                   </div>
                 </div>
                 <div className="p-6 flex flex-col gap-3">
                   <div className="flex items-center justify-between text-outline font-label-code text-label-code">
-                    <span>FINTECH / PLATFORMS</span>
-                    <span>HIGH PERFORMANCE</span>
+                    <span>WEB DEVELOPMENT</span>
+                    <span>RESPONSIVE ARCHITECTURE</span>
                   </div>
-                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Apex Financial Core</h3>
+                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Modern Web Applications & Portals</h3>
                   <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                    Financial management dashboard and real-time transaction engine architected for deterministic performance and operational reliability.
+                    Fast, responsive web applications, interactive customer portals, and corporate digital presences built with clean frontend engineering.
                   </p>
                 </div>
               </div>
@@ -774,19 +773,19 @@ export default function Home() {
                   to="/portfolio"
                   className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
                 >
-                  <span>View in Portfolio</span>
+                  <span>Explore Capabilities</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
 
-            {/* Project 2: NovaLogix */}
+            {/* Capability 2: Custom Software */}
             <div className="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-xl transition-all duration-300 border border-[#E5EAF0]">
               <div>
                 <div className="h-60 overflow-hidden relative">
                   <img
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    alt="NovaLogix Fleet Ops supply chain telematics interface"
+                    alt="Custom business software architecture interface"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiFgP_2AxLJHSSLlnlKDHJtHNGPu7YZN-tvPJFI4YMZvUFu8VFDoQbeYPMCbKLwNsd0rxG-9jMLsWYidxNYJ9cq9bhP5MFqqaDjxlojjZuc7thcDXlEzlfHK86U0zVlDvYAAKmJMSCzqK1zxh1zJ6Bq7s2mP613N6xZAiLhKq7X6Q0fiTsS2FQJjsjTm3X_1rs5hmOhUMmxFHtSrnpsZcjcq7CbtjfURjHwIfEiw"
                   />
                   <div className="absolute top-4 left-4">
@@ -797,12 +796,12 @@ export default function Home() {
                 </div>
                 <div className="p-6 flex flex-col gap-3">
                   <div className="flex items-center justify-between text-outline font-label-code text-label-code">
-                    <span>SUPPLY CHAIN & LOGISTICS</span>
-                    <span>IOT TELEMATICS</span>
+                    <span>SOFTWARE SYSTEMS</span>
+                    <span>SCALABLE BACKEND</span>
                   </div>
-                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">NovaLogix Fleet Ops</h3>
+                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Custom Software & Business Tools</h3>
                   <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                    Workflow orchestration and fleet management system providing real-time telemetry streaming, route coordination, and dispatch analytics.
+                    Bespoke operational tools, database architectures, and secure RESTful APIs engineered to solve specific operational bottlenecks.
                   </p>
                 </div>
               </div>
@@ -811,19 +810,19 @@ export default function Home() {
                   to="/portfolio"
                   className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
                 >
-                  <span>View in Portfolio</span>
+                  <span>Explore Capabilities</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
 
-            {/* Project 3: Synthra Intelligence */}
+            {/* Capability 3: AI & Automation */}
             <div className="rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-xl transition-all duration-300 border border-[#E5EAF0]">
               <div>
                 <div className="h-60 overflow-hidden relative">
                   <img
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    alt="Synthra Intelligence automated document parsing interface"
+                    alt="Intelligent workflow automation interface"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd2QjfJkzufPoUqwbp81htGmQUdUuaqwcZOoADQrWzRRAK3lsRLdiXMBczr4f3ETFqb4orhkFJ7Ex7eQne62_6FhpPbt73n8Fg27P_Jhmn62ucXVCaAQeDFMH4Xbxa4OSSQNWUSQ6yHhehpIL0NOMOBzGafltjDdg4NwRULIGhhyHqOO38LlsIXjNwXB81pC-AE5zKkrFlUT2qvvpZD7MfU5yY2DzglcRoUsjzMA"
                   />
                   <div className="absolute top-4 left-4">
@@ -834,12 +833,12 @@ export default function Home() {
                 </div>
                 <div className="p-6 flex flex-col gap-3">
                   <div className="flex items-center justify-between text-outline font-label-code text-label-code">
-                    <span>DOCUMENT AI / NLP</span>
-                    <span>AUTOMATED PARSING</span>
+                    <span>WORKFLOW AUTOMATION</span>
+                    <span>INTELLIGENT SYSTEMS</span>
                   </div>
-                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Synthra Intelligence</h3>
+                  <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Intelligent Workflow Automation</h3>
                   <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                    Automated document parsing engine extracting structured data from multi-format business records and contracts with high precision.
+                    Targeted automation pipelines, data extraction workflows, and smart integrations that eliminate repetitive manual business tasks.
                   </p>
                 </div>
               </div>
@@ -848,7 +847,7 @@ export default function Home() {
                   to="/portfolio"
                   className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary group-hover:text-primary-container transition-colors"
                 >
-                  <span>View in Portfolio</span>
+                  <span>Explore Capabilities</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -857,72 +856,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 7: CLIENT ENDORSEMENTS */}
-      <section className="w-full py-16 sm:py-24 lg:py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
-          <div className="max-w-2xl flex flex-col gap-3">
-            <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-              Collaboration & Impact
-            </span>
-            <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-              Client & Partner Feedback
-            </h2>
-            <p className="font-body-default text-body-default text-on-surface-variant">
-              How our engineering rigor, responsive communication, and problem-solving create tangible business impact.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {/* Testimonial 1 */}
-            <div className="p-6 sm:p-8 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6 border border-[#E5EAF0]">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-1 text-secondary">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
-                  ))}
-                </div>
-                <p className="font-body-large text-body-large text-on-surface italic leading-relaxed">
-                  “Stuzen Technologies provided exactly what modern digital businesses require: clean, robust architecture that handles high traffic with stability and precision. Their team demonstrated outstanding dedication to delivery milestones and technical transparency throughout.”
-                </p>
-              </div>
-              <div className="flex items-center gap-4 pt-4 border-t border-surface-container">
-                <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-headline-sub">
-                  ST
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-label-prominent text-label-prominent text-on-surface">Engineering Leadership</span>
-                  <span className="font-body-small text-body-small text-outline">Digital Solutions & Platform Engineering</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="p-6 sm:p-8 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6 border border-[#E5EAF0]">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-1 text-secondary">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
-                  ))}
-                </div>
-                <p className="font-body-large text-body-large text-on-surface italic leading-relaxed">
-                  “The custom web platform and operational automation workflows implemented by Stuzen streamlined our processes significantly. They approached our project with genuine curiosity, understood our business bottlenecks, and engineered an intuitive, maintainable solution.”
-                </p>
-              </div>
-              <div className="flex items-center gap-4 pt-4 border-t border-surface-container">
-                <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-headline-sub">
-                  OP
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-label-prominent text-label-prominent text-on-surface">Operations & Delivery Lead</span>
-                  <span className="font-body-small text-body-small text-outline">Enterprise Systems & Digital Modernization</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 8: FINAL CONVERSION CTA */}
+      {/* SECTION 7: FINAL CONVERSION CTA */}
       <CTASection
         tag="Start Your Project"
         title="Have a Project in Mind?"

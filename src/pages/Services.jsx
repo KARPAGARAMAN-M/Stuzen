@@ -47,24 +47,24 @@ export default function Services() {
           {/* Key Metrics Strip */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-4 border-t border-[#E5EAF0]">
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <span className="font-label-code text-label-code text-outline uppercase">Speed Benchmark</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">&lt; 0.8s Avg Load</div>
+              <span className="font-label-code text-label-code text-outline uppercase">Website Development</span>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Fast & Responsive</div>
               <span className="font-body-small text-body-small text-secondary flex items-center gap-1 mt-1">
-                <Zap className="w-3.5 h-3.5" /> 99+ Core Web Vitals
+                <Zap className="w-3.5 h-3.5" /> Modern cross-device layouts
               </span>
             </div>
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <span className="font-label-code text-label-code text-outline uppercase">Reliability Baseline</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">99.99% Uptime</div>
+              <span className="font-label-code text-label-code text-outline uppercase">Custom Software</span>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Modular Architecture</div>
               <span className="font-body-small text-body-small text-primary flex items-center gap-1 mt-1">
-                <Shield className="w-3.5 h-3.5" /> Mission-critical SLA
+                <Shield className="w-3.5 h-3.5" /> Scalable backends & databases
               </span>
             </div>
             <div className="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
-              <span className="font-label-code text-label-code text-outline uppercase">Delivery Discipline</span>
-              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">100% In-House</div>
+              <span className="font-label-code text-label-code text-outline uppercase">AI & Automation</span>
+              <div className="font-headline-sub text-headline-sub text-on-surface mt-1">Practical Workflows</div>
               <span className="font-body-small text-body-small text-outline flex items-center gap-1 mt-1">
-                <Layers className="w-3.5 h-3.5" /> Zero outsourced risk
+                <Layers className="w-3.5 h-3.5" /> Efficient task automation
               </span>
             </div>
           </div>
@@ -125,8 +125,8 @@ export default function Services() {
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC74qETZjak9e4rIekYkOMMC9ftSXnshkaUf24nmttTr-w9YYRbaQmfLWO3w5Ugzb1p6v5YUYfLSWQDxAhi4Ioto1xWzvF7hRNQiY-gF9swqhP5MkPxd2gg55k22apOT9jK7lb8pBcRNcmJ4GzQVeN4xjCkKhT4RRxUv7O0ecmLBpzqunI2VrvAyMZPN_WcMKVdLk4IWCnzrgBNrI_CiHYPxkdWv4eDekN3Xg6Q1g"
                 />
                 <div className="p-4 bg-surface-container-lowest border-t border-[#E5EAF0] flex items-center justify-between">
-                  <span className="font-label-code text-label-code text-outline">CORE WEB VITALS: OPTIMAL</span>
-                  <span className="font-label-code text-label-code text-primary font-bold">100/100 Lighthouse</span>
+                  <span className="font-label-code text-label-code text-outline">CORE WEB STANDARDS</span>
+                  <span className="font-label-code text-label-code text-primary font-bold">Fast & Responsive</span>
                 </div>
               </div>
             </div>
@@ -142,8 +142,8 @@ export default function Services() {
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5jaXNghOfBlkM1cBSRGDgvb19Q8RfqF6P75_i93-K377xW5gH1lKx0iF2Y7yX_Jk4_zU-8fX-l2b7k7"
                 />
                 <div className="p-4 bg-surface-container-lowest border-t border-[#E5EAF0] flex items-center justify-between">
-                  <span className="font-label-code text-label-code text-outline">DISTRIBUTED CLUSTERS</span>
-                  <span className="font-label-code text-primary font-bold">Zero-Downtime Pipeline</span>
+                  <span className="font-label-code text-label-code text-outline">BACKEND ARCHITECTURE</span>
+                  <span className="font-label-code text-primary font-bold">Modular & Scalable</span>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function Services() {
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low">
                   <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                  <span className="font-label-prominent text-label-prominent text-on-surface">High-Security Compliance Architecture (SOC-2/HIPAA)</span>
+                  <span className="font-label-prominent text-label-prominent text-on-surface">Data Security Best Practices & Role-Based Access</span>
                 </div>
               </div>
               <Link
@@ -242,7 +242,7 @@ export default function Services() {
                 />
                 <div className="p-4 bg-surface-container-lowest border-t border-[#E5EAF0] flex items-center justify-between">
                   <span className="font-label-code text-label-code text-outline">AUTOMATION PIPELINES</span>
-                  <span className="font-label-code text-primary font-bold">99.4% Extraction Precision</span>
+                  <span className="font-label-code text-primary font-bold">Rule-Assisted Workflows</span>
                 </div>
               </div>
             </div>

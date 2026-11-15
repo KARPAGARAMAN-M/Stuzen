@@ -44,9 +44,9 @@ export default function CustomSoftware() {
         'Every platform is architected with horizontal scalability from sprint one. We deploy containerized microservices orchestrated via Kubernetes, implement connection pooling, configure Redis distributed caching, and optimize database queries using automated EXPLAIN ANALYZE index profiling to maintain sub-50ms latency under 100x traffic spikes.',
     },
     {
-      question: 'What does your post-launch warranty and engineering support SLA look like?',
+      question: 'What does your post-launch warranty and engineering support look like?',
       answer:
-        'Every software delivery includes an initial 30-day comprehensive stabilization warranty covering proactive telemetry monitoring and bug resolution. Following handoff, clients can opt for structured monthly engineering SLAs guaranteeing 99.99% uptime, 15-minute critical incident response times, and ongoing feature iterations.',
+        'Every software delivery includes an initial warranty period covering stabilization and bug resolution. Following handoff, clients can opt for structured monthly support for dependency updates, technical maintenance, and ongoing feature iterations.',
     },
   ];
 
@@ -89,15 +89,15 @@ export default function CustomSoftware() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
                   <div className="font-headline-sub text-headline-sub text-primary font-bold">100%</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">Full IP Ownership</span>
+                  <span className="font-label-code text-label-code text-outline uppercase">Full Client Ownership</span>
                 </div>
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
-                  <div className="font-headline-sub text-headline-sub text-primary font-bold">99.99%</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">Uptime Architecture</span>
+                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Modular</div>
+                  <span className="font-label-code text-label-code text-outline uppercase">Scalable Architecture</span>
                 </div>
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
-                  <div className="font-headline-sub text-headline-sub text-primary font-bold">SOC-2</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">Security Baseline</span>
+                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Secure</div>
+                  <span className="font-label-code text-label-code text-outline uppercase">Clean Security Practices</span>
                 </div>
               </div>
 
@@ -114,7 +114,7 @@ export default function CustomSoftware() {
                   to="/portfolio"
                   className="inline-flex items-center justify-center h-12 px-7 rounded-lg bg-surface-container-lowest text-on-surface font-label-prominent text-label-prominent shadow-sm border border-[#E5EAF0] hover:bg-surface-container transition-all duration-200"
                 >
-                  View Case Studies
+                  View Capabilities
                 </Link>
               </div>
             </div>
@@ -346,9 +346,9 @@ export default function CustomSoftware() {
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                 <Shield className="w-5 h-5" />
               </div>
-              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Enterprise Security & Compliance</h4>
+              <h4 className="font-headline-sub text-body-large font-bold text-on-surface">Data Security Best Practices</h4>
               <p className="font-body-small text-body-small text-on-surface-variant leading-relaxed">
-                SOC-2 Type II standards, AES-256 encryption at rest, TLS 1.3 in transit, and role-based access control (RBAC).
+                Secure API endpoints, encrypted data transit, sanitized input validation, and role-based access control (RBAC).
               </p>
             </div>
           </div>
@@ -419,23 +419,23 @@ export default function CustomSoftware() {
         </div>
       </section>
 
-      {/* SECTION 6: FEATURED IMPLEMENTATIONS */}
+      {/* SECTION 6: SOFTWARE CAPABILITIES */}
       <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-                ENTERPRISE WORK
+                OUR SOFTWARE CAPABILITIES
               </span>
               <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-                Featured Enterprise Implementations
+                Software Solutions We Engineer
               </h2>
             </div>
             <Link
               to="/portfolio"
               className="inline-flex items-center gap-1.5 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors shrink-0"
             >
-              <span>View Portfolio</span>
+              <span>Explore All Capabilities</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -445,24 +445,24 @@ export default function CustomSoftware() {
               <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
-                  alt="NovaLogix Fleet Ops platform"
+                  alt="Custom Business Software Platform"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWza0jc9rDMjPpx8tV0IkF3GWbAl"
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
-                <span className="font-label-code text-label-code text-outline uppercase">TELEMATICS & SUPPLY CHAIN</span>
+                <span className="font-label-code text-label-code text-outline uppercase">OPERATIONS & MANAGEMENT</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">
-                  NovaLogix Fleet Ops: Cloud Dispatch & Real-Time Telemetry Engine
+                  Custom Business Management Systems
                 </h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Workflow orchestration and fleet management system providing real-time telemetry streaming, route coordination, and dispatch analytics.
+                  Bespoke operational tools, administrative portals, and management platforms engineered to automate manual business processes and organize company records.
                 </p>
                 <div className="pt-2">
                   <Link
                     to="/portfolio"
                     className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors"
                   >
-                    <span>Read Full Implementation</span>
+                    <span>Explore Capabilities</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -473,24 +473,24 @@ export default function CustomSoftware() {
               <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
-                  alt="Omnia Core ERP"
+                  alt="Database & API Architecture"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkCD1e8TtkPI5f9khHL82CVUeacB"
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
-                <span className="font-label-code text-label-code text-outline uppercase">ERP & MULTI-CURRENCY LEDGER</span>
+                <span className="font-label-code text-label-code text-outline uppercase">DATA & BACKEND ARCHITECTURE</span>
                 <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">
-                  Omnia Core ERP: Multi-Entity Inventory & Financial Reconciliation
+                  Database Design & Secure API Services
                 </h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Comprehensive financial operations ERP handling portfolio allocations, workflow management, and automated regulatory reporting.
+                  Structured relational databases, secure RESTful APIs, and webhook integrations to keep disparate business software and third-party tools synchronized.
                 </p>
                 <div className="pt-2">
                   <Link
                     to="/portfolio"
                     className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors"
                   >
-                    <span>Read Full Implementation</span>
+                    <span>Explore Capabilities</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

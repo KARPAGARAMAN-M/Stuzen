@@ -41,9 +41,9 @@ export default function WebsiteDevelopment() {
         'We enforce strict performance budgets: static generation with edge caching, modular CSS zero-runtime bundles, automatic AVIF/WebP image compression, deferred third-party script loading, and tree-shaken JavaScript dependencies that eliminate render-blocking assets.',
     },
     {
-      question: 'Do you provide post-launch maintenance, monitoring, and SLA support?',
+      question: 'Do you provide post-launch maintenance and technical support?',
       answer:
-        'Yes. Every deployment includes an initial 30-day warranty period for zero-cost adjustments and telemetry monitoring. Afterward, we offer structured monthly SLA maintenance retainers covering uptime guarantees, dependency upgrades, security patching, and ongoing performance audits.',
+        'Yes. Every website launch includes an initial support period for post-launch adjustments and verification. Afterward, we offer regular maintenance options covering dependency updates, security patching, and ongoing performance checks.',
     },
   ];
 
@@ -85,16 +85,16 @@ export default function WebsiteDevelopment() {
               {/* Metrics Row */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
-                  <div className="font-headline-sub text-headline-sub text-primary font-bold">&lt; 0.6s</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">Time to Interactive</span>
+                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Fast</div>
+                  <span className="font-label-code text-label-code text-outline uppercase">Performance Optimized</span>
                 </div>
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
-                  <div className="font-headline-sub text-headline-sub text-primary font-bold">99.8%</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">Core Web Vitals Pass</span>
+                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Fluid</div>
+                  <span className="font-label-code text-label-code text-outline uppercase">Responsive Across Devices</span>
                 </div>
                 <div className="p-3.5 rounded-lg bg-surface-container-low border border-[#E5EAF0]">
-                  <div className="font-headline-sub text-headline-sub text-primary font-bold">100%</div>
-                  <span className="font-label-code text-label-code text-outline uppercase">WCAG 2.1 AA Compliance</span>
+                  <div className="font-headline-sub text-headline-sub text-primary font-bold">Clean</div>
+                  <span className="font-label-code text-label-code text-outline uppercase">Modern Web Standards</span>
                 </div>
               </div>
 
@@ -259,7 +259,7 @@ export default function WebsiteDevelopment() {
               <span className="font-label-code text-label-code text-primary font-bold">06 // SOLUTION</span>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Portfolio & Creative Showcases</h3>
               <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                Media-rich interactive presentations showcasing high-resolution project case studies, client metrics, and engineering benchmarks.
+                Media-rich interactive showcases presenting services, digital capabilities, and company solutions with smooth visuals.
               </p>
             </div>
           </div>
@@ -347,23 +347,23 @@ export default function WebsiteDevelopment() {
         </div>
       </section>
 
-      {/* SECTION 6: SELECTED CASE STUDIES */}
+      {/* SECTION 6: WEB SOLUTIONS CAPABILITIES */}
       <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
-                PROVEN RESULTS
+                OUR WEB CAPABILITIES
               </span>
               <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface">
-                Selected Web Engineering Case Studies
+                Web Solutions We Engineer
               </h2>
             </div>
             <Link
               to="/portfolio"
               className="inline-flex items-center gap-1.5 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors shrink-0"
             >
-              <span>Explore All Case Studies</span>
+              <span>Explore All Capabilities</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -373,22 +373,22 @@ export default function WebsiteDevelopment() {
               <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
-                  alt="Apex Financial Platform"
+                  alt="Corporate Web Platform Interface"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuZcWj8079rhvrLURNJ0ATcqh9S7bNsJiTIEtd7ZiyvB-VbNRY3lQFJhCbGndp4lG54dDrhMdA-jP238KfdjRlqOuFFfPF1F1qHmFu-GEitxTtGC71oiwjUJ9MtWKGI7Jtyuzjfa2J-Jbhl0m8-iF_x3bKSbrTX-0-9voAeT4TinOzxfmI6ckaNNKMGhK24OYKBzq4QRIKlracSkBeBmO8niGwjwlZn_nQqUUYVQ"
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
-                <span className="font-label-code text-label-code text-outline uppercase">FINTECH & CAPITAL</span>
-                <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Apex Financial Corporate Platform</h3>
+                <span className="font-label-code text-label-code text-outline uppercase">CORPORATE & BUSINESS SITES</span>
+                <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Modern Web Applications & Dashboards</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  Enterprise wealth platform handling high-throughput transactional workflows with sub-second page delivery and 100% Lighthouse audit benchmarks.
+                  Fast, responsive corporate websites and interactive dashboards built with clean React architectures, fast load times, and intuitive navigation.
                 </p>
                 <div className="pt-2">
                   <Link
                     to="/portfolio"
                     className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors"
                   >
-                    <span>Read Full Case Study</span>
+                    <span>Explore Capabilities</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -399,22 +399,22 @@ export default function WebsiteDevelopment() {
               <div className="h-56 sm:h-64 overflow-hidden relative">
                 <img
                   className="w-full h-full object-cover"
-                  alt="Vantage Health Technology Portal"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKcQZQBMRerrnL1zbTm1CmDyJGe1c8g1_v3b4Xy-Nq0"
+                  alt="Service & Booking Portal"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkxxLxJaMuGcOXVrNXvyJfF-XCY7"
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
-                <span className="font-label-code text-label-code text-outline uppercase">HEALTHCARE & MEDTECH</span>
-                <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Vantage Health Technology Portal</h3>
+                <span className="font-label-code text-label-code text-outline uppercase">SERVICE & CLIENT PORTALS</span>
+                <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Interactive Portals & Booking Platforms</h3>
                 <p className="font-body-default text-body-default text-on-surface-variant leading-relaxed">
-                  HIPAA-compliant web platform serving 1.2M patients with WebRTC telehealth video integrations and WCAG 2.1 AAA accessible reading flows.
+                  Customer-facing service portals and self-service booking platforms with accessible layout design, fluid mobile experience, and clean code standards.
                 </p>
                 <div className="pt-2">
                   <Link
                     to="/portfolio"
                     className="inline-flex items-center gap-2 font-label-prominent text-label-prominent text-primary hover:text-primary-container transition-colors"
                   >
-                    <span>Read Full Case Study</span>
+                    <span>Explore Capabilities</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

@@ -52,8 +52,8 @@ export default function About() {
                 <Clock className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h4 className="font-label-prominent text-label-prominent text-on-surface">100% On-Time Sprint Cadence</h4>
-                <p className="font-body-small text-body-small text-outline mt-0.5">Reliable milestone delivery metrics</p>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Structured Sprint Cadence</h4>
+                <p className="font-body-small text-body-small text-outline mt-0.5">Clear milestones and predictable project progress</p>
               </div>
             </div>
 
@@ -62,8 +62,8 @@ export default function About() {
                 <Shield className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h4 className="font-label-prominent text-label-prominent text-on-surface">Zero Architecture Debt Guarantee</h4>
-                <p className="font-body-small text-body-small text-outline mt-0.5">Maintainable, strictly typed codebases</p>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Clean Code Standards</h4>
+                <p className="font-body-small text-body-small text-outline mt-0.5">Maintainable, modular and well-structured codebases</p>
               </div>
             </div>
 
@@ -72,8 +72,8 @@ export default function About() {
                 <Users className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h4 className="font-label-prominent text-label-prominent text-on-surface">Senior Engineering Guild Model</h4>
-                <p className="font-body-small text-body-small text-outline mt-0.5">No junior delegation, only proven architects</p>
+                <h4 className="font-label-prominent text-label-prominent text-on-surface">Dedicated Engineering Focus</h4>
+                <p className="font-body-small text-body-small text-outline mt-0.5">Direct collaboration with the developers building your solution</p>
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function About() {
               </div>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Our Mission</h3>
               <p className="font-body-large text-body-large text-on-surface-variant leading-relaxed">
-                To empower ambitious organizations with mission-critical web platforms, custom enterprise systems, and intelligent automation pipelines that accelerate market velocity while eliminating structural technical debt.
+                To empower growing businesses with well-crafted websites, custom software, and practical automations that solve real problems, eliminate repetitive tasks, and support long-term growth.
               </p>
             </div>
 
@@ -156,7 +156,7 @@ export default function About() {
               </div>
               <h3 className="font-headline-sub text-headline-sub text-on-surface font-bold">Our Vision</h3>
               <p className="font-body-large text-body-large text-on-surface-variant leading-relaxed">
-                To become the global benchmark for deterministic software engineering—recognized internationally as the technology partner that consistently turns complex enterprise friction into seamless competitive advantage.
+                To become a trusted technology partner known for dependable software development, thoughtful user experiences, and practical digital solutions that create real business value.
               </p>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function About() {
                   </div>
                   <div className="p-4 rounded-lg bg-surface-container-low border border-[#E5EAF0]/60">
                     <span className="font-label-prominent text-label-prominent font-semibold text-on-surface block mb-1">Typical Outcomes</span>
-                    <span className="font-body-small text-body-small text-on-surface-variant">98+ Google Lighthouse scores, &gt;45% conversion uplift</span>
+                    <span className="font-body-small text-body-small text-on-surface-variant">Fast loading speeds and responsive layouts across all devices</span>
                   </div>
                 </div>
               </div>
@@ -334,7 +334,7 @@ export default function About() {
                   </div>
                   <div className="p-4 rounded-lg bg-surface-container-low border border-[#E5EAF0]/60">
                     <span className="font-label-prominent text-label-prominent font-semibold text-on-surface block mb-1">Typical Outcomes</span>
-                    <span className="font-body-small text-body-small text-on-surface-variant">99.99% system availability, resilient data integrity</span>
+                    <span className="font-body-small text-body-small text-on-surface-variant">Structured database schemas and reliable API performance</span>
                   </div>
                 </div>
               </div>
@@ -371,7 +371,7 @@ export default function About() {
                   </div>
                   <div className="p-4 rounded-lg bg-surface-container-low border border-[#E5EAF0]/60">
                     <span className="font-label-prominent text-label-prominent font-semibold text-on-surface block mb-1">Typical Outcomes</span>
-                    <span className="font-body-small text-body-small text-on-surface-variant">60% reduction in manual data processing time</span>
+                    <span className="font-body-small text-body-small text-on-surface-variant">Automated business tasks and streamlined daily workflows</span>
                   </div>
                 </div>
               </div>
