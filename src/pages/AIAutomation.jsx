@@ -47,11 +47,11 @@ export default function AIAutomation() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-10 pb-10 sm:pb-12 lg:pt-14 lg:pb-14">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 font-label-code text-label-code text-outline">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
@@ -161,7 +161,7 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 2: PHILOSOPHY */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7 flex flex-col gap-6">
@@ -185,7 +185,8 @@ export default function AIAutomation() {
               <img
                 className="w-full h-full object-cover"
                 alt="Software engineers deploying cognitive AI pipeline"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxaeDpai97ZIqwrcZ99elnQjyzGtx-o0l1y234"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsbytQlNWbid7cvKFsQ-ozCzwYNyIfYJWQyYCotgkh_OjfMwmNKSMuo_SzSds-CGu-phuRb_bX4nHqn4d4oXWtkGtxyoNhaNwk0KA4HMcb-7MgOCZfqKKukEvKSD6g3YNXqHGoWS_GdIwqNGNR8auhshtxi2hT-kJTBmQy_p9NBDFY6m7tzqopVyLuNt1MRiwR6FYtKWUCMSGCgSQodhe6MG5O-04sYeR8eWt3rQ"
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
               />
             </div>
           </div>
@@ -193,8 +194,8 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 3: 5 STRUCTURED PRACTICE AREAS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               AI CAPABILITIES
@@ -249,8 +250,8 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 4: CONCRETE BUSINESS BENEFITS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               QUANTIFIABLE METRICS
@@ -305,8 +306,8 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 5: IMPLEMENTATION ROADMAP */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               DELIVERY PROTOCOL
@@ -353,8 +354,8 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 6: AUTOMATION CAPABILITIES */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
@@ -379,7 +380,8 @@ export default function AIAutomation() {
                 <img
                   className="w-full h-full object-cover"
                   alt="Intelligent Document Processing"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoPDeM-W5c39PHYAQ0v0B5UJkagR_q60f1y23"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd2QjfJkzufPoUqwbp81htGmQUdUuaqwcZOoADQrWzRRAK3lsRLdiXMBczr4f3ETFqb4orhkFJ7Ex7eQne62_6FhpPbt73n8Fg27P_Jhmn62ucXVCaAQeDFMH4Xbxa4OSSQNWUSQ6yHhehpIL0NOMOBzGafltjDdg4NwRULIGhhyHqOO38LlsIXjNwXB81pC-AE5zKkrFlUT2qvvpZD7MfU5yY2DzglcRoUsjzMA"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
@@ -405,7 +407,8 @@ export default function AIAutomation() {
                 <img
                   className="w-full h-full object-cover"
                   alt="Workflow & Task Automation"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5LZrZuAb1PBqksmn6RxLtHG-wZb"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsbytQlNWbid7cvKFsQ-ozCzwYNyIfYJWQyYCotgkh_OjfMwmNKSMuo_SzSds-CGu-phuRb_bX4nHqn4d4oXWtkGtxyoNhaNwk0KA4HMcb-7MgOCZfqKKukEvKSD6g3YNXqHGoWS_GdIwqNGNR8auhshtxi2hT-kJTBmQy_p9NBDFY6m7tzqopVyLuNt1MRiwR6FYtKWUCMSGCgSQodhe6MG5O-04sYeR8eWt3rQ"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
@@ -430,8 +433,8 @@ export default function AIAutomation() {
       </section>
 
       {/* SECTION 7: FAQS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           <div className="text-center flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               SECURITY & OPERATIONS

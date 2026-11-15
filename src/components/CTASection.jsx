@@ -10,8 +10,8 @@ export default function CTASection({
   buttonLink = '/contact',
 }) {
   return (
-    <section className="w-full pb-16 sm:pb-24 lg:pb-32 px-4 sm:px-6 lg:px-12 bg-surface">
-      <div className="max-w-7xl mx-auto rounded-2xl bg-surface-container-low p-6 sm:p-10 lg:p-16 shadow-sm relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
+    <section className="w-full pb-10 sm:pb-12 lg:pb-14 px-4 sm:px-6 lg:px-12 bg-surface">
+      <div className="max-w-7xl mx-auto rounded-2xl bg-surface-container-low p-6 sm:p-8 lg:p-12 shadow-sm relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
         {/* Decorative radial ambient blur */}
         <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none" />
 

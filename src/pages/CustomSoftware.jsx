@@ -53,11 +53,11 @@ export default function CustomSoftware() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-10 pb-10 sm:pb-12 lg:pt-14 lg:pb-14">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 font-label-code text-label-code text-outline">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
@@ -161,8 +161,8 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 2: OFF-THE-SHELF VS CUSTOM SOFTWARE */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-3xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               THE STRATEGIC REALITY
@@ -236,8 +236,8 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 3: 6 SOLUTION CATEGORIES */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               SOLUTIONS DIRECTORY
@@ -300,8 +300,8 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 4: IMPACT PILLARS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               OUTCOMES
@@ -356,8 +356,8 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 5: 6 LIFECYCLE STAGES */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               ENGINEERING RIGOR
@@ -420,8 +420,8 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 6: SOFTWARE CAPABILITIES */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
@@ -446,7 +446,8 @@ export default function CustomSoftware() {
                 <img
                   className="w-full h-full object-cover"
                   alt="Custom Business Software Platform"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWza0jc9rDMjPpx8tV0IkF3GWbAl"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiFgP_2AxLJHSSLlnlKDHJtHNGPu7YZN-tvPJFI4YMZvUFu8VFDoQbeYPMCbKLwNsd0rxG-9jMLsWYidxNYJ9cq9bhP5MFqqaDjxlojjZuc7thcDXlEzlfHK86U0zVlDvYAAKmJMSCzqK1zxh1zJ6Bq7s2mP613N6xZAiLhKq7X6Q0fiTsS2FQJjsjTm3X_1rs5hmOhUMmxFHtSrnpsZcjcq7CbtjfURjHwIfEiw"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
@@ -474,7 +475,8 @@ export default function CustomSoftware() {
                 <img
                   className="w-full h-full object-cover"
                   alt="Database & API Architecture"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkCD1e8TtkPI5f9khHL82CVUeacB"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg_vtY4AHBZRfvdRrJx-DivTyCay1bnqHjzGPxEg0ZgdkXt8NAcY9J-2ZgQBj4RtF9GHFekAXxD3vHqQUJg8RxbQ5qCZrXiCTx-hT2cTh_9sCYAsjQz7XUpCK_hwPIzvlarLHqDnMIoQ3sz1YQVRE7ltQOpHeT7eSb_Mfs80vY0v8PM8WUj62-31ZtZtlDcRMZcBJ4-TnLWaslo7-rwYJj3WeFWdgFrXWWJli76w"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
@@ -501,8 +503,8 @@ export default function CustomSoftware() {
       </section>
 
       {/* SECTION 7: FAQS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           <div className="text-center flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               GOT QUESTIONS?

@@ -23,12 +23,12 @@ export default function About() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-10 pb-10 sm:pb-12 lg:pt-14 lg:pb-14">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
-          <div className="max-w-4xl w-full flex flex-col gap-5 sm:gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
+          <div className="max-w-4xl w-full flex flex-col gap-4 sm:gap-5">
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary" />
               <span className="font-label-code text-label-code uppercase tracking-widest text-primary font-bold">
@@ -46,7 +46,7 @@ export default function About() {
           </div>
 
           {/* Dynamic Meta Indicator Strip */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-[#E5EAF0]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 pt-4 border-t border-[#E5EAF0]">
             <div className="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-[#E5EAF0]">
               <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
                 <Clock className="w-5 h-5 text-primary" />
@@ -81,16 +81,17 @@ export default function About() {
       </section>
 
       {/* SECTION 2: COMPANY STORY */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             {/* Visual Column */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-[#E5EAF0] relative h-72 sm:h-96">
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-[#E5EAF0] relative h-72 sm:h-96 bg-surface-container">
                 <img
                   className="w-full h-full object-cover"
-                  alt="Modern high-precision software architecture laboratory"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQi__kbylEk4c8uuutmS7e0oKdav0H1p27kY-0vVpU1-lP61a-7bL8t2e-a1XvLg_z5o12aA-7gY1q72bE0w1bVwI15wR64bJ-7aXhIe5s-q6c9w3k6q"
+                  alt="Modern software engineering environment"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsd4d_BneZcusFkXg0YgzYNm3yKqAH33IanrS01HNdqn20W30qKSiCUcj91VZUEeGgwTXWegHhXBJS1-N9l9A0hZrATc4r2nQexPxaowCZsLz7IzZjQWeSma0k3eSTNg59jD-_Mj_AlkzZgs6T3EhGYANNDefjhso4Xk_RNIhGgAfh2hCuRjo8YMY7MhX00KPigUogea1b16uRNyoUH8g1wyRmQtKn5kDtgASAeQ"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 p-5 rounded-xl bg-surface-container-lowest shadow-xl border border-[#E5EAF0] max-w-xs hidden sm:block">
@@ -128,8 +129,8 @@ export default function About() {
       </section>
 
       {/* SECTION 3: MISSION & VISION */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               STRATEGIC ANCHORS
@@ -164,8 +165,8 @@ export default function About() {
       </section>
 
       {/* SECTION 4: FOUR GUIDING PILLARS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               CORE VALUES
@@ -223,22 +224,22 @@ export default function About() {
       </section>
 
       {/* SECTION 5: CORE EXPERTISE (Interactive Breakdown) */}
-      <section className="w-full py-16 sm:py-24 bg-surface" id="expertise-section">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface" id="expertise-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
             <span className="font-label-code text-label-code uppercase tracking-widest text-primary font-bold">
               CAPABILITY MATRIX
             </span>
             <h2 className="font-headline-section text-[clamp(1.5rem,5vw,2.375rem)] leading-[1.2] text-on-surface mt-2 tracking-tight">
               Our Core Practice Disciplines
             </h2>
-            <p className="font-body-default text-body-default text-on-surface-variant mt-4">
+            <p className="font-body-default text-body-default text-on-surface-variant mt-3">
               Specialized technical competencies structured to solve foundational business challenges. Select a discipline below to inspect our operational breakdown.
             </p>
           </div>
 
           {/* Tab Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-6 sm:mb-8">
             <button
               className={`px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-lg font-label-prominent text-xs sm:text-label-prominent transition-all duration-150 ${
                 activeTab === 'web'
@@ -388,8 +389,8 @@ export default function About() {
       </section>
 
       {/* SECTION 6: WORKING PHILOSOPHY */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               THE TRIAD
@@ -431,10 +432,10 @@ export default function About() {
       </section>
 
       {/* SECTION 7: CULTURE & MASTERY */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            <div className="lg:col-span-6 flex flex-col gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+            <div className="lg:col-span-6 flex flex-col gap-5 sm:gap-6">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
                 ENGINEERING GUILD
               </span>
@@ -462,18 +463,20 @@ export default function About() {
             </div>
 
             <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 border border-[#E5EAF0]">
+              <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 border border-[#E5EAF0] bg-surface-container">
                 <img
                   className="w-full h-full object-cover"
-                  alt="Senior software architect reviewing technical designs"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm28P-_9u4ANFRduhAxUH7GdejgI"
+                  alt="Software architecture and engineering discussion"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRB8HnNJ-sjt1xwOzAizWbN9d3t_7Z1c1Dz0cU9RLXTr9zgDp8GeCQVjvCIwIqLenoDAyDXQfoSj6uLVXFulISn8DB84XojvqHD9XUYmvoZBnLfXa69GgGoETjPgsR3RlZYzsJX2pXLw9vq9DdED-TD63fGiEAWpWnAgcC5mzj7k2JS-GOrrzIAZvni6yGp-SJ8RAc4IBX8GYtpCa2sw5qDYsP_IJR5NdekXJyNg"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 border border-[#E5EAF0]">
+              <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 border border-[#E5EAF0] bg-surface-container">
                 <img
                   className="w-full h-full object-cover"
                   alt="Engineering team collaborating in tech office"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBESAIHmgTdJ4IqPS0bPOb1b27ua"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC74qETZjak9e4rIekYkOMMC9ftSXnshkaUf24nmttTr-w9YYRbaQmfLWO3w5Ugzb1p6v5YUYfLSWQDxAhi4Ioto1xWzvF7hRNQiY-gF9swqhP5MkPxd2gg55k22apOT9jK7lb8pBcRNcmJ4GzQVeN4xjCkKhT4RRxUv7O0ecmLBpzqunI2VrvAyMZPN_WcMKVdLk4IWCnzrgBNrI_CiHYPxkdWv4eDekN3Xg6Q1g"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
             </div>

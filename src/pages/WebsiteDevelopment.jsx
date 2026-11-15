@@ -50,11 +50,11 @@ export default function WebsiteDevelopment() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-10 pb-10 sm:pb-12 lg:pt-14 lg:pb-14">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 font-label-code text-label-code text-outline">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
@@ -64,9 +64,9 @@ export default function WebsiteDevelopment() {
             <span className="text-primary font-semibold">Website Development</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             {/* Left Content */}
-            <div className="lg:col-span-7 flex flex-col gap-6">
+            <div className="lg:col-span-7 flex flex-col gap-5">
               <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-primary" />
                 <span className="font-label-code text-label-code uppercase tracking-widest text-primary font-bold">
@@ -135,7 +135,8 @@ export default function WebsiteDevelopment() {
                   <img
                     className="w-full h-full object-cover"
                     alt="Corporate SaaS landing interface mockup"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaqFhmp2V5hRZ9hnpHBWVJFmN4TvJq234V8b2q9_m4Xf_r93K7yGk"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC74qETZjak9e4rIekYkOMMC9ftSXnshkaUf24nmttTr-w9YYRbaQmfLWO3w5Ugzb1p6v5YUYfLSWQDxAhi4Ioto1xWzvF7hRNQiY-gF9swqhP5MkPxd2gg55k22apOT9jK7lb8pBcRNcmJ4GzQVeN4xjCkKhT4RRxUv7O0ecmLBpzqunI2VrvAyMZPN_WcMKVdLk4IWCnzrgBNrI_CiHYPxkdWv4eDekN3Xg6Q1g"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                   {/* Lighthouse Badge */}
                   <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-surface-container-lowest/95 backdrop-blur-md border border-[#E5EAF0] shadow-lg flex items-center justify-between">
@@ -157,8 +158,8 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 2: 3 PILLARS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               THE VALUE EQUATION
@@ -203,8 +204,8 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 3: 6 WEB SOLUTIONS GRID */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               SOLUTIONS SCOPE
@@ -267,8 +268,8 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 4: 5 PROCESS STEPS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               DELIVERY STEPS
@@ -323,8 +324,8 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 5: TECH STACK BADGES */}
-      <section className="w-full py-12 sm:py-16 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8">
+      <section className="w-full py-8 sm:py-10 lg:py-12 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6">
           <div className="max-w-xl">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               STANDARDS & TOOLING
@@ -348,8 +349,8 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 6: WEB SOLUTIONS CAPABILITIES */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
@@ -375,6 +376,7 @@ export default function WebsiteDevelopment() {
                   className="w-full h-full object-cover"
                   alt="Corporate Web Platform Interface"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuZcWj8079rhvrLURNJ0ATcqh9S7bNsJiTIEtd7ZiyvB-VbNRY3lQFJhCbGndp4lG54dDrhMdA-jP238KfdjRlqOuFFfPF1F1qHmFu-GEitxTtGC71oiwjUJ9MtWKGI7Jtyuzjfa2J-Jbhl0m8-iF_x3bKSbrTX-0-9voAeT4TinOzxfmI6ckaNNKMGhK24OYKBzq4QRIKlracSkBeBmO8niGwjwlZn_nQqUUYVQ"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
@@ -400,7 +402,8 @@ export default function WebsiteDevelopment() {
                 <img
                   className="w-full h-full object-cover"
                   alt="Service & Booking Portal"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkxxLxJaMuGcOXVrNXvyJfF-XCY7"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCKV_QncN0hqbXlMQ9r9AF8146SyqgaQkiCFvxwf-hVKJberbRhR1YCzQIKuLhP2aIY-iU4RYPnmMIsgEDmkYkJxBQ80GWyKQ9ke2sIq5hsG01KNZnGdqEJ_0O8ALwWcfAo_KMmnSTpTYYn1zxymr_oIbqegqJe0C8NY-ZWCbDCArcUxIAzDAHWEQZbIS3X1S0HURgnjip1M2jTahPbJg8IzC7zlPfSOOqsaVmQ"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col gap-4">
@@ -425,8 +428,8 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* SECTION 7: FAQS */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           <div className="text-center flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               CLEAR ANSWERS

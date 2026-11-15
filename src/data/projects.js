@@ -73,7 +73,7 @@ export const projectsData = [
     industry: 'SERVICE PLATFORMS',
     highlightMetric: 'SEAMLESS UX',
     summary: 'Customer-facing service portals, consultation booking workflows, and account dashboards designed to give clients intuitive self-service access.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBkxxLxJaMuGcOXVrNXvyJfF-XCY7',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDQCKV_QncN0hqbXlMQ9r9AF8146SyqgaQkiCFvxwf-hVKJberbRhR1YCzQIKuLhP2aIY-iU4RYPnmMIsgEDmkYkJxBQ80GWyKQ9ke2sIq5hsG01KNZnGdqEJ_0O8ALwWcfAo_KMmnSTpTYYn1zxymr_oIbqegqJe0C8NY-ZWCbDCArcUxIAzDAHWEQZbIS3X1S0HURgnjip1M2jTahPbJg8IzC7zlPfSOOqsaVmQ',
     stats: [
       { label: 'User Flow', value: 'Self-Service' },
       { label: 'Mobile Experience', value: 'Optimized' },
@@ -95,7 +95,7 @@ export const projectsData = [
     industry: 'BACKEND ARCHITECTURE',
     highlightMetric: 'STRUCTURED DATA',
     summary: 'Engineered relational and document databases, structured REST APIs, and third-party webhook integrations to keep disparate business tools in synchronization.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAkCD1e8TtkPI5f9khHL82CVUeacB',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDg_vtY4AHBZRfvdRrJx-DivTyCay1bnqHjzGPxEg0ZgdkXt8NAcY9J-2ZgQBj4RtF9GHFekAXxD3vHqQUJg8RxbQ5qCZrXiCTx-hT2cTh_9sCYAsjQz7XUpCK_hwPIzvlarLHqDnMIoQ3sz1YQVRE7ltQOpHeT7eSb_Mfs80vY0v8PM8WUj62-31ZtZtlDcRMZcBJ4-TnLWaslo7-rwYJj3WeFWdgFrXWWJli76w',
     stats: [
       { label: 'API Protocol', value: 'REST / Webhooks' },
       { label: 'Data Integrity', value: 'High' },
@@ -117,7 +117,7 @@ export const projectsData = [
     industry: 'ASSISTIVE AI',
     highlightMetric: 'KNOWLEDGE ACCESS',
     summary: 'Smart conversational query assistants and knowledge retrieval tools that help teams search internal documentation and answer customer FAQs accurately.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB5LZrZuAb1PBqksmn6RxLtHG-wZb',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAsbytQlNWbid7cvKFsQ-ozCzwYNyIfYJWQyYCotgkh_OjfMwmNKSMuo_SzSds-CGu-phuRb_bX4nHqn4d4oXWtkGtxyoNhaNwk0KA4HMcb-7MgOCZfqKKukEvKSD6g3YNXqHGoWS_GdIwqNGNR8auhshtxi2hT-kJTBmQy_p9NBDFY6m7tzqopVyLuNt1MRiwR6FYtKWUCMSGCgSQodhe6MG5O-04sYeR8eWt3rQ',
     stats: [
       { label: 'Knowledge Base', value: 'Centralized' },
       { label: 'Query Speed', value: 'Instant' },

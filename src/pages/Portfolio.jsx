@@ -30,7 +30,7 @@ export default function Portfolio() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-10 pb-10 sm:pb-12 lg:pt-14 lg:pb-14">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
@@ -82,8 +82,8 @@ export default function Portfolio() {
       </section>
 
       {/* SECTION 2: SHOWCASE GRID WITH FILTER TABS */}
-      <section className="w-full py-12 sm:py-16 lg:py-24 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           {/* Filter Tabs Bar */}
           <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-[#E5EAF0]">
             <div className="flex flex-wrap items-center gap-2">
@@ -126,6 +126,7 @@ export default function Portfolio() {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      onError={(e) => { e.currentTarget.style.display = 'none'; }}
                     />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-code text-label-code text-on-surface font-semibold shadow-sm">
@@ -174,8 +175,8 @@ export default function Portfolio() {
       </section>
 
       {/* SECTION 3: ARCHITECTURAL BLUEPRINT */}
-      <section id="deep-dive" className="w-full bg-surface py-14 sm:py-20 lg:py-28 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
+      <section id="deep-dive" className="w-full bg-surface py-10 sm:py-12 lg:py-16 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <span className="font-label-code text-label-code text-primary uppercase tracking-widest block mb-2 font-bold">
@@ -280,9 +281,10 @@ export default function Portfolio() {
             <div className="lg:col-span-5 flex flex-col gap-6">
               <div className="rounded-2xl overflow-hidden shadow-xl border border-[#E5EAF0] bg-surface-container-lowest">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCywmIIbKpUKOIUzCEKECh3nDOY6c"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCKV_QncN0hqbXlMQ9r9AF8146SyqgaQkiCFvxwf-hVKJberbRhR1YCzQIKuLhP2aIY-iU4RYPnmMIsgEDmkYkJxBQ80GWyKQ9ke2sIq5hsG01KNZnGdqEJ_0O8ALwWcfAo_KMmnSTpTYYn1zxymr_oIbqegqJe0C8NY-ZWCbDCArcUxIAzDAHWEQZbIS3X1S0HURgnjip1M2jTahPbJg8IzC7zlPfSOOqsaVmQ"
                   alt="Modern web platform interface and code structure"
                   className="w-full h-56 sm:h-72 object-cover"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
                 <div className="p-4 sm:p-6 bg-surface-container-lowest flex items-center justify-between border-t border-[#E5EAF0]">
                   <span className="font-label-code text-label-code text-outline">ENGINEERING DISCIPLINE</span>

@@ -21,14 +21,14 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* HERO SECTION */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-24 lg:pt-16 lg:pb-32">
+      <section className="relative w-full overflow-hidden bg-surface pt-10 pb-10 sm:pb-12 lg:pt-14 lg:pb-14">
         {/* Ambient architectural glow background shapes */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 lg:gap-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8 lg:gap-10">
           {/* Top Text Block */}
-          <div className="max-w-4xl w-full flex flex-col gap-5 sm:gap-6">
+          <div className="max-w-4xl w-full flex flex-col gap-4 sm:gap-5">
             {/* Eyebrow Badge */}
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
               <span className="relative flex h-2 w-2">
@@ -268,11 +268,11 @@ export default function Home() {
       </section>
 
       {/* SECTION 2: COMPANY INTRODUCTION */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             {/* Text Column */}
-            <div className="lg:col-span-7 flex flex-col gap-6">
+            <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6">
               <div className="inline-flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-primary" />
                 <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
@@ -310,20 +310,22 @@ export default function Home() {
                     Continuous domain research, architectural audits & feasibility modeling.
                   </p>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 relative border border-[#E5EAF0]">
+                <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 relative border border-[#E5EAF0] bg-surface-container">
                   <img
                     className="w-full h-full object-cover"
                     alt="Senior software engineering leads discussing digital enterprise system architecture"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsd4d_BneZcusFkXg0YgzYNm3yKqAH33IanrS01HNdqn20W30qKSiCUcj91VZUEeGgwTXWegHhXBJS1-N9l9A0hZrATc4r2nQexPxaowCZsLz7IzZjQWeSma0k3eSTNg59jD-_Mj_AlkzZgs6T3EhGYANNDefjhso4Xk_RNIhGgAfh2hCuRjo8YMY7MhX00KPigUogea1b16uRNyoUH8g1wyRmQtKn5kDtgASAeQ"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                 </div>
               </div>
               <div className="flex flex-col gap-3 sm:gap-4 mt-0 sm:-mt-6">
-                <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 relative border border-[#E5EAF0]">
+                <div className="rounded-xl overflow-hidden shadow-sm h-52 sm:h-64 relative border border-[#E5EAF0] bg-surface-container">
                   <img
                     className="w-full h-full object-cover"
                     alt="High tech software interface display on modern ultra-wide monitors"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRB8HnNJ-sjt1xwOzAizWbN9d3t_7Z1c1Dz0cU9RLXTr9zgDp8GeCQVjvCIwIqLenoDAyDXQfoSj6uLVXFulISn8DB84XojvqHD9XUYmvoZBnLfXa69GgGoETjPgsR3RlZYzsJX2pXLw9vq9DdED-TD63fGiEAWpWnAgcC5mzj7k2JS-GOrrzIAZvni6yGp-SJ8RAc4IBX8GYtpCa2sw5qDYsP_IJR5NdekXJyNg"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-sm bg-primary text-on-primary p-4 sm:p-6 flex flex-col justify-between h-44 sm:h-48">
@@ -339,8 +341,8 @@ export default function Home() {
       </section>
 
       {/* SECTION 3: SERVICES OVERVIEW */}
-      <section className="w-full py-16 sm:py-24 lg:py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
@@ -515,8 +517,8 @@ export default function Home() {
       </section>
 
       {/* SECTION 4: WHATSAPP AUTOMATION */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low border-y border-[#E5EAF0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low border-y border-[#E5EAF0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           <div className="max-w-3xl flex flex-col gap-3">
             <div className="inline-flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-primary" />
@@ -583,8 +585,8 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: WHY CHOOSE STUZEN */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-14">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               WHY CHOOSE STUZEN
@@ -653,8 +655,8 @@ export default function Home() {
       </section>
 
       {/* SECTION 6: OUR PROCESS */}
-      <section className="w-full py-16 sm:py-24 lg:py-32 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               OUR PROCESS
@@ -717,9 +719,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 6: OUR CAPABILITIES */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      {/* SECTION 7: OUR CAPABILITIES */}
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="max-w-2xl flex flex-col gap-3">
               <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
@@ -750,6 +752,7 @@ export default function Home() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     alt="Modern web platform dashboard interface"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuZcWj8079rhvrLURNJ0ATcqh9S7bNsJiTIEtd7ZiyvB-VbNRY3lQFJhCbGndp4lG54dDrhMdA-jP238KfdjRlqOuFFfPF1F1qHmFu-GEitxTtGC71oiwjUJ9MtWKGI7Jtyuzjfa2J-Jbhl0m8-iF_x3bKSbrTX-0-9voAeT4TinOzxfmI6ckaNNKMGhK24OYKBzq4QRIKlracSkBeBmO8niGwjwlZn_nQqUUYVQ"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-code text-label-code text-on-surface font-semibold shadow-sm">
@@ -787,6 +790,7 @@ export default function Home() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     alt="Custom business software architecture interface"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiFgP_2AxLJHSSLlnlKDHJtHNGPu7YZN-tvPJFI4YMZvUFu8VFDoQbeYPMCbKLwNsd0rxG-9jMLsWYidxNYJ9cq9bhP5MFqqaDjxlojjZuc7thcDXlEzlfHK86U0zVlDvYAAKmJMSCzqK1zxh1zJ6Bq7s2mP613N6xZAiLhKq7X6Q0fiTsS2FQJjsjTm3X_1rs5hmOhUMmxFHtSrnpsZcjcq7CbtjfURjHwIfEiw"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-code text-label-code text-on-surface font-semibold shadow-sm">
@@ -824,6 +828,7 @@ export default function Home() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     alt="Intelligent workflow automation interface"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd2QjfJkzufPoUqwbp81htGmQUdUuaqwcZOoADQrWzRRAK3lsRLdiXMBczr4f3ETFqb4orhkFJ7Ex7eQne62_6FhpPbt73n8Fg27P_Jhmn62ucXVCaAQeDFMH4Xbxa4OSSQNWUSQ6yHhehpIL0NOMOBzGafltjDdg4NwRULIGhhyHqOO38LlsIXjNwXB81pC-AE5zKkrFlUT2qvvpZD7MfU5yY2DzglcRoUsjzMA"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-code text-label-code text-on-surface font-semibold shadow-sm">

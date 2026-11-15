@@ -22,7 +22,7 @@ export default function Services() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-16 sm:pb-20 lg:pt-16 lg:pb-28">
+      <section className="relative w-full overflow-hidden bg-surface pt-10 pb-10 sm:pb-12 lg:pt-14 lg:pb-14">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
@@ -72,8 +72,8 @@ export default function Services() {
       </section>
 
       {/* SECTION 2: 3 DEEP DIVE SERVICE BLOCKS */}
-      <section className="w-full py-12 sm:py-16 md:py-24 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-20">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-12">
           {/* BLOCK 1: Website Development */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container-lowest rounded-2xl p-6 sm:p-8 lg:p-12 shadow-sm border border-[#E5EAF0]">
             <div className="lg:col-span-6 flex flex-col items-start">
@@ -123,6 +123,7 @@ export default function Services() {
                   className="w-full h-64 sm:h-80 object-cover"
                   alt="Modern software engineering studio showing responsive web interfaces"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC74qETZjak9e4rIekYkOMMC9ftSXnshkaUf24nmttTr-w9YYRbaQmfLWO3w5Ugzb1p6v5YUYfLSWQDxAhi4Ioto1xWzvF7hRNQiY-gF9swqhP5MkPxd2gg55k22apOT9jK7lb8pBcRNcmJ4GzQVeN4xjCkKhT4RRxUv7O0ecmLBpzqunI2VrvAyMZPN_WcMKVdLk4IWCnzrgBNrI_CiHYPxkdWv4eDekN3Xg6Q1g"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
                 <div className="p-4 bg-surface-container-lowest border-t border-[#E5EAF0] flex items-center justify-between">
                   <span className="font-label-code text-label-code text-outline">CORE WEB STANDARDS</span>
@@ -139,7 +140,8 @@ export default function Services() {
                 <img
                   className="w-full h-64 sm:h-80 object-cover"
                   alt="Architectural software blueprint and database relationships"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5jaXNghOfBlkM1cBSRGDgvb19Q8RfqF6P75_i93-K377xW5gH1lKx0iF2Y7yX_Jk4_zU-8fX-l2b7k7"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg_vtY4AHBZRfvdRrJx-DivTyCay1bnqHjzGPxEg0ZgdkXt8NAcY9J-2ZgQBj4RtF9GHFekAXxD3vHqQUJg8RxbQ5qCZrXiCTx-hT2cTh_9sCYAsjQz7XUpCK_hwPIzvlarLHqDnMIoQ3sz1YQVRE7ltQOpHeT7eSb_Mfs80vY0v8PM8WUj62-31ZtZtlDcRMZcBJ4-TnLWaslo7-rwYJj3WeFWdgFrXWWJli76w"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
                 <div className="p-4 bg-surface-container-lowest border-t border-[#E5EAF0] flex items-center justify-between">
                   <span className="font-label-code text-label-code text-outline">BACKEND ARCHITECTURE</span>
@@ -238,7 +240,8 @@ export default function Services() {
                 <img
                   className="w-full h-64 sm:h-80 object-cover"
                   alt="Neural network visualization and automated business intelligence"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWpjIlQQJiiWh1iDprtpRM_CJCth3mG70YnC_4iZ8qJ4_m49pX-8q-g0k7y6v-x3dF"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsbytQlNWbid7cvKFsQ-ozCzwYNyIfYJWQyYCotgkh_OjfMwmNKSMuo_SzSds-CGu-phuRb_bX4nHqn4d4oXWtkGtxyoNhaNwk0KA4HMcb-7MgOCZfqKKukEvKSD6g3YNXqHGoWS_GdIwqNGNR8auhshtxi2hT-kJTBmQy_p9NBDFY6m7tzqopVyLuNt1MRiwR6FYtKWUCMSGCgSQodhe6MG5O-04sYeR8eWt3rQ"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
                 <div className="p-4 bg-surface-container-lowest border-t border-[#E5EAF0] flex items-center justify-between">
                   <span className="font-label-code text-label-code text-outline">AUTOMATION PIPELINES</span>
@@ -251,8 +254,8 @@ export default function Services() {
       </section>
 
       {/* SECTION 3: 4-PHASE ENGAGEMENT MODEL */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-12 sm:gap-16">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               DELIVERY LIFECYCLE
@@ -310,8 +313,8 @@ export default function Services() {
       </section>
 
       {/* SECTION 4: ENGAGEMENT MODELS TABLE */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8 sm:gap-10">
           <div className="max-w-2xl flex flex-col gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               PARTNERSHIP OPTIONS

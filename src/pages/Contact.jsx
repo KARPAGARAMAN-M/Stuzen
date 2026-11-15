@@ -98,11 +98,11 @@ export default function Contact() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 1: HERO HEADER */}
-      <section className="relative w-full overflow-hidden bg-surface pt-12 pb-14 sm:pb-16 lg:pt-16 lg:pb-20">
+      <section className="relative w-full overflow-hidden bg-surface pt-10 pb-10 sm:pb-12 lg:pt-14 lg:pb-14">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           <div className="max-w-3xl flex flex-col gap-4">
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high w-fit shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary" />
@@ -156,7 +156,7 @@ export default function Contact() {
       </section>
 
       {/* SECTION 2 & 3: TWO-COLUMN INTERACTION SECTION */}
-      <section className="w-full pb-16 sm:pb-24" id="inquiry-form">
+      <section className="w-full pb-10 sm:pb-12 lg:pb-16" id="inquiry-form">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
             {/* Left Column: Direct Coordinates */}
@@ -573,7 +573,7 @@ export default function Contact() {
       </section>
 
       {/* SECTION 4: HIGH-TRUST REASSURANCES */}
-      <section className="w-full py-12 sm:py-16 bg-surface-container-low border-y border-[#E5EAF0]">
+      <section className="w-full py-8 sm:py-10 lg:py-12 bg-surface-container-low border-y border-[#E5EAF0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm border border-[#E5EAF0]">
@@ -614,8 +614,8 @@ export default function Contact() {
       </section>
 
       {/* SECTION 5: FAQS BEFORE REACHING OUT */}
-      <section className="w-full py-14 sm:py-20 lg:py-28 bg-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10 sm:gap-12">
+      <section className="w-full py-10 sm:py-12 lg:py-16 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-6 sm:gap-8">
           <div className="text-center flex flex-col items-center gap-3">
             <span className="font-label-code text-label-code uppercase tracking-wider text-primary font-bold">
               ENGAGEMENT FAQ
